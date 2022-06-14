@@ -1,0 +1,13 @@
+package br.com.compass.mscustomer.entity;
+
+import javax.persistence.Entity;
+
+import br.com.compass.mscustomer.entity.enums.Sex;
+
+@Entity
+public class User {
+	
+	private String firstName;
+	private String lastName;
+	private Sex sex;
+}
