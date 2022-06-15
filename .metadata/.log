@@ -9857,3 +9857,1573 @@ Caused by: java.io.IOException: O pipe está sendo fechado
 	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
 	... 12 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:26:50.495
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-06-15 10:27:28.667
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:30:19.160
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:30:29.207
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.439
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.440
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.446
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.448
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.454
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.455
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.457
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.458
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.464
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.466
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.472
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.473
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.475
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.476
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:30.478
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:30:30.479
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:30:31.617
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:32.478
+!MESSAGE executing callback sts4.classpath.uGgoKEej FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:30:32.479
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.345
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.346
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.353
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.354
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.360
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.361
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.362
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.364
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.371
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.372
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.378
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.380
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.381
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.382
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.384
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:30:44.385
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:30:44.485
+!MESSAGE executing callback sts4.classpath.uGgoKEej SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:30:44.707
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:31:13.116
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:31:51.581
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:33:44.919
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:37:50.118
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:38:23.332
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:38:23.649
+!MESSAGE The POM for io.springfox:springfox-swagger2:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:38:23.653
+!MESSAGE The POM for io.springfox:springfox-data-rest:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:38:23.985
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.400
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.402
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.408
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.409
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.415
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.417
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.418
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.419
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.425
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.426
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.432
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.433
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.434
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.435
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.437
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:38:24.439
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:38:24.525
+!MESSAGE executing callback sts4.classpath.uGgoKEej SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:38:25.309
+!MESSAGE The POM for io.springfox:springfox-swagger2:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:38:25.312
+!MESSAGE The POM for io.springfox:springfox-data-rest:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:38:25.359
+!MESSAGE Could not download sources for io.springfox:springfox-swagger2:3.0.0-SNAPSHOT
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.springfox:springfox-swagger2:jar:sources:3.0.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:285)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing io.springfox:springfox-swagger2:jar:sources:3.0.0-SNAPSHOT
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-06-15 10:38:25.359
+!MESSAGE Could not resolve artifact io.springfox:springfox-swagger2:jar:sources:3.0.0-SNAPSHOT
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-06-15 10:38:25.359
+!MESSAGE Missing io.springfox:springfox-swagger2:jar:sources:3.0.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:38:25.364
+!MESSAGE Could not download sources for io.springfox:springfox-data-rest:3.0.0-SNAPSHOT
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.springfox:springfox-data-rest:jar:sources:3.0.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:285)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing io.springfox:springfox-data-rest:jar:sources:3.0.0-SNAPSHOT
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-06-15 10:38:25.364
+!MESSAGE Could not resolve artifact io.springfox:springfox-data-rest:jar:sources:3.0.0-SNAPSHOT
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-06-15 10:38:25.364
+!MESSAGE Missing io.springfox:springfox-data-rest:jar:sources:3.0.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:39:11.090
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:39:11.442
+!MESSAGE The POM for io.springfox:springfox-swagger2:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:39:11.444
+!MESSAGE The POM for io.springfox:springfox-data-rest:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:39:11.793
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.267
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.268
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.276
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.278
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.285
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.287
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.289
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.290
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.298
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.300
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.305
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.307
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.308
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.309
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.310
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:39:12.311
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:12.405
+!MESSAGE executing callback sts4.classpath.uGgoKEej SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:39:12.904
+!MESSAGE The POM for io.springfox:springfox-swagger2:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:39:12.907
+!MESSAGE The POM for io.springfox:springfox-data-rest:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:39:12.962
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:39:12.967
+!MESSAGE Could not download javadoc for io.springfox:springfox-swagger2:3.0.0-SNAPSHOT
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.springfox:springfox-swagger2:jar:javadoc:3.0.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing io.springfox:springfox-swagger2:jar:javadoc:3.0.0-SNAPSHOT
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-06-15 10:39:12.967
+!MESSAGE Could not resolve artifact io.springfox:springfox-swagger2:jar:javadoc:3.0.0-SNAPSHOT
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-06-15 10:39:12.967
+!MESSAGE Missing io.springfox:springfox-swagger2:jar:javadoc:3.0.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:39:12.976
+!MESSAGE Could not download javadoc for io.springfox:springfox-data-rest:3.0.0-SNAPSHOT
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.springfox:springfox-data-rest:jar:javadoc:3.0.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing io.springfox:springfox-data-rest:jar:javadoc:3.0.0-SNAPSHOT
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-06-15 10:39:12.976
+!MESSAGE Could not resolve artifact io.springfox:springfox-data-rest:jar:javadoc:3.0.0-SNAPSHOT
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-06-15 10:39:12.976
+!MESSAGE Missing io.springfox:springfox-data-rest:jar:javadoc:3.0.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:39:34.644
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:39:34.971
+!MESSAGE The POM for io.springfox:springfox-swagger2:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:39:34.973
+!MESSAGE The POM for io.springfox:springfox-data-rest:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:39:35.284
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.710
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.711
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.716
+!MESSAGE classpath=99 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.719
+!MESSAGE classpath=99 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.723
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.724
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.725
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.727
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.731
+!MESSAGE classpath=99 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.733
+!MESSAGE classpath=99 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.738
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.739
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.740
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.741
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.743
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:39:35.744
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:39:35.822
+!MESSAGE executing callback sts4.classpath.uGgoKEej SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:40:27.114
+!MESSAGE The POM for io.springfox:springfox-swagger2:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:40:27.118
+!MESSAGE The POM for io.springfox:springfox-data-rest:jar:3.0.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:41:01.443
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:41:02.164
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.576
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.577
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.584
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.585
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.590
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.591
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.592
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.593
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.600
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.601
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.606
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.607
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.608
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.609
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.610
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:41:02.611
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:41:02.696
+!MESSAGE executing callback sts4.classpath.uGgoKEej SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:41:04.292
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-06-15 10:43:59.045
+!MESSAGE org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: O pipe está sendo fechado
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: O pipe está sendo fechado
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:109)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: O pipe está sendo fechado
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$4(LanguageServerWrapper.java:260)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy70.completion(Unknown Source)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.lambda$1(LSContentAssistProcessor.java:105)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.lambda$0(LSContentAssistProcessor.java:108)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.helpAsyncBlocker(ForkJoinPool.java:1253)
+	at java.base/java.util.concurrent.ForkJoinPool.helpAsyncBlocker(ForkJoinPool.java:2237)
+	at java.base/java.util.concurrent.CompletableFuture.waitingGet(CompletableFuture.java:1887)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2072)
+	... 11 more
+Caused by: java.io.IOException: O pipe está sendo fechado
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 31 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:45:13.552
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:45:24.533
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:47:58.373
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:48:05.808
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY Activator 4 0 2022-06-15 10:48:30.211
+!MESSAGE Could not read maven project
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:831)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$26(ProjectRegistryManager.java:1049)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at java.base/java.util.Collections$SynchronizedMap.computeIfAbsent(Collections.java:2760)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$25(ProjectRegistryManager.java:1048)
+	at java.base/java.util.Map.computeIfAbsent(Map.java:1054)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1048)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:261)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:696)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$16(ProjectRegistryManager.java:851)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:847)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:817)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$26(ProjectRegistryManager.java:1049)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at java.base/java.util.Collections$SynchronizedMap.computeIfAbsent(Collections.java:2760)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$25(ProjectRegistryManager.java:1048)
+	at java.base/java.util.Map.computeIfAbsent(Map.java:1054)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1048)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:261)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2022-06-15 10:48:30.212
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-06-15 10:48:30.212
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:696)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$16(ProjectRegistryManager.java:851)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:847)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:817)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$26(ProjectRegistryManager.java:1049)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at java.base/java.util.Collections$SynchronizedMap.computeIfAbsent(Collections.java:2760)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$25(ProjectRegistryManager.java:1048)
+	at java.base/java.util.Map.computeIfAbsent(Map.java:1054)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1048)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:261)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY Activator 4 0 2022-06-15 10:48:30.241
+!MESSAGE Could not read maven project
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:831)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$26(ProjectRegistryManager.java:1049)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at java.base/java.util.Collections$SynchronizedMap.computeIfAbsent(Collections.java:2760)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$25(ProjectRegistryManager.java:1048)
+	at java.base/java.util.Map.computeIfAbsent(Map.java:1054)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1048)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:261)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:696)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$16(ProjectRegistryManager.java:851)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:847)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:817)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$26(ProjectRegistryManager.java:1049)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at java.base/java.util.Collections$SynchronizedMap.computeIfAbsent(Collections.java:2760)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$25(ProjectRegistryManager.java:1048)
+	at java.base/java.util.Map.computeIfAbsent(Map.java:1054)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1048)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:261)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2022-06-15 10:48:30.241
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-06-15 10:48:30.241
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:696)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$16(ProjectRegistryManager.java:851)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:847)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:817)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$26(ProjectRegistryManager.java:1049)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at java.base/java.util.Collections$SynchronizedMap.computeIfAbsent(Collections.java:2760)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$25(ProjectRegistryManager.java:1048)
+	at java.base/java.util.Map.computeIfAbsent(Map.java:1054)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1048)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:261)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getMavenProject(MavenSpringBootProject.java:130)
+	at org.springframework.ide.eclipse.boot.core.internal.MavenSpringBootProject.getDependencies(MavenSpringBootProject.java:147)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester.hasDevTools(BootPropertyTester.java:204)
+	at org.springframework.ide.eclipse.boot.core.BootPropertyTester$2.run(BootPropertyTester.java:189)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:48:55.647
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-06-15 10:48:55.867
+!MESSAGE Failed to build parent project for org.springframework.boot:spring-boot-starter-parent:pom:2.5.10
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:48:55.869
+!MESSAGE Could not read parent project
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:207)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:342)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:299)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:743)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolveParentProject(MavenImpl.java:722)
+	at org.sonatype.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:609)
+	at org.sonatype.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:395)
+	at org.sonatype.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:227)
+	at org.sonatype.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:167)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:135)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:169)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:105)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:860)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:392)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:417)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 9 problems were encountered while building the effective model for org.springframework.boot:spring-boot-starter-parent:2.5.10
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:505)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:437)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:252)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:173)
+	... 32 more
+
+!ENTRY org.eclipse.m2e.jdt 4 -1 2022-06-15 10:48:56.340
+!MESSAGE Could not download sources or javadoc
+!SUBENTRY 1 org.eclipse.m2e.core 4 0 2022-06-15 10:48:56.340
+!MESSAGE Could not read maven project
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-06-15 10:48:56.340
+!MESSAGE Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: io.prometheus:simpleclient_bom:pom:0.10.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.prometheus:simpleclient_bom:pom:0.10.0 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2698, column 19
+[ERROR] Non-resolvable import POM: io.r2dbc:r2dbc-bom:pom:Arabba-SR12 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.r2dbc:r2dbc-bom:pom:Arabba-SR12 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2705, column 19
+[ERROR] Non-resolvable import POM: io.projectreactor:reactor-bom:pom:2020.0.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.projectreactor:reactor-bom:pom:2020.0.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2712, column 19
+[ERROR] Non-resolvable import POM: io.rsocket:rsocket-bom:pom:1.1.1 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.rsocket:rsocket-bom:pom:1.1.1 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2719, column 19
+[ERROR] Non-resolvable import POM: org.springframework.data:spring-data-bom:pom:2021.0.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.data:spring-data-bom:pom:2021.0.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2726, column 19
+[ERROR] Non-resolvable import POM: org.springframework:spring-framework-bom:pom:5.3.16 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework:spring-framework-bom:pom:5.3.16 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2733, column 19
+[ERROR] Non-resolvable import POM: org.springframework.integration:spring-integration-bom:pom:5.5.9 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.integration:spring-integration-bom:pom:5.5.9 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2740, column 19
+[ERROR] Non-resolvable import POM: org.springframework.security:spring-security-bom:pom:5.5.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.security:spring-security-bom:pom:5.5.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2747, column 19
+[ERROR] Non-resolvable import POM: org.springframework.session:spring-session-bom:pom:2021.0.5 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.session:spring-session-bom:pom:2021.0.5 from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled. @ org.springframework.boot:spring-boot-dependencies:2.5.10, C:\Users\willams.souza\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.5.10\spring-boot-dependencies-2.5.10.pom, line 2754, column 19
+
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProjects(MavenImpl.java:696)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$16(ProjectRegistryManager.java:851)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:1009)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:847)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:817)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$26(ProjectRegistryManager.java:1049)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at java.base/java.util.Collections$SynchronizedMap.computeIfAbsent(Collections.java:2760)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$25(ProjectRegistryManager.java:1048)
+	at java.base/java.util.Map.computeIfAbsent(Map.java:1054)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1048)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:261)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:251)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.610
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.611
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.615
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.616
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.628
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.630
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.631
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.632
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.638
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.640
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.648
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.649
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.650
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.651
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:56.653
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:48:56.658
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:48:56.677
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:48:58.656
+!MESSAGE executing callback sts4.classpath.uGgoKEej FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:48:58.659
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:49:00.973
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.602
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.603
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.606
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.607
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.611
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.612
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.613
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.614
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.617
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.618
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.625
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.626
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.627
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.628
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.629
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:49:01.630
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:01.722
+!MESSAGE executing callback sts4.classpath.uGgoKEej SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.core 4 4 2022-06-15 10:49:01.823
+!MESSAGE Error occurred while deleting: /ms-customer/target/classes/br
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:779)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:316)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:495)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:604)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:474)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete '/ms-customer/target/classes/br'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:367)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:816)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1797)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:766)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:316)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:495)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:604)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:474)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer\repository\UserRepository.class.
+java.nio.file.FileSystemException: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer\repository\UserRepository.class: O arquivo já está sendo usado por outro processo
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:222)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:139)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:816)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1797)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:766)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:316)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:495)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:604)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:474)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer\repository.
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer.
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass.
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com.
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2022-06-15 10:49:01.824
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2022-06-15 10:49:01.824
+!MESSAGE Could not delete '/ms-customer/target/classes/br'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:367)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:816)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1797)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:766)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:316)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:495)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:604)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:474)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer\repository\UserRepository.class.
+java.nio.file.FileSystemException: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer\repository\UserRepository.class: O arquivo já está sendo usado por outro processo
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:222)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:139)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:816)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1797)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:766)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:316)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:495)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:604)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:474)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer\repository.
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer.
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass.
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com.
+Contains: Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2022-06-15 10:49:01.824
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2022-06-15 10:49:01.824
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2022-06-15 10:49:01.824
+!MESSAGE Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer\repository\UserRepository.class.
+!STACK 0
+java.nio.file.FileSystemException: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer\repository\UserRepository.class: O arquivo já está sendo usado por outro processo
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:222)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:250)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:139)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:156)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:816)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1797)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:766)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:316)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:865)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:495)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:604)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:116)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:474)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2022-06-15 10:49:01.824
+!MESSAGE Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer\repository.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2022-06-15 10:49:01.824
+!MESSAGE Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass\mscustomer.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2022-06-15 10:49:01.824
+!MESSAGE Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com\compass.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2022-06-15 10:49:01.824
+!MESSAGE Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br\com.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2022-06-15 10:49:01.824
+!MESSAGE Could not delete: C:\temp\ws-sts\shop-style\ms-customer\target\classes\br.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:49:02.899
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:49:24.354
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.928
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.929
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.932
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.933
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.939
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.940
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.941
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.942
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.944
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.945
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.950
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.951
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.952
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.954
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:24.955
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:49:24.956
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:49:26.118
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:49:26.957
+!MESSAGE executing callback sts4.classpath.uGgoKEej FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:49:26.958
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:49:40.453
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.822
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.823
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.830
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.831
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.845
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.846
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.847
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.848
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.853
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.853
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.859
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.860
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.861
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.862
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.863
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:51:19.864
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:51:19.939
+!MESSAGE executing callback sts4.classpath.uGgoKEej SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:51:19.951
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:52:39.210
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:52:39.939
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.317
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.318
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.326
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.327
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.331
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.333
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.334
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.336
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.341
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.344
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.349
+!MESSAGE buffering callback sts4.classpath.uGgoKEej ms-customer false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.350
+!MESSAGE executing callback sts4.classpath.uGgoKEej 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.351
+!MESSAGE buffering callback sts4.classpath.KZTcwQEQ ms-customer false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.353
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.354
+!MESSAGE executing callback sts4.classpath.KZTcwQEQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-06-15 10:52:40.356
+!MESSAGE No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.KZTcwQEQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-15 10:52:40.450
+!MESSAGE executing callback sts4.classpath.uGgoKEej SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-15 10:52:41.753
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled

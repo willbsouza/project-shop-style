@@ -1,0 +1,5 @@
+package br.com.compass.mscustomer.config.swagger;
+
+public class SwaggerConfigurations {
+
+}
