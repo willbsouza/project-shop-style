@@ -1,0 +1,26 @@
+package br.com.compass.mscustomer.service;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.compass.mscustomer.dto.UserDto;
+import br.com.compass.mscustomer.dto.UserFormDto;
+import br.com.compass.mscustomer.repository.UserRepository;
+
+@Service
+public class UserService {
+	
+	@Autowired
+	private UserRepository userRepository;
+
+	public UserDto findById(Long id) {
+		return userRepository.findById(id).orElse(null);
+	}
+
+	public UserDto save(@Valid UserFormDto userFormDto) {
+		return null;
+	}
+
+}

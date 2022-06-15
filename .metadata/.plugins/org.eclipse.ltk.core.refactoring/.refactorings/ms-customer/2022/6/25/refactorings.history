@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;br.com.compass.mscustomer.dto.UserDTO&apos; to &apos;UserDto&apos;&#x0D;&#x0A;- Original project: &apos;ms-customer&apos;&#x0D;&#x0A;- Original element: &apos;br.com.compass.mscustomer.dto.UserDTO&apos;&#x0D;&#x0A;- Renamed element: &apos;br.com.compass.mscustomer.dto.UserDto&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UserDTO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;br.com.compass.mscustomer.dto{UserDTO.java[UserDTO" matchStrategy="1" name="UserDto" qualified="false" references="true" similarDeclarations="false" stamp="1655223941506" textual="false" version="1.0"/>
+</session>

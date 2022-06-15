@@ -1,0 +1,20 @@
+package br.com.compass.mscustomer.dto;
+
+import java.time.LocalDate;
+
+import br.com.compass.mscustomer.entity.enums.Sex;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+public class UserDto {
+	
+	private String firstName;
+	private String lastName;
+	private Sex sex;
+	private LocalDate birthdate;
+	private String email;
+	private String active;
+}
