@@ -16,6 +16,7 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.br.CPF;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -68,7 +69,7 @@ public class User {
 		this.cpf = userFormDto.getCpf();
 		this.birthdate = userFormDto.getBirthdate();
 		this.email = userFormDto.getEmail();
-		this.password = userFormDto.getPassword();
+		this.password = new BCryptPasswordEncoder().encode(userFormDto.getPassword());
 		this.active = userFormDto.getActive();
 	}
 

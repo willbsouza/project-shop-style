@@ -3,12 +3,15 @@ package br.com.compass.mscustomer.service;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import br.com.compass.mscustomer.dto.UserDto;
 import br.com.compass.mscustomer.dto.UserFormDto;
+import br.com.compass.mscustomer.dto.UserLoginDto;
 import br.com.compass.mscustomer.entity.User;
 import br.com.compass.mscustomer.repository.UserRepository;
+import br.com.compass.mscustomer.service.exception.LoginException;
 import br.com.compass.mscustomer.service.exception.MethodArgumentNotValidException;
 import br.com.compass.mscustomer.service.exception.ObjectNotFoundException;
 
@@ -69,5 +72,20 @@ public class UserService {
 		}catch (MethodArgumentNotValidException e) {
 			throw new MethodArgumentNotValidException(e.getMessage());
 		}
+	}
+
+	public UserDto login(UserLoginDto userLoginDto) {
+		User user = userRepository.findByEmail(userLoginDto.getEmail());
+		if(user != null && new BCryptPasswordEncoder().matches(userLoginDto.getPassword(), user.getPassword())) {
+			UserDto userDto = new UserDto();
+			userDto.setFirstName(user.getFirstName());
+			userDto.setLastName(user.getLastName());
+			userDto.setSex(user.getSex());
+			userDto.setBirthdate(user.getBirthdate());
+			userDto.setEmail(user.getEmail());
+			userDto.setActive(user.getActive());		
+			return userDto;		
+		}
+		throw new LoginException("Login e/ou senha incorretos!");
 	}
 }

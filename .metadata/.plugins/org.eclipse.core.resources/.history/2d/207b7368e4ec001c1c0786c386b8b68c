@@ -1,0 +1,12 @@
+package br.com.compass.mscustomer.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import br.com.compass.mscustomer.entity.User;
+
+public interface UserRepository extends JpaRepository<User, Long>{
+
+	@Query(value="SELECT * FROM tb_user WHERE email = :email and password = :password", nativeQuery = true)
+	User login(String email, String password);
+}

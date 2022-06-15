@@ -1,0 +1,27 @@
+package br.com.compass.mscustomer.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.compass.mscustomer.dto.UserDto;
+import br.com.compass.mscustomer.dto.UserLoginDto;
+import br.com.compass.mscustomer.entity.User;
+import br.com.compass.mscustomer.repository.UserRepository;
+
+@RestController
+@RequestMapping("/v1/login")
+public class LoginController {
+
+	@Autowired
+	private UserRepository userRepository;
+	
+	@PostMapping
+	public UserDto login(UserLoginDto userLoginDto) {
+		User user = userRepository.login(userLoginDto.getEmail(), userLoginDto.getPassword());
+		if(user != null) {
+			
+		}
+	}
+}

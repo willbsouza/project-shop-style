@@ -11,13 +11,14 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import br.com.compass.mscustomer.service.exception.LoginException;
 import br.com.compass.mscustomer.service.exception.ObjectNotFoundException;
 
 @RestControllerAdvice
 public class ResourceExceptionHandler {
 
 	@ExceptionHandler(ObjectNotFoundException.class)
-	public ResponseEntity<StandardError> objetoNaoEncontrado(ObjectNotFoundException e, HttpServletRequest request){
+	public ResponseEntity<StandardError> objectNotFound(ObjectNotFoundException e, HttpServletRequest request){
 		
 		StandardError erro = new StandardError();
 		erro.setTimestamp(Instant.now());
@@ -29,18 +30,18 @@ public class ResourceExceptionHandler {
 	}
 	
 	@ExceptionHandler(MethodArgumentNotValidException.class)
-	public ResponseEntity<StandardError> camposInvalidos(MethodArgumentNotValidException e, HttpServletRequest request){
+	public ResponseEntity<StandardError> invalidFields(MethodArgumentNotValidException e, HttpServletRequest request){
 		StandardError erro = new StandardError();
 		erro.setTimestamp(Instant.now());
 		erro.setStatus(HttpStatus.BAD_REQUEST.value());
-		erro.setError("Campo não pode ser vazio/nulo.");
+		erro.setError("Campo não está de acordo com as políticas.");
 		erro.setMessage("Campo incorreto: " + e.getFieldError().getField().toUpperCase());
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
 	}
 	
 	@ExceptionHandler(HttpMessageNotReadableException.class)
-	public ResponseEntity<StandardError> camposInvalidos(HttpMessageNotReadableException e, HttpServletRequest request){
+	public ResponseEntity<StandardError> invalidFields(HttpMessageNotReadableException e, HttpServletRequest request){
 		StandardError erro = new StandardError();
 		erro.setTimestamp(Instant.now());
 		erro.setStatus(HttpStatus.BAD_REQUEST.value());
@@ -48,6 +49,17 @@ public class ResourceExceptionHandler {
 		erro.setMessage("Selecione uma das entradas válidas a seguir: " + e.getCause().getMessage());
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
+	}	
+	
+	@ExceptionHandler(LoginException.class)
+	public ResponseEntity<StandardError> invalidLogin(LoginException e, HttpServletRequest request){		
+		StandardError erro = new StandardError();
+		erro.setTimestamp(Instant.now());
+		erro.setStatus(HttpStatus.UNAUTHORIZED.value());
+		erro.setError("Dados inválidos.");
+		erro.setMessage(e.getMessage());
+		erro.setPath(request.getRequestURI());
+		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(erro);
 	}	
 }
 

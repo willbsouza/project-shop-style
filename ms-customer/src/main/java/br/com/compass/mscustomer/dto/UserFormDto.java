@@ -2,11 +2,9 @@ package br.com.compass.mscustomer.dto;
 
 import java.time.LocalDate;
 
-import javax.persistence.Column;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
@@ -37,11 +35,10 @@ public class UserFormDto {
 	private LocalDate birthdate;
 	
 	@Email
-	@Column(unique = true)
 	private String email;
 	
 	@NotNull
-	@NotEmpty
+	@Length(min = 8)
 	private String password;
 	
 	@NotNull
