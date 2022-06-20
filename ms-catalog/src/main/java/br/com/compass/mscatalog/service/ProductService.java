@@ -45,5 +45,33 @@ public class ProductService {
 		}
 		return new ProductDto(productRepository.save(product));
 	}
-	
+
+	public ProductDto findById(Long id) {
+		return new ProductDto( 
+				productRepository.findById(id).orElseThrow(
+				() -> new ObjectNotFoundException("Product ID: " + id + " not found."))
+			);
+	}
+
+	public void deleteById(Long id) {
+		findById(id);
+		productRepository.deleteById(id);
+	}
+
+	public ProductDto update(Long id, ProductFormDto productFormDto) {
+		Product product = productRepository.findById(id).orElseThrow(
+				() -> new ObjectNotFoundException("Product ID: " + id + " not found."));
+		product.setName(productFormDto.getName());
+		product.setDescription(productFormDto.getDescription());
+		product.setActive(productFormDto.getActive());
+		product.getCategories().clear();
+		for(Long idCategory : productFormDto.getCategory_ids()) {
+			Category findCategory = categoryRepository.findById(idCategory).orElseThrow(
+					() -> new ObjectNotFoundException("Category ID: " + idCategory + " not found."));
+			if(findCategory.getActive()) {
+				product.addCategory(findCategory);
+			}
+		}
+		return new ProductDto(productRepository.save(product));
+	}
 }
