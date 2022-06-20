@@ -1,18 +1,32 @@
 package br.com.compass.mscatalog.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import br.com.compass.mscatalog.dto.ProductFormDto;
 
 @Document
 public class Product {
+	
+	@Transient
+	public static final String SEQUENCE_NAME = "product_sequence";
 
 	@Id
-	private String id;
+	private Long id;
+	
 	private String name;
 	private String description;
 	private Boolean active;
+	
+	@DBRef
+	private List<Category> categories = new ArrayList<>();
+	
+	private List<Variation> variations = new ArrayList<>();
 	
 	public Product() {}
 	
@@ -22,10 +36,10 @@ public class Product {
 		this.active = productFormDto.getActive();
 	}
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -45,5 +59,21 @@ public class Product {
 	}
 	public void setActive(Boolean active) {
 		this.active = active;
+	}
+	
+	public List<Category> getCategories() {
+		return categories;
+	}
+	
+	public void addCategory(Category category) {
+		this.categories.add(category);
+	}
+
+	public List<Variation> getVariations() {
+		return variations;
+	}
+	
+	public void addVariation(Variation variation) {
+		this.variations.add(variation);
 	}
 }

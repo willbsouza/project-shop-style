@@ -9,6 +9,7 @@ INDEX VERSION 1.131+C:\temp\ws-sts\shop-style\.metadata\.plugins\org.eclipse.jdt
 1370916127.index
 944869353.index
 1396637906.index
+270996577.index
 3196716354.index
 773152198.index
 3620829913.index
@@ -81,8 +82,8 @@ INDEX VERSION 1.131+C:\temp\ws-sts\shop-style\.metadata\.plugins\org.eclipse.jdt
 1162937372.index
 2252065002.index
 2989581738.index
-878573610.index
 3451526160.index
+878573610.index
 369986149.index
 2655799657.index
 1845628127.index
@@ -106,8 +107,8 @@ INDEX VERSION 1.131+C:\temp\ws-sts\shop-style\.metadata\.plugins\org.eclipse.jdt
 1389851672.index
 793943953.index
 1844305651.index
-1410017294.index
 845014983.index
+1410017294.index
 2274491169.index
 2467167679.index
 607074159.index

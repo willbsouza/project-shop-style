@@ -1,5 +1,7 @@
 package br.com.compass.mscatalog.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.compass.mscatalog.dto.ProductDto;
 import br.com.compass.mscatalog.dto.ProductFormDto;
-import br.com.compass.mscatalog.entity.Product;
 import br.com.compass.mscatalog.service.ProductService;
 
 @RestController
@@ -20,15 +22,14 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 	
-	@GetMapping
-	public String testController() {
-		return "Controller works!";
+	@PostMapping
+	public ResponseEntity<ProductDto> save(@RequestBody ProductFormDto productFormDto){
+		return new ResponseEntity<ProductDto>(productService.save(productFormDto), HttpStatus.CREATED);
 	}
 	
-	@PostMapping
-	public ResponseEntity<Product> save(@RequestBody ProductFormDto productFormDto){
-		Product product = new Product(productFormDto);
-		return new ResponseEntity<Product>(productService.save(product), HttpStatus.CREATED);
+	@GetMapping
+	public ResponseEntity<List<ProductDto>> findAll(){
+		return new ResponseEntity<List<ProductDto>>(productService.findAll(), HttpStatus.OK);
 	}
-
+ 
 }
