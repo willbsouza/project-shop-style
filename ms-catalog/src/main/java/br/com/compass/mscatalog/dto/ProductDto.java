@@ -10,7 +10,6 @@ public class ProductDto {
 	private String name;
 	private String description;
 	private Boolean active;
-	private List<CategoryDto> categories;
 	private List<VariationDto> variations;
 	
 	public ProductDto() {}
@@ -19,7 +18,6 @@ public class ProductDto {
 		this.name = product.getName();
 		this.description = product.getDescription();
 		this.active = product.getActive();
-		this.categories = product.getCategories().stream().map(CategoryDto::new).collect(Collectors.toList());
 		this.variations = product.getVariations().stream().map(VariationDto::new).collect(Collectors.toList());
 	}
 	
@@ -40,10 +38,6 @@ public class ProductDto {
 	}
 	public void setActive(Boolean active) {
 		this.active = active;
-	}
-
-	public List<CategoryDto> getCategories() {
-		return categories;
 	}
 
 	public List<VariationDto> getVariations() {

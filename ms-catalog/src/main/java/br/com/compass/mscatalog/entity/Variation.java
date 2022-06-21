@@ -1,5 +1,8 @@
 package br.com.compass.mscatalog.entity;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.DBRef;
@@ -14,9 +17,16 @@ public class Variation {
 	@Id
 	private Long id;
 	
+	@NotNull @NotEmpty
 	private String color;
+	
+	@NotNull @NotEmpty
 	private String size;
+	
+	@NotNull
 	private Double price;
+	
+	@NotNull
 	private Integer quantity;
 	
 	@DBRef

@@ -2,6 +2,8 @@ package br.com.compass.mscatalog.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -37,12 +39,12 @@ public class CategoryController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<CategoryDto> save(@RequestBody CategoryFormDto categoryFormDto){
+	public ResponseEntity<CategoryDto> save(@RequestBody @Valid CategoryFormDto categoryFormDto){
 		return new ResponseEntity<CategoryDto>(categoryService.save(categoryFormDto), HttpStatus.CREATED);
 	}
 	
 	@PutMapping("/{id}")
-	public ResponseEntity<CategoryDto> update(@PathVariable Long id, @RequestBody CategoryFormDto categoryFormDto){
+	public ResponseEntity<CategoryDto> update(@PathVariable Long id, @RequestBody @Valid CategoryFormDto categoryFormDto){
 		return new ResponseEntity<CategoryDto>(categoryService.update(id, categoryFormDto), HttpStatus.OK);
 	}
 	

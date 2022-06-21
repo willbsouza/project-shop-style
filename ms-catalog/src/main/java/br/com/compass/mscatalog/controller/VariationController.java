@@ -1,5 +1,7 @@
 package br.com.compass.mscatalog.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,12 +25,12 @@ public class VariationController {
 	private VariationService variationService;
 	
 	@PostMapping
-	public ResponseEntity<VariationDto> save(@RequestBody VariationFormDto variationFormDto){
+	public ResponseEntity<VariationDto> save(@RequestBody @Valid VariationFormDto variationFormDto){
 		return new ResponseEntity<VariationDto>(variationService.save(variationFormDto), HttpStatus.CREATED);
 	}
 	
 	@PutMapping("/{id}")
-	public ResponseEntity<VariationDto> update(@PathVariable Long id, @RequestBody VariationFormDto variationFormDto){
+	public ResponseEntity<VariationDto> update(@PathVariable Long id, @RequestBody @Valid VariationFormDto variationFormDto){
 		return new ResponseEntity<VariationDto>(variationService.update(id, variationFormDto), HttpStatus.OK);
 	}
 	

@@ -2,11 +2,20 @@ package br.com.compass.mscatalog.dto;
 
 import java.util.List;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 public class ProductFormDto {
 	
+	@NotNull @NotEmpty
 	private String name;
+	
+	@NotNull @NotEmpty
 	private String description;
+	
+	@NotNull
 	private Boolean active;
+	
 	private List<Long> category_ids;
 	
 	public String getName() {

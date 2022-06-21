@@ -1,11 +1,23 @@
 package br.com.compass.mscatalog.dto;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 public class VariationFormDto {
 
+	@NotNull @NotEmpty
 	private String color;
+	
+	@NotNull @NotEmpty
 	private String size;
+	
+	@NotNull
 	private Double price;
+	
+	@NotNull
 	private Integer quantity;
+	
+	@NotNull
 	private Long product_id;
 	
 	public String getColor() {

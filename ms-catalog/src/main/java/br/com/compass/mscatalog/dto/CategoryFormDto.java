@@ -1,8 +1,14 @@
 package br.com.compass.mscatalog.dto;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 public class CategoryFormDto {
 
+	@NotNull @NotEmpty
 	private String name;
+	
+	@NotNull
 	private Boolean active;
 	
 	public String getName() {
@@ -17,5 +23,4 @@ public class CategoryFormDto {
 	public void setActive(Boolean active) {
 		this.active = active;
 	}
-	
 }

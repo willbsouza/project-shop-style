@@ -3,6 +3,8 @@ package br.com.compass.mscatalog.service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,7 +32,7 @@ public class ProductService {
 		return productRepository.findAll().stream().map(ProductDto::new).collect(Collectors.toList());
 	}
 	
-	public ProductDto save(ProductFormDto productFormDto) {
+	public ProductDto save(@Valid ProductFormDto productFormDto) {
 		Product product = new Product();
 		product.setId(seqService.getSequenceNumber(Product.SEQUENCE_NAME));
 		product.setName(productFormDto.getName());
@@ -40,7 +42,8 @@ public class ProductService {
 			Category findCategory = categoryRepository.findById(idCategory).orElseThrow(
 					() -> new ObjectNotFoundException("Category ID: " + idCategory + " not found."));
 			if(findCategory.getActive()) {
-				product.addCategory(findCategory);
+				findCategory.addProducts(product);
+				categoryRepository.save(findCategory);
 			}
 		}
 		return new ProductDto(productRepository.save(product));
@@ -58,18 +61,19 @@ public class ProductService {
 		productRepository.deleteById(id);
 	}
 
-	public ProductDto update(Long id, ProductFormDto productFormDto) {
+	public ProductDto update(Long id, @Valid ProductFormDto productFormDto) {
 		Product product = productRepository.findById(id).orElseThrow(
 				() -> new ObjectNotFoundException("Product ID: " + id + " not found."));
 		product.setName(productFormDto.getName());
 		product.setDescription(productFormDto.getDescription());
 		product.setActive(productFormDto.getActive());
-		product.getCategories().clear();
+		
 		for(Long idCategory : productFormDto.getCategory_ids()) {
 			Category findCategory = categoryRepository.findById(idCategory).orElseThrow(
 					() -> new ObjectNotFoundException("Category ID: " + idCategory + " not found."));
-			if(findCategory.getActive()) {
-				product.addCategory(findCategory);
+			if(findCategory.getActive()) {			
+				findCategory.addProducts(product);
+				categoryRepository.save(findCategory);
 			}
 		}
 		return new ProductDto(productRepository.save(product));

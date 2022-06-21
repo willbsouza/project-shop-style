@@ -3,6 +3,9 @@ package br.com.compass.mscatalog.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.DBRef;
@@ -19,13 +22,19 @@ public class Product {
 	@Id
 	private Long id;
 	
+	@NotNull @NotEmpty
 	private String name;
+	
+	@NotNull @NotEmpty
 	private String description;
+	
+	@NotNull
 	private Boolean active;
 	
 	@DBRef
 	private List<Category> categories = new ArrayList<>();
 	
+	@DBRef
 	private List<Variation> variations = new ArrayList<>();
 	
 	public Product() {}

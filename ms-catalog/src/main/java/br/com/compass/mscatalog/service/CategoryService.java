@@ -3,6 +3,8 @@ package br.com.compass.mscatalog.service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +24,7 @@ public class CategoryService {
 	@Autowired
 	private SequenceGeneratorService seqService;
 
-	public CategoryDto save(CategoryFormDto categoryFormDto) {
+	public CategoryDto save(@Valid CategoryFormDto categoryFormDto) {
 		Category category = new Category();
 		category.setId(seqService.getSequenceNumber(Category.SEQUENCE_NAME));
 		category.setName(categoryFormDto.getName());
@@ -40,7 +42,7 @@ public class CategoryService {
 		return category.getProducts().stream().map(ProductDto::new).collect(Collectors.toList());
 	}
 
-	public CategoryDto update(Long id, CategoryFormDto categoryFormDto) {
+	public CategoryDto update(Long id, @Valid CategoryFormDto categoryFormDto) {
 		Category category = categoryRepository.findById(id).orElseThrow(
 				() -> new ObjectNotFoundException("Category ID : " + id + " not found."));
 		category.setName(categoryFormDto.getName());

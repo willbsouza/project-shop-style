@@ -3,6 +3,8 @@ package br.com.compass.mscatalog.service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,7 +32,7 @@ public class VariationService {
 		return variationRepository.findAll().stream().map(VariationDto::new).collect(Collectors.toList());
 	}
 
-	public VariationDto save(VariationFormDto variationFormDto) {
+	public VariationDto save(@Valid VariationFormDto variationFormDto) {
 		Product product = productRepository.findById(variationFormDto.getProduct_id()).orElseThrow(
 				() -> new ObjectNotFoundException("Product ID : " + variationFormDto.getProduct_id() + " not found."));
 		Variation variation = new Variation();
@@ -40,10 +42,14 @@ public class VariationService {
 		variation.setPrice(variationFormDto.getPrice());
 		variation.setQuantity(variationFormDto.getQuantity());
 		variation.setSize(variationFormDto.getSize());	
+		
+		product.addVariation(variation);
+		productRepository.save(product);
+		
 		return new VariationDto(variationRepository.save(variation));
 	}
 
-	public VariationDto update(Long id, VariationFormDto variationFormDto) {
+	public VariationDto update(Long id, @Valid VariationFormDto variationFormDto) {
 		Product product = productRepository.findById(variationFormDto.getProduct_id()).orElseThrow(
 				() -> new ObjectNotFoundException("Product ID : " + variationFormDto.getProduct_id() + " not found."));
 		Variation variation = variationRepository.findById(id).orElseThrow(
@@ -52,7 +58,11 @@ public class VariationService {
 		variation.setColor(variationFormDto.getColor());
 		variation.setPrice(variationFormDto.getPrice());
 		variation.setQuantity(variationFormDto.getQuantity());
-		variation.setSize(variationFormDto.getSize());	
+		variation.setSize(variationFormDto.getSize());
+		
+		product.addVariation(variation);
+		productRepository.save(product);
+				
 		return new VariationDto(variationRepository.save(variation));
 	}
 
