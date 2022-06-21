@@ -42,4 +42,23 @@ public class VariationService {
 		variation.setSize(variationFormDto.getSize());	
 		return new VariationDto(variationRepository.save(variation));
 	}
+
+	public VariationDto update(Long id, VariationFormDto variationFormDto) {
+		Product product = productRepository.findById(variationFormDto.getProduct_id()).orElseThrow(
+				() -> new ObjectNotFoundException("Product ID : " + variationFormDto.getProduct_id() + " not found."));
+		Variation variation = variationRepository.findById(id).orElseThrow(
+				() -> new ObjectNotFoundException("Variation ID : "+ id + " not found."));
+		variation.setProduct(product);
+		variation.setColor(variationFormDto.getColor());
+		variation.setPrice(variationFormDto.getPrice());
+		variation.setQuantity(variationFormDto.getQuantity());
+		variation.setSize(variationFormDto.getSize());	
+		return new VariationDto(variationRepository.save(variation));
+	}
+
+	public void deleteById(Long id) {
+		variationRepository.findById(id).orElseThrow(
+				() -> new ObjectNotFoundException("Variation ID : "+ id + " not found."));
+		variationRepository.deleteById(id);
+	}
 }
