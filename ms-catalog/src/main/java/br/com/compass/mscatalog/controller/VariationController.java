@@ -37,6 +37,4 @@ public class VariationController {
 		variationService.deleteById(id);
 		return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
 	}
-	
-
 }
