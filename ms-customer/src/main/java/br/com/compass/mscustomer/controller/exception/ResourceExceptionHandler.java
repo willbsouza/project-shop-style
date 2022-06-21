@@ -4,6 +4,7 @@ import java.time.Instant;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -57,9 +58,20 @@ public class ResourceExceptionHandler {
 		erro.setTimestamp(Instant.now());
 		erro.setStatus(HttpStatus.UNAUTHORIZED.value());
 		erro.setError("Dados inválidos.");
-		erro.setMessage(e.getMessage());
+		erro.setMessage("E-mail e/ou senha incorretos!");
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(erro);
-	}	
+	}
+	@ExceptionHandler(DataIntegrityViolationException.class)
+	public ResponseEntity<StandardError> invalidFields(DataIntegrityViolationException e, HttpServletRequest request){		
+		StandardError erro = new StandardError();
+		erro.setTimestamp(Instant.now());
+		erro.setStatus(HttpStatus.BAD_REQUEST.value());
+		erro.setError("Campo não está de acordo com as políticas.");
+		erro.setMessage("Verifique os campos.");
+		erro.setPath(request.getRequestURI());
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
+	}
+	
 }
 

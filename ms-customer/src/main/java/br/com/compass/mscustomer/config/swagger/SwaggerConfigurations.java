@@ -26,7 +26,7 @@ public class SwaggerConfigurations {
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
 		.title("Projeto Shop Style")
-		.description("Documentação da API - Shop Style")
+		.description("Documentação da API - Shop Style - MS Customer")
 		.version("1.0")
 		.build();
 		}
