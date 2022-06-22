@@ -39,6 +39,4 @@ public class AddressController {
 		addressService.deleteById(id); 
 		return new ResponseEntity<AddressDto>(HttpStatus.NO_CONTENT);
 	}
-	
-	
 }

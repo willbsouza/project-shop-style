@@ -20,10 +20,10 @@ public class AddressService {
 	private AddressRepository addressRepository;
 	
 	@Autowired
-	private CustomerRepository userRepository;
-
+	private CustomerRepository customerRepository;
+	
 	public AddressDto save(@Valid AddressFormDto addressFormDto) {
-		Customer customer = userRepository.findById(addressFormDto.getCustomerId()).orElseThrow(
+		Customer customer = customerRepository.findById(addressFormDto.getCustomerId()).orElseThrow(
 				() -> new ObjectNotFoundException("Customer Id: " + addressFormDto.getCustomerId() + " not found."));
 		
 		Address address = new Address();
@@ -34,14 +34,14 @@ public class AddressService {
 		address.setCity(addressFormDto.getCity());
 		address.setState(addressFormDto.getState());
 		address.setCep(addressFormDto.getCep());
-		address.setCustomer(customer);	
-		
+		address.setCustomer(customer);
+
 		return new AddressDto(addressRepository.save(address));
 	}
 
 	public AddressDto update(Long id, @Valid AddressFormDto addressFormDto) {
 		Address address = addressRepository.findById(id).orElseThrow(
-				() -> new ObjectNotFoundException("Address Id: " + addressFormDto.getCustomerId() + " not found."));
+				() -> new ObjectNotFoundException("Address Id: " + id + " not found."));
 		address.setStreet(addressFormDto.getStreet());
 		address.setNumber(addressFormDto.getNumber());
 		address.setComplement(addressFormDto.getComplement());

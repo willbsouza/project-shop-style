@@ -41,7 +41,7 @@ public class CustomerFormDto {
 	private String email;
 	
 	@NotNull
-	@Length(min = 8)
+	@Length(min = 6)
 	private String password;
 	
 	@NotNull

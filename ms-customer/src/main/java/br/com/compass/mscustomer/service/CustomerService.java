@@ -6,11 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import br.com.compass.mscustomer.dto.CustomerChangePasswordDto;
 import br.com.compass.mscustomer.dto.CustomerDto;
 import br.com.compass.mscustomer.dto.CustomerFormDto;
 import br.com.compass.mscustomer.dto.CustomerLoginDto;
 import br.com.compass.mscustomer.entity.Customer;
 import br.com.compass.mscustomer.repository.CustomerRepository;
+import br.com.compass.mscustomer.service.exception.ChangePasswordException;
 import br.com.compass.mscustomer.service.exception.LoginException;
 import br.com.compass.mscustomer.service.exception.ObjectNotFoundException;
 
@@ -48,5 +50,24 @@ public class CustomerService {
 			return new CustomerDto(customer);		
 		}
 		throw new LoginException("Login e/ou senha incorretos!");
+	}
+
+	public CustomerDto changePassword(@Valid CustomerChangePasswordDto passwordDto, Long id) {
+		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " não encontrado."));
+		if(verificationPassword(customer, passwordDto)) {	
+			customer.setPassword(passwordDto.getNewPassword());
+			return new CustomerDto(customer);		
+		}
+		throw new ChangePasswordException("Dados incorretos. Confira as informações de email, cpf e os campos de nova senha e confirmação de senha devem ser iguais.");
+	}
+	
+	private Boolean verificationPassword(Customer customer, CustomerChangePasswordDto passwordDto) {
+		if(new BCryptPasswordEncoder().matches(passwordDto.getOldPassword(), customer.getPassword())
+				&& passwordDto.getCpf().equals(customer.getCpf())
+				&& passwordDto.getEmail().equals(customer.getEmail())
+				&& passwordDto.getNewPassword().equals(passwordDto.getNewPasswordConfirmation())) {
+			return true;
+		}
+		return false;
 	}
 }

@@ -13,7 +13,6 @@ public class AddressDto {
 	private String number;
 	private String complement;
 	private String cep;
-	private CustomerDto customerDto;
 	
 	public AddressDto() {}
 	
@@ -26,7 +25,6 @@ public class AddressDto {
 		this.city = address.getCity();
 		this.state = address.getState();
 		this.cep = address.getCep();	
-		this.customerDto = new CustomerDto(address.getCustomer());
 	}
 
 	public Long getId() {
@@ -91,13 +89,5 @@ public class AddressDto {
 
 	public void setCep(String cep) {
 		this.cep = cep;
-	}
-
-	public CustomerDto getCustomerDto() {
-		return customerDto;
-	}
-
-	public void setCustomerDto(CustomerDto customerDto) {
-		this.customerDto = customerDto;
 	}
 }

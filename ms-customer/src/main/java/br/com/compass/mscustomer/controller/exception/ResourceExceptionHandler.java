@@ -12,6 +12,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import br.com.compass.mscustomer.service.exception.ChangePasswordException;
 import br.com.compass.mscustomer.service.exception.LoginException;
 import br.com.compass.mscustomer.service.exception.ObjectNotFoundException;
 
@@ -58,10 +59,22 @@ public class ResourceExceptionHandler {
 		erro.setTimestamp(Instant.now());
 		erro.setStatus(HttpStatus.UNAUTHORIZED.value());
 		erro.setError("Dados inválidos.");
-		erro.setMessage("E-mail e/ou senha incorretos!");
+		erro.setMessage(e.getMessage());
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(erro);
 	}
+	
+	@ExceptionHandler(ChangePasswordException.class)
+	public ResponseEntity<StandardError> changePassword(ChangePasswordException e, HttpServletRequest request){		
+		StandardError erro = new StandardError();
+		erro.setTimestamp(Instant.now());
+		erro.setStatus(HttpStatus.UNAUTHORIZED.value());
+		erro.setError("Dados inválidos.");
+		erro.setMessage(e.getMessage());
+		erro.setPath(request.getRequestURI());
+		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(erro);
+	}
+	
 	@ExceptionHandler(DataIntegrityViolationException.class)
 	public ResponseEntity<StandardError> invalidFields(DataIntegrityViolationException e, HttpServletRequest request){		
 		StandardError erro = new StandardError();

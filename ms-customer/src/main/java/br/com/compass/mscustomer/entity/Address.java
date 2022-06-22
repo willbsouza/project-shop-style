@@ -6,16 +6,19 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import br.com.compass.mscustomer.entity.enums.State;
 
 
 @Entity
-@Table(name = "tb_address")
+@Table(name = "address")
 public class Address {
 
 	@Id
@@ -42,9 +45,10 @@ public class Address {
 	
 	@NotNull @NotEmpty
 	private String cep;
-	
-	@NotNull
+
 	@ManyToOne
+	@JoinColumn(name = "customer_id")
+	@JsonIgnore
 	private Customer customer;
 
 	public Long getId() {

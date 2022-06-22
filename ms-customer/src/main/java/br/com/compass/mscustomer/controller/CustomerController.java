@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.compass.mscustomer.dto.CustomerChangePasswordDto;
 import br.com.compass.mscustomer.dto.CustomerDto;
 import br.com.compass.mscustomer.dto.CustomerFormDto;
 import br.com.compass.mscustomer.dto.CustomerLoginDto;
@@ -46,5 +47,11 @@ public class CustomerController {
 	@Transactional
 	public ResponseEntity<CustomerDto> update(@RequestBody @Valid CustomerFormDto customerFormDto, @PathVariable Long id) {
 		return new ResponseEntity<CustomerDto>(customerService.updateById(customerFormDto, id), HttpStatus.OK);
+	}
+	
+	@PutMapping("/customers/{id}/password")
+	@Transactional
+	public ResponseEntity<CustomerDto> changePassword(@RequestBody @Valid CustomerChangePasswordDto passwordDto, @PathVariable Long id) {
+		return new ResponseEntity<CustomerDto>(customerService.changePassword(passwordDto, id), HttpStatus.ACCEPTED);
 	}
 }

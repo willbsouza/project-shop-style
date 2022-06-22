@@ -14,7 +14,6 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
@@ -27,7 +26,7 @@ import br.com.compass.mscustomer.dto.CustomerFormDto;
 import br.com.compass.mscustomer.entity.enums.Sex;
 
 @Entity
-@Table(name = "tb_customer")
+@Table(name = "customer")
 public class Customer {
 	
 	@Id
@@ -47,6 +46,7 @@ public class Customer {
 	private Sex sex;
 
 	@CPF
+	@NotNull
 	private String cpf;
 	
 	@NotNull
@@ -58,7 +58,7 @@ public class Customer {
 	private String email;
 	
 	@NotNull
-	@NotEmpty
+	@Length(min = 6)
 	private String password;
 	
 	@NotNull
@@ -141,7 +141,7 @@ public class Customer {
 	}
 
 	public void setPassword(String password) {
-		this.password = password;
+		this.password = new BCryptPasswordEncoder().encode(password);
 	}
 
 	public Boolean getActive() {
@@ -150,5 +150,9 @@ public class Customer {
 
 	public void setActive(Boolean active) {
 		this.active = active;
+	}
+
+	public List<Address> getAddresses() {
+		return addresses;
 	}
 }
