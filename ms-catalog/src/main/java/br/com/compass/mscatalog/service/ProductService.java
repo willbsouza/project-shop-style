@@ -49,7 +49,7 @@ public class ProductService {
 			product.setCategory(category);
 			return new ProductDto(productRepository.save(product));
 		} else {
-			throw new CategoryNotValidException("Não é possível incluir produto nesta categoria.");
+			throw new CategoryNotValidException("It is not possible to add a product to this category.");
 		}
 	}
 	
@@ -68,7 +68,7 @@ public class ProductService {
 			product.setCategory(category);
 			return new ProductDto(productRepository.save(product));
 		} else {
-			throw new CategoryNotValidException("Não é possível incluir produto nesta categoria.");
+			throw new CategoryNotValidException("It is not possible to add a product to this category.");
 		}
 	}
 

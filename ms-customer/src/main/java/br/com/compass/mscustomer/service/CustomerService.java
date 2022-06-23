@@ -23,7 +23,7 @@ public class CustomerService {
 	private CustomerRepository customerRepository;
 
 	public CustomerDto findById(Long id) {
-		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " não encontrado."));
+		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " not found"));
 		return new CustomerDto(customer);
 	}
 
@@ -32,7 +32,7 @@ public class CustomerService {
 	}
 
 	public CustomerDto updateById(@Valid CustomerFormDto userFormDto, Long id) {
-		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " não encontrado."));
+		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " not found"));
 			customer.setFirstName(userFormDto.getFirstName());
 			customer.setLastName(userFormDto.getLastName());
 			customer.setSex(userFormDto.getSex());
@@ -49,16 +49,16 @@ public class CustomerService {
 		if(customer != null && new BCryptPasswordEncoder().matches(customerLoginDto.getPassword(), customer.getPassword())) {	
 			return new CustomerDto(customer);		
 		}
-		throw new LoginException("Login e/ou senha incorretos!");
+		throw new LoginException("Incorrect email and/or password!");
 	}
 
 	public CustomerDto changePassword(@Valid CustomerChangePasswordDto passwordDto, Long id) {
-		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " não encontrado."));
+		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " not found."));
 		if(verificationPassword(customer, passwordDto)) {	
 			customer.setPassword(passwordDto.getNewPassword());
 			return new CustomerDto(customer);		
 		}
-		throw new ChangePasswordException("Dados incorretos. Confira as informações de email, cpf e os campos de nova senha e confirmação de senha devem ser iguais.");
+		throw new ChangePasswordException("Incorrect data. Check the email information, cpf and the new password and password confirmation fields must be the same.");
 	}
 	
 	private Boolean verificationPassword(Customer customer, CustomerChangePasswordDto passwordDto) {

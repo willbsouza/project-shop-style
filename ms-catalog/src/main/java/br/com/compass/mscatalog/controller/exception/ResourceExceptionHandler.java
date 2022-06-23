@@ -23,7 +23,7 @@ public class ResourceExceptionHandler {
 		StandardError erro = new StandardError();
 		erro.setTimestamp(Instant.now());
 		erro.setStatus(HttpStatus.NOT_FOUND.value());
-		erro.setError("Não encontrado.");
+		erro.setError("Not found.");
 		erro.setMessage(e.getMessage());
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erro);
@@ -34,8 +34,8 @@ public class ResourceExceptionHandler {
 		StandardError erro = new StandardError();
 		erro.setTimestamp(Instant.now());
 		erro.setStatus(HttpStatus.BAD_REQUEST.value());
-		erro.setError("Campo não está de acordo com as políticas.");
-		erro.setMessage("Campo incorreto: " + e.getFieldError().getField().toUpperCase());
+		erro.setError("Field does not comply with policies.");
+		erro.setMessage("Incorrect field: " + e.getFieldError().getField().toUpperCase());
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
 	}
@@ -45,8 +45,8 @@ public class ResourceExceptionHandler {
 		StandardError erro = new StandardError();
 		erro.setTimestamp(Instant.now());
 		erro.setStatus(HttpStatus.BAD_REQUEST.value());
-		erro.setError("Entrada inválida. Selecione uma entrada válida.");
-		erro.setMessage("Selecione uma das entradas válidas a seguir: " + e.getCause().getMessage());
+		erro.setError("Invalid Input. Please select a valid entry.");
+		erro.setMessage("Select one of the following valid entries: " + e.getCause().getMessage());
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
 	}	
@@ -57,7 +57,7 @@ public class ResourceExceptionHandler {
 		StandardError erro = new StandardError();
 		erro.setTimestamp(Instant.now());
 		erro.setStatus(HttpStatus.BAD_REQUEST.value());
-		erro.setError("Categoria inválida.");
+		erro.setError("Invalid category.");
 		erro.setMessage(e.getMessage());
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
