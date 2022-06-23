@@ -7,6 +7,8 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+import br.com.compass.mspayment.dto.PaymentFormDto;
+
 @Entity
 public class Payment {
 
@@ -20,7 +22,16 @@ public class Payment {
 	@NotNull
 	private Boolean active;
 	
+	@NotNull
 	private Boolean installments;
+	
+	public Payment() {}
+	
+	public Payment(PaymentFormDto paymentFormDto) {
+		this.type = paymentFormDto.getType();
+		this.active = paymentFormDto.getActive();
+		this.installments = paymentFormDto.getInstallments();
+	}
 
 	public Long getId() {
 		return id;
