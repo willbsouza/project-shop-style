@@ -12,6 +12,7 @@ import br.com.compass.mspayment.entity.Payment;
 import br.com.compass.mspayment.repository.InstallmentRepository;
 import br.com.compass.mspayment.repository.PaymentRepository;
 import br.com.compass.mspayment.service.exception.ObjectNotFoundException;
+import br.com.compass.mspayment.service.exception.PaymentNotValidException;
 
 @Service
 public class InstallmentService {
@@ -25,7 +26,13 @@ public class InstallmentService {
 	public InstallmentDto save(@Valid InstallmentFormDto installmentFormDto) {
 		Payment payment = paymentRepository.findById(installmentFormDto.getPaymentId()).orElseThrow(
 				() -> new ObjectNotFoundException("Payment Id: " + installmentFormDto.getPaymentId() + " not found."));
-		return new InstallmentDto(installmentRepository.save(new Installment(installmentFormDto, payment)));
+		
+		if(payment.getInstallments() && payment.getActive()) {
+			return new InstallmentDto(installmentRepository.save(new Installment(installmentFormDto, payment)));
+		} else {
+			throw new PaymentNotValidException("Choosed payment method not valid!");
+		}
+		
 	}
 
 	public InstallmentDto update(Long id, @Valid InstallmentFormDto installmentFormDto) {

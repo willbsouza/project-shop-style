@@ -6,7 +6,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import br.com.compass.mspayment.dto.InstallmentFormDto;
@@ -21,7 +20,6 @@ public class Installment {
 	@NotNull
 	private Integer amount;
 	
-	@NotNull @NotEmpty
 	private String brand;
 	
 	@OneToOne
