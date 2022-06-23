@@ -9,6 +9,8 @@ import javax.persistence.OneToOne;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+import br.com.compass.mspayment.dto.InstallmentFormDto;
+
 @Entity
 public class Installment {
 
@@ -17,7 +19,7 @@ public class Installment {
 	private Long id;
 	
 	@NotNull
-	private Double amount;
+	private Integer amount;
 	
 	@NotNull @NotEmpty
 	private String brand;
@@ -25,6 +27,14 @@ public class Installment {
 	@OneToOne
 	@JoinColumn(name = "payment_id")
 	private Payment payment;
+	
+	public Installment() {}
+	
+	public Installment(InstallmentFormDto installmentFormDto, Payment payment) {
+		this.amount = installmentFormDto.getAmount();
+		this.brand = installmentFormDto.getBrand();
+		this.payment = payment;
+	}
 	
 	public Long getId() {
 		return id;
@@ -34,11 +44,11 @@ public class Installment {
 		this.id = id;
 	}
 	
-	public Double getAmount() {
+	public Integer getAmount() {
 		return amount;
 	}
 	
-	public void setAmount(Double amount) {
+	public void setAmount(Integer amount) {
 		this.amount = amount;
 	}
 	
