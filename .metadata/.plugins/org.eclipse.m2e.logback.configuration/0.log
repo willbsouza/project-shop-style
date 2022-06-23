@@ -13193,3 +13193,1107 @@ java.io.EOFException: null
 2022-06-23 17:00:02,858 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-06-23 17:00:02,858 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-06-23 17:00:02,858 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:00:02,864 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:00:02,865 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:00:02,865 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:00:02,865 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-customer\src\test\resources
+2022-06-23 17:08:24,529 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:08:25,580 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.6.9/spring-boot-starter-data-mongodb-2.6.9.pom
+2022-06-23 17:08:25,899 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.6.9/spring-boot-starter-data-mongodb-2.6.9.pom
+2022-06-23 17:08:26,197 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.4.2/mongodb-driver-sync-4.4.2.pom
+2022-06-23 17:08:26,407 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.4.2/mongodb-driver-sync-4.4.2.pom
+2022-06-23 17:08:26,616 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson/4.4.2/bson-4.4.2.pom
+2022-06-23 17:08:26,771 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson/4.4.2/bson-4.4.2.pom
+2022-06-23 17:08:26,923 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.4.2/mongodb-driver-core-4.4.2.pom
+2022-06-23 17:08:27,081 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.4.2/mongodb-driver-core-4.4.2.pom
+2022-06-23 17:08:27,233 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.3.5/spring-data-mongodb-3.3.5.pom
+2022-06-23 17:08:27,408 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.3.5/spring-data-mongodb-3.3.5.pom
+2022-06-23 17:08:27,560 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb-parent/3.3.5/spring-data-mongodb-parent-3.3.5.pom
+2022-06-23 17:08:27,811 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb-parent/3.3.5/spring-data-mongodb-parent-3.3.5.pom
+2022-06-23 17:08:28,052 [AetherRepositoryConnector-repo.maven.apache.org-2-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.6.9/spring-boot-starter-data-mongodb-2.6.9.jar
+2022-06-23 17:08:28,196 [AetherRepositoryConnector-repo.maven.apache.org-2-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson/4.4.2/bson-4.4.2.jar
+2022-06-23 17:08:28,196 [AetherRepositoryConnector-repo.maven.apache.org-2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.4.2/mongodb-driver-sync-4.4.2.jar
+2022-06-23 17:08:28,252 [AetherRepositoryConnector-repo.maven.apache.org-2-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.4.2/mongodb-driver-core-4.4.2.jar
+2022-06-23 17:08:28,373 [AetherRepositoryConnector-repo.maven.apache.org-2-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.3.5/spring-data-mongodb-3.3.5.jar
+2022-06-23 17:08:28,414 [AetherRepositoryConnector-repo.maven.apache.org-2-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.6.9/spring-boot-starter-data-mongodb-2.6.9.jar
+2022-06-23 17:08:29,013 [AetherRepositoryConnector-repo.maven.apache.org-2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.4.2/mongodb-driver-sync-4.4.2.jar
+2022-06-23 17:08:29,223 [AetherRepositoryConnector-repo.maven.apache.org-2-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson/4.4.2/bson-4.4.2.jar
+2022-06-23 17:08:29,349 [AetherRepositoryConnector-repo.maven.apache.org-2-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.4.2/mongodb-driver-core-4.4.2.jar
+2022-06-23 17:08:29,497 [AetherRepositoryConnector-repo.maven.apache.org-2-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.3.5/spring-data-mongodb-3.3.5.jar
+2022-06-23 17:08:30,287 [Worker-602: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:08:30,287 [Worker-602: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:08:30,291 [Worker-602: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:08:30,295 [Worker-602: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:08:30,782 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 6 sec
+2022-06-23 17:08:30,783 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:08:30,904 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:08:31,354 [Worker-602: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:08:31,354 [Worker-602: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:08:31,354 [Worker-602: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:08:31,354 [Worker-602: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:08:31,723 [Worker-602: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-06-23 17:08:31,898 [Worker-606: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.6.9/spring-boot-starter-data-mongodb-2.6.9-sources.jar
+2022-06-23 17:08:32,065 [Worker-610: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:08:32,065 [Worker-610: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:08:32,065 [Worker-610: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:08:32,067 [Worker-610: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:08:32,068 [Worker-610: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:08:32,068 [Worker-610: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:08:32,068 [Worker-610: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:08:32,198 [Worker-606: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.6.9/spring-boot-starter-data-mongodb-2.6.9-sources.jar
+2022-06-23 17:08:32,512 [Worker-606: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-data-mongodb:2.6.9
+2022-06-23 17:08:33,073 [Worker-606: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.4.2/mongodb-driver-sync-4.4.2-sources.jar
+2022-06-23 17:08:33,432 [Worker-606: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.4.2/mongodb-driver-sync-4.4.2-sources.jar
+2022-06-23 17:08:33,536 [Worker-606: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.mongodb:mongodb-driver-sync:4.4.2
+2022-06-23 17:08:34,110 [Worker-606: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson/4.4.2/bson-4.4.2-sources.jar
+2022-06-23 17:08:34,926 [Worker-606: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson/4.4.2/bson-4.4.2-sources.jar
+2022-06-23 17:08:35,103 [Worker-606: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.mongodb:bson:4.4.2
+2022-06-23 17:08:35,670 [Worker-606: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.4.2/mongodb-driver-core-4.4.2-sources.jar
+2022-06-23 17:08:36,588 [Worker-606: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.4.2/mongodb-driver-core-4.4.2-sources.jar
+2022-06-23 17:08:36,709 [Worker-606: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.mongodb:mongodb-driver-core:4.4.2
+2022-06-23 17:08:37,282 [Worker-606: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.3.5/spring-data-mongodb-3.3.5-sources.jar
+2022-06-23 17:08:38,261 [Worker-606: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.3.5/spring-data-mongodb-3.3.5-sources.jar
+2022-06-23 17:08:38,525 [Worker-606: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.data:spring-data-mongodb:3.3.5
+2022-06-23 17:08:39,397 [Worker-609: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:08:39,397 [Worker-609: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:08:39,398 [Worker-609: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:08:39,398 [Worker-609: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:08:39,399 [Worker-609: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:08:39,399 [Worker-609: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:08:39,400 [Worker-609: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:08:43,823 [Worker-606: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:08:44,260 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:08:44,260 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:08:44,260 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:08:44,260 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:08:44,261 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:08:44,261 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:08:44,261 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:08:46,126 [Worker-607: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:08:46,126 [Worker-607: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:08:46,127 [Worker-607: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:08:46,129 [Worker-607: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:08:46,130 [Worker-607: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:08:46,130 [Worker-607: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:08:46,130 [Worker-607: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:09:18,466 [Worker-612: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:09:18,849 [Worker-612: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:09:18,984 [Worker-612: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-customer:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-customer\pom.xml.
+2022-06-23 17:09:19,082 [Worker-612: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-catalog:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-catalog\pom.xml.
+2022-06-23 17:09:20,258 [Worker-612: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:09:20,258 [Worker-612: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:09:20,259 [Worker-612: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:09:20,259 [Worker-612: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:09:20,605 [Worker-612: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2022-06-23 17:09:21,097 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:09:21,097 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:09:21,098 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:09:21,099 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:09:21,100 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:09:21,100 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:09:21,100 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-catalog\src\test\resources
+2022-06-23 17:09:21,341 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:09:21,342 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:09:21,342 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:09:21,342 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:09:21,342 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:09:21,342 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:09:21,342 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-customer\src\test\resources
+2022-06-23 17:09:21,648 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:09:21,648 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:09:21,648 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:09:21,656 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:09:21,656 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:09:21,656 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:09:21,656 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:15:35,610 [Worker-615: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:15:36,319 [Worker-615: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.5.10/spring-boot-starter-data-mongodb-2.5.10.pom
+2022-06-23 17:15:36,652 [Worker-615: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.5.10/spring-boot-starter-data-mongodb-2.5.10.pom
+2022-06-23 17:15:36,993 [Worker-615: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.2.9/spring-data-mongodb-3.2.9.pom
+2022-06-23 17:15:37,177 [Worker-615: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.2.9/spring-data-mongodb-3.2.9.pom
+2022-06-23 17:15:37,341 [Worker-615: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb-parent/3.2.9/spring-data-mongodb-parent-3.2.9.pom
+2022-06-23 17:15:37,513 [Worker-615: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb-parent/3.2.9/spring-data-mongodb-parent-3.2.9.pom
+2022-06-23 17:15:37,778 [AetherRepositoryConnector-repo.maven.apache.org-3-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.5.10/spring-boot-starter-data-mongodb-2.5.10.jar
+2022-06-23 17:15:37,990 [AetherRepositoryConnector-repo.maven.apache.org-3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.2.9/spring-data-mongodb-3.2.9.jar
+2022-06-23 17:15:38,214 [AetherRepositoryConnector-repo.maven.apache.org-3-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.5.10/spring-boot-starter-data-mongodb-2.5.10.jar
+2022-06-23 17:15:39,165 [AetherRepositoryConnector-repo.maven.apache.org-3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.2.9/spring-data-mongodb-3.2.9.jar
+2022-06-23 17:15:39,854 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:15:39,854 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:15:39,854 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:15:39,854 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:15:39,855 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:15:39,855 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:15:39,855 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:15:41,487 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:15:41,487 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:15:41,488 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:15:41,491 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:15:41,492 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:15:41,492 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:15:41,492 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:15:41,518 [Worker-616: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.5.10/spring-boot-starter-data-mongodb-2.5.10-sources.jar
+2022-06-23 17:15:41,853 [Worker-616: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.5.10/spring-boot-starter-data-mongodb-2.5.10-sources.jar
+2022-06-23 17:15:41,981 [Worker-616: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-data-mongodb:2.5.10
+2022-06-23 17:15:42,666 [Worker-616: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.2.9/spring-data-mongodb-3.2.9-sources.jar
+2022-06-23 17:15:43,718 [Worker-616: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.2.9/spring-data-mongodb-3.2.9-sources.jar
+2022-06-23 17:15:43,813 [Worker-616: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.data:spring-data-mongodb:3.2.9
+2022-06-23 17:15:44,444 [Worker-615: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:15:44,862 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:15:44,862 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:15:44,862 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:15:44,862 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:15:44,863 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:15:44,863 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:15:44,863 [Worker-615: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:15:46,746 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:15:46,747 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:15:46,747 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:15:46,750 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:15:46,751 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:15:46,751 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:15:46,751 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:18:20,426 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:18:20,426 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:18:20,426 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:18:20,433 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:18:20,435 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:18:20,435 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:18:20,435 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:18:28,967 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:18:28,967 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:18:28,967 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:18:28,976 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:18:28,977 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:18:28,977 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:18:28,977 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:19:27,141 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/2.7.1/spring-boot-starter-parent-2.7.1.pom
+2022-06-23 17:19:27,426 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/2.7.1/spring-boot-starter-parent-2.7.1.pom
+2022-06-23 17:19:27,573 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/2.7.1/spring-boot-dependencies-2.7.1.pom
+2022-06-23 17:19:27,942 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/2.7.1/spring-boot-dependencies-2.7.1.pom
+2022-06-23 17:19:28,108 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.6.3/kotlinx-coroutines-bom-1.6.3.pom
+2022-06-23 17:19:28,265 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.6.3/kotlinx-coroutines-bom-1.6.3.pom
+2022-06-23 17:19:28,423 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-bom/1.9.1/micrometer-bom-1.9.1.pom
+2022-06-23 17:19:28,572 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-bom/1.9.1/micrometer-bom-1.9.1.pom
+2022-06-23 17:19:28,737 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-bom/2021.2.1/spring-data-bom-2021.2.1.pom
+2022-06-23 17:19:28,898 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-bom/2021.2.1/spring-data-bom-2021.2.1.pom
+2022-06-23 17:19:29,047 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/5.7.2/spring-security-bom-5.7.2.pom
+2022-06-23 17:19:29,202 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/5.7.2/spring-security-bom-5.7.2.pom
+2022-06-23 17:19:29,701 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-payment:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-payment\pom.xml.
+2022-06-23 17:19:30,451 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.7.1/spring-boot-maven-plugin-2.7.1.pom
+2022-06-23 17:19:30,622 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.7.1/spring-boot-starter-data-mongodb-2.7.1.pom
+2022-06-23 17:19:30,750 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.7.1/spring-boot-maven-plugin-2.7.1.pom
+2022-06-23 17:19:30,903 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.7.1/spring-boot-maven-plugin-2.7.1.jar
+2022-06-23 17:19:30,905 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.7.1/spring-boot-starter-data-mongodb-2.7.1.pom
+2022-06-23 17:19:31,050 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.1/spring-boot-starter-2.7.1.pom
+2022-06-23 17:19:31,198 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.1/spring-boot-starter-2.7.1.pom
+2022-06-23 17:19:31,269 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.7.1/spring-boot-maven-plugin-2.7.1.jar
+2022-06-23 17:19:31,339 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.1/spring-boot-2.7.1.pom
+2022-06-23 17:19:31,484 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.1/spring-boot-2.7.1.pom
+2022-06-23 17:19:31,646 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:19:31,647 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.1/spring-boot-autoconfigure-2.7.1.pom
+2022-06-23 17:19:31,795 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.1/spring-boot-autoconfigure-2.7.1.pom
+2022-06-23 17:19:31,799 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.1/spring-boot-autoconfigure-2.7.1.pom
+2022-06-23 17:19:31,938 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.1/spring-boot-starter-logging-2.7.1.pom
+2022-06-23 17:19:31,956 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.1/spring-boot-autoconfigure-2.7.1.pom
+2022-06-23 17:19:32,087 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.1/spring-boot-starter-logging-2.7.1.pom
+2022-06-23 17:19:32,106 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.1/spring-boot-starter-logging-2.7.1.pom
+2022-06-23 17:19:32,253 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.6.1/mongodb-driver-sync-4.6.1.pom
+2022-06-23 17:19:32,259 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.1/spring-boot-starter-logging-2.7.1.pom
+2022-06-23 17:19:32,397 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.6.1/mongodb-driver-sync-4.6.1.pom
+2022-06-23 17:19:32,418 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.6.1/mongodb-driver-sync-4.6.1.pom
+2022-06-23 17:19:32,542 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson/4.6.1/bson-4.6.1.pom
+2022-06-23 17:19:32,573 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.6.1/mongodb-driver-sync-4.6.1.pom
+2022-06-23 17:19:32,719 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson/4.6.1/bson-4.6.1.pom
+2022-06-23 17:19:32,893 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson/4.6.1/bson-4.6.1.pom
+2022-06-23 17:19:32,899 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson/4.6.1/bson-4.6.1.pom
+2022-06-23 17:19:33,039 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.6.1/mongodb-driver-core-4.6.1.pom
+2022-06-23 17:19:33,053 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.6.1/mongodb-driver-core-4.6.1.pom
+2022-06-23 17:19:33,194 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.6.1/mongodb-driver-core-4.6.1.pom
+2022-06-23 17:19:33,224 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.6.1/mongodb-driver-core-4.6.1.pom
+2022-06-23 17:19:33,350 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson-record-codec/4.6.1/bson-record-codec-4.6.1.pom
+2022-06-23 17:19:33,377 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson-record-codec/4.6.1/bson-record-codec-4.6.1.pom
+2022-06-23 17:19:33,504 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson-record-codec/4.6.1/bson-record-codec-4.6.1.pom
+2022-06-23 17:19:33,534 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson-record-codec/4.6.1/bson-record-codec-4.6.1.pom
+2022-06-23 17:19:33,657 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.4.1/spring-data-mongodb-3.4.1.pom
+2022-06-23 17:19:33,695 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.4.1/spring-data-mongodb-3.4.1.pom
+2022-06-23 17:19:33,819 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.4.1/spring-data-mongodb-3.4.1.pom
+2022-06-23 17:19:33,850 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.4.1/spring-data-mongodb-3.4.1.pom
+2022-06-23 17:19:34,191 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb-parent/3.4.1/spring-data-mongodb-parent-3.4.1.pom
+2022-06-23 17:19:34,446 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb-parent/3.4.1/spring-data-mongodb-parent-3.4.1.pom
+2022-06-23 17:19:34,598 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb-parent/3.4.1/spring-data-mongodb-parent-3.4.1.pom
+2022-06-23 17:19:34,603 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb-parent/3.4.1/spring-data-mongodb-parent-3.4.1.pom
+2022-06-23 17:19:34,751 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/2.7.1/spring-data-parent-2.7.1.pom
+2022-06-23 17:19:34,753 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/2.7.1/spring-data-parent-2.7.1.pom
+2022-06-23 17:19:34,914 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/2.7.1/spring-data-parent-2.7.1.pom
+2022-06-23 17:19:34,971 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/2.7.1/spring-data-parent-2.7.1.pom
+2022-06-23 17:19:35,064 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/2.7.1/spring-data-build-2.7.1.pom
+2022-06-23 17:19:35,118 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/2.7.1/spring-data-build-2.7.1.pom
+2022-06-23 17:19:35,214 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/2.7.1/spring-data-build-2.7.1.pom
+2022-06-23 17:19:35,266 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/2.7.1/spring-data-build-2.7.1.pom
+2022-06-23 17:19:35,362 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.6.2/kotlinx-coroutines-bom-1.6.2.pom
+2022-06-23 17:19:35,412 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.6.2/kotlinx-coroutines-bom-1.6.2.pom
+2022-06-23 17:19:35,506 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.6.2/kotlinx-coroutines-bom-1.6.2.pom
+2022-06-23 17:19:35,560 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.6.2/kotlinx-coroutines-bom-1.6.2.pom
+2022-06-23 17:19:35,658 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.7.1/spring-data-commons-2.7.1.pom
+2022-06-23 17:19:35,713 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.7.1/spring-data-commons-2.7.1.pom
+2022-06-23 17:19:35,804 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.7.1/spring-data-commons-2.7.1.pom
+2022-06-23 17:19:35,875 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.7.1/spring-data-commons-2.7.1.pom
+2022-06-23 17:19:35,951 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.7.1/spring-boot-starter-validation-2.7.1.pom
+2022-06-23 17:19:36,035 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.7.1/spring-boot-starter-validation-2.7.1.pom
+2022-06-23 17:19:36,102 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.7.1/spring-boot-starter-validation-2.7.1.pom
+2022-06-23 17:19:36,184 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.7.1/spring-boot-starter-validation-2.7.1.pom
+2022-06-23 17:19:36,248 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.7.1/spring-boot-starter-web-2.7.1.pom
+2022-06-23 17:19:36,340 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.7.1/spring-boot-starter-web-2.7.1.pom
+2022-06-23 17:19:36,396 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.7.1/spring-boot-starter-web-2.7.1.pom
+2022-06-23 17:19:36,502 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.7.1/spring-boot-starter-web-2.7.1.pom
+2022-06-23 17:19:36,543 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.7.1/spring-boot-starter-json-2.7.1.pom
+2022-06-23 17:19:36,648 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.7.1/spring-boot-starter-json-2.7.1.pom
+2022-06-23 17:19:36,689 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.7.1/spring-boot-starter-json-2.7.1.pom
+2022-06-23 17:19:36,795 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.7.1/spring-boot-starter-json-2.7.1.pom
+2022-06-23 17:19:36,845 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.7.1/spring-boot-starter-tomcat-2.7.1.pom
+2022-06-23 17:19:36,946 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.7.1/spring-boot-starter-tomcat-2.7.1.pom
+2022-06-23 17:19:36,990 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.7.1/spring-boot-starter-tomcat-2.7.1.pom
+2022-06-23 17:19:37,109 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.7.1/spring-boot-starter-tomcat-2.7.1.pom
+2022-06-23 17:19:37,139 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.pom
+2022-06-23 17:19:37,257 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.pom
+2022-06-23 17:19:37,283 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.pom
+2022-06-23 17:19:37,403 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.pom
+2022-06-23 17:19:37,430 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.1/spring-boot-starter-test-2.7.1.pom
+2022-06-23 17:19:37,546 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.1/spring-boot-starter-test-2.7.1.pom
+2022-06-23 17:19:37,589 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.1/spring-boot-starter-test-2.7.1.pom
+2022-06-23 17:19:37,704 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.1/spring-boot-starter-test-2.7.1.pom
+2022-06-23 17:19:37,735 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.1/spring-boot-test-2.7.1.pom
+2022-06-23 17:19:37,848 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.1/spring-boot-test-2.7.1.pom
+2022-06-23 17:19:37,882 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.1/spring-boot-test-2.7.1.pom
+2022-06-23 17:19:37,992 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.1/spring-boot-test-2.7.1.pom
+2022-06-23 17:19:38,028 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.1/spring-boot-test-autoconfigure-2.7.1.pom
+2022-06-23 17:19:38,132 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.1/spring-boot-test-autoconfigure-2.7.1.pom
+2022-06-23 17:19:38,176 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.1/spring-boot-test-autoconfigure-2.7.1.pom
+2022-06-23 17:19:38,284 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.1/spring-boot-test-autoconfigure-2.7.1.pom
+2022-06-23 17:19:38,349 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.11/byte-buddy-1.12.11.pom
+2022-06-23 17:19:38,456 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.11/byte-buddy-1.12.11.pom
+2022-06-23 17:19:38,506 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.11/byte-buddy-1.12.11.pom
+2022-06-23 17:19:38,605 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.11/byte-buddy-1.12.11.pom
+2022-06-23 17:19:38,666 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.12.11/byte-buddy-parent-1.12.11.pom
+2022-06-23 17:19:38,760 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.12.11/byte-buddy-parent-1.12.11.pom
+2022-06-23 17:19:38,839 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.12.11/byte-buddy-parent-1.12.11.pom
+2022-06-23 17:19:38,943 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.12.11/byte-buddy-parent-1.12.11.pom
+2022-06-23 17:19:38,995 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.11/byte-buddy-agent-1.12.11.pom
+2022-06-23 17:19:39,092 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.11/byte-buddy-agent-1.12.11.pom
+2022-06-23 17:19:39,141 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.11/byte-buddy-agent-1.12.11.pom
+2022-06-23 17:19:39,273 [Worker-606: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.11/byte-buddy-agent-1.12.11.pom
+2022-06-23 17:19:39,316 [AetherRepositoryConnector-repo.maven.apache.org-4-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.7.1/spring-boot-starter-data-mongodb-2.7.1.jar
+2022-06-23 17:19:39,453 [AetherRepositoryConnector-repo.maven.apache.org-5-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.7.1/spring-boot-starter-data-mongodb-2.7.1.jar
+2022-06-23 17:19:39,457 [AetherRepositoryConnector-repo.maven.apache.org-4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.1/spring-boot-starter-2.7.1.jar
+2022-06-23 17:19:39,459 [AetherRepositoryConnector-repo.maven.apache.org-4-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.1/spring-boot-starter-logging-2.7.1.jar
+2022-06-23 17:19:39,468 [AetherRepositoryConnector-repo.maven.apache.org-4-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.6.1/mongodb-driver-sync-4.6.1.jar
+2022-06-23 17:19:39,477 [AetherRepositoryConnector-repo.maven.apache.org-4-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson/4.6.1/bson-4.6.1.jar
+2022-06-23 17:19:39,600 [AetherRepositoryConnector-repo.maven.apache.org-5-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.1/spring-boot-starter-logging-2.7.1.jar
+2022-06-23 17:19:39,600 [AetherRepositoryConnector-repo.maven.apache.org-5-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson/4.6.1/bson-4.6.1.jar
+2022-06-23 17:19:39,600 [AetherRepositoryConnector-repo.maven.apache.org-5-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.6.1/mongodb-driver-sync-4.6.1.jar
+2022-06-23 17:19:39,600 [AetherRepositoryConnector-repo.maven.apache.org-5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.1/spring-boot-starter-2.7.1.jar
+2022-06-23 17:19:39,762 [AetherRepositoryConnector-repo.maven.apache.org-4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.1/spring-boot-starter-2.7.1.jar
+2022-06-23 17:19:39,763 [AetherRepositoryConnector-repo.maven.apache.org-4-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.7.1/spring-boot-starter-data-mongodb-2.7.1.jar
+2022-06-23 17:19:39,775 [AetherRepositoryConnector-repo.maven.apache.org-5-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.7.1/spring-boot-starter-data-mongodb-2.7.1.jar
+2022-06-23 17:19:39,807 [AetherRepositoryConnector-repo.maven.apache.org-4-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.1/spring-boot-starter-logging-2.7.1.jar
+2022-06-23 17:19:39,907 [AetherRepositoryConnector-repo.maven.apache.org-4-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.6.1/mongodb-driver-sync-4.6.1.jar
+2022-06-23 17:19:39,927 [AetherRepositoryConnector-repo.maven.apache.org-4-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson-record-codec/4.6.1/bson-record-codec-4.6.1.jar
+2022-06-23 17:19:39,929 [AetherRepositoryConnector-repo.maven.apache.org-4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.6.1/mongodb-driver-core-4.6.1.jar
+2022-06-23 17:19:39,938 [AetherRepositoryConnector-repo.maven.apache.org-5-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.1/spring-boot-starter-logging-2.7.1.jar
+2022-06-23 17:19:39,938 [AetherRepositoryConnector-repo.maven.apache.org-5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.1/spring-boot-starter-2.7.1.jar
+2022-06-23 17:19:40,103 [AetherRepositoryConnector-repo.maven.apache.org-4-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.4.1/spring-data-mongodb-3.4.1.jar
+2022-06-23 17:19:40,121 [AetherRepositoryConnector-repo.maven.apache.org-4-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.7.1/spring-data-commons-2.7.1.jar
+2022-06-23 17:19:40,133 [AetherRepositoryConnector-repo.maven.apache.org-4-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson-record-codec/4.6.1/bson-record-codec-4.6.1.jar
+2022-06-23 17:19:40,136 [AetherRepositoryConnector-repo.maven.apache.org-4-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson/4.6.1/bson-4.6.1.jar
+2022-06-23 17:19:40,141 [AetherRepositoryConnector-repo.maven.apache.org-5-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.6.1/mongodb-driver-core-4.6.1.jar
+2022-06-23 17:19:40,204 [AetherRepositoryConnector-repo.maven.apache.org-5-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson-record-codec/4.6.1/bson-record-codec-4.6.1.jar
+2022-06-23 17:19:40,204 [AetherRepositoryConnector-repo.maven.apache.org-5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.4.1/spring-data-mongodb-3.4.1.jar
+2022-06-23 17:19:40,219 [AetherRepositoryConnector-repo.maven.apache.org-5-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.6.1/mongodb-driver-sync-4.6.1.jar
+2022-06-23 17:19:40,377 [AetherRepositoryConnector-repo.maven.apache.org-4-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.7.1/spring-boot-starter-validation-2.7.1.jar
+2022-06-23 17:19:40,377 [AetherRepositoryConnector-repo.maven.apache.org-4-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.7.1/spring-boot-starter-web-2.7.1.jar
+2022-06-23 17:19:40,419 [AetherRepositoryConnector-repo.maven.apache.org-4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.6.1/mongodb-driver-core-4.6.1.jar
+2022-06-23 17:19:40,518 [AetherRepositoryConnector-repo.maven.apache.org-4-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.7.1/spring-data-commons-2.7.1.jar
+2022-06-23 17:19:40,550 [AetherRepositoryConnector-repo.maven.apache.org-5-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson-record-codec/4.6.1/bson-record-codec-4.6.1.jar
+2022-06-23 17:19:40,551 [AetherRepositoryConnector-repo.maven.apache.org-4-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.7.1/spring-boot-starter-web-2.7.1.jar
+2022-06-23 17:19:40,551 [AetherRepositoryConnector-repo.maven.apache.org-4-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.7.1/spring-boot-starter-validation-2.7.1.jar
+2022-06-23 17:19:40,556 [AetherRepositoryConnector-repo.maven.apache.org-5-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.7.1/spring-data-commons-2.7.1.jar
+2022-06-23 17:19:40,565 [AetherRepositoryConnector-repo.maven.apache.org-5-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson/4.6.1/bson-4.6.1.jar
+2022-06-23 17:19:40,653 [AetherRepositoryConnector-repo.maven.apache.org-4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.7.1/spring-boot-starter-json-2.7.1.jar
+2022-06-23 17:19:40,676 [AetherRepositoryConnector-repo.maven.apache.org-4-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.4.1/spring-data-mongodb-3.4.1.jar
+2022-06-23 17:19:40,696 [AetherRepositoryConnector-repo.maven.apache.org-4-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.7.1/spring-boot-starter-tomcat-2.7.1.jar
+2022-06-23 17:19:40,798 [AetherRepositoryConnector-repo.maven.apache.org-4-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.1/spring-boot-2.7.1.jar
+2022-06-23 17:19:40,839 [AetherRepositoryConnector-repo.maven.apache.org-5-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.7.1/spring-boot-starter-validation-2.7.1.jar
+2022-06-23 17:19:40,840 [AetherRepositoryConnector-repo.maven.apache.org-5-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.7.1/spring-boot-starter-web-2.7.1.jar
+2022-06-23 17:19:40,852 [AetherRepositoryConnector-repo.maven.apache.org-4-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.1/spring-boot-autoconfigure-2.7.1.jar
+2022-06-23 17:19:40,858 [AetherRepositoryConnector-repo.maven.apache.org-4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.7.1/spring-boot-starter-json-2.7.1.jar
+2022-06-23 17:19:40,872 [AetherRepositoryConnector-repo.maven.apache.org-5-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.6.1/mongodb-driver-core-4.6.1.jar
+2022-06-23 17:19:40,975 [AetherRepositoryConnector-repo.maven.apache.org-5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.4.1/spring-data-mongodb-3.4.1.jar
+2022-06-23 17:19:40,978 [AetherRepositoryConnector-repo.maven.apache.org-4-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.jar
+2022-06-23 17:19:41,001 [AetherRepositoryConnector-repo.maven.apache.org-4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.1/spring-boot-starter-test-2.7.1.jar
+2022-06-23 17:19:41,011 [AetherRepositoryConnector-repo.maven.apache.org-4-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.1/spring-boot-2.7.1.jar
+2022-06-23 17:19:41,071 [AetherRepositoryConnector-repo.maven.apache.org-4-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.7.1/spring-boot-starter-tomcat-2.7.1.jar
+2022-06-23 17:19:41,082 [AetherRepositoryConnector-repo.maven.apache.org-5-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.7.1/spring-boot-starter-json-2.7.1.jar
+2022-06-23 17:19:41,094 [AetherRepositoryConnector-repo.maven.apache.org-4-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.1/spring-boot-autoconfigure-2.7.1.jar
+2022-06-23 17:19:41,095 [AetherRepositoryConnector-repo.maven.apache.org-5-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.7.1/spring-boot-starter-validation-2.7.1.jar
+2022-06-23 17:19:41,095 [AetherRepositoryConnector-repo.maven.apache.org-5-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.7.1/spring-boot-starter-web-2.7.1.jar
+2022-06-23 17:19:41,109 [AetherRepositoryConnector-repo.maven.apache.org-5-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.7.1/spring-data-commons-2.7.1.jar
+2022-06-23 17:19:41,141 [AetherRepositoryConnector-repo.maven.apache.org-4-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.jar
+2022-06-23 17:19:41,146 [AetherRepositoryConnector-repo.maven.apache.org-4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.1/spring-boot-starter-test-2.7.1.jar
+2022-06-23 17:19:41,255 [AetherRepositoryConnector-repo.maven.apache.org-5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.7.1/spring-boot-starter-tomcat-2.7.1.jar
+2022-06-23 17:19:41,255 [AetherRepositoryConnector-repo.maven.apache.org-4-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.1/spring-boot-test-autoconfigure-2.7.1.jar
+2022-06-23 17:19:41,255 [AetherRepositoryConnector-repo.maven.apache.org-4-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.1/spring-boot-test-2.7.1.jar
+2022-06-23 17:19:41,286 [AetherRepositoryConnector-repo.maven.apache.org-4-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.11/byte-buddy-1.12.11.jar
+2022-06-23 17:19:41,293 [AetherRepositoryConnector-repo.maven.apache.org-4-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.11/byte-buddy-agent-1.12.11.jar
+2022-06-23 17:19:41,451 [AetherRepositoryConnector-repo.maven.apache.org-5-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.1/spring-boot-2.7.1.jar
+2022-06-23 17:19:41,451 [AetherRepositoryConnector-repo.maven.apache.org-5-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.jar
+2022-06-23 17:19:41,451 [AetherRepositoryConnector-repo.maven.apache.org-5-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.1/spring-boot-autoconfigure-2.7.1.jar
+2022-06-23 17:19:41,460 [AetherRepositoryConnector-repo.maven.apache.org-5-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.7.1/spring-boot-starter-json-2.7.1.jar
+2022-06-23 17:19:41,475 [AetherRepositoryConnector-repo.maven.apache.org-4-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.1/spring-boot-test-2.7.1.jar
+2022-06-23 17:19:41,476 [AetherRepositoryConnector-repo.maven.apache.org-4-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.1/spring-boot-test-autoconfigure-2.7.1.jar
+2022-06-23 17:19:41,485 [AetherRepositoryConnector-repo.maven.apache.org-4-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.11/byte-buddy-agent-1.12.11.jar
+2022-06-23 17:19:41,663 [AetherRepositoryConnector-repo.maven.apache.org-4-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.11/byte-buddy-1.12.11.jar
+2022-06-23 17:19:41,900 [AetherRepositoryConnector-repo.maven.apache.org-5-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.1/spring-boot-starter-test-2.7.1.jar
+2022-06-23 17:19:41,912 [AetherRepositoryConnector-repo.maven.apache.org-5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.7.1/spring-boot-starter-tomcat-2.7.1.jar
+2022-06-23 17:19:41,915 [AetherRepositoryConnector-repo.maven.apache.org-5-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1.jar
+2022-06-23 17:19:42,021 [AetherRepositoryConnector-repo.maven.apache.org-5-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.1/spring-boot-2.7.1.jar
+2022-06-23 17:19:42,135 [AetherRepositoryConnector-repo.maven.apache.org-5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.1/spring-boot-test-2.7.1.jar
+2022-06-23 17:19:42,135 [AetherRepositoryConnector-repo.maven.apache.org-5-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.1/spring-boot-test-autoconfigure-2.7.1.jar
+2022-06-23 17:19:42,163 [AetherRepositoryConnector-repo.maven.apache.org-5-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.1/spring-boot-starter-test-2.7.1.jar
+2022-06-23 17:19:42,184 [AetherRepositoryConnector-repo.maven.apache.org-5-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.1/spring-boot-autoconfigure-2.7.1.jar
+2022-06-23 17:19:42,274 [AetherRepositoryConnector-repo.maven.apache.org-5-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.11/byte-buddy-1.12.11.jar
+2022-06-23 17:19:42,625 [AetherRepositoryConnector-repo.maven.apache.org-5-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.11/byte-buddy-agent-1.12.11.jar
+2022-06-23 17:19:42,746 [AetherRepositoryConnector-repo.maven.apache.org-5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.1/spring-boot-test-2.7.1.jar
+2022-06-23 17:19:42,746 [AetherRepositoryConnector-repo.maven.apache.org-5-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.1/spring-boot-test-autoconfigure-2.7.1.jar
+2022-06-23 17:19:42,798 [AetherRepositoryConnector-repo.maven.apache.org-5-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.11/byte-buddy-agent-1.12.11.jar
+2022-06-23 17:19:42,983 [AetherRepositoryConnector-repo.maven.apache.org-5-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.11/byte-buddy-1.12.11.jar
+2022-06-23 17:19:43,704 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-customer:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-customer\pom.xml.
+2022-06-23 17:19:43,808 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-catalog:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-catalog\pom.xml.
+2022-06-23 17:19:44,128 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-payment:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-payment\pom.xml.
+2022-06-23 17:19:44,195 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:19:45,830 [Worker-624: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:19:45,830 [Worker-624: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:19:45,834 [Worker-624: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:19:45,838 [Worker-624: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:19:46,398 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 19 sec
+2022-06-23 17:19:46,398 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:19:46,570 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:19:46,798 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.7.1/spring-boot-starter-data-mongodb-2.7.1-sources.jar
+2022-06-23 17:19:47,073 [Worker-624: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:19:47,073 [Worker-624: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:19:47,073 [Worker-624: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:19:47,073 [Worker-624: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:19:47,084 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb/2.7.1/spring-boot-starter-data-mongodb-2.7.1-sources.jar
+2022-06-23 17:19:47,148 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-data-mongodb:2.7.1
+2022-06-23 17:19:47,564 [Worker-624: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-06-23 17:19:47,954 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.1/spring-boot-starter-2.7.1-sources.jar
+2022-06-23 17:19:48,248 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.1/spring-boot-starter-2.7.1-sources.jar
+2022-06-23 17:19:48,259 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:48,259 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:48,263 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:19:48,263 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:19:48,265 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:48,266 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:48,266 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-catalog\src\test\resources
+2022-06-23 17:19:48,322 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter:2.7.1
+2022-06-23 17:19:48,600 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:48,600 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:48,600 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:19:48,600 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:19:48,601 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:48,601 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:48,601 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-customer\src\test\resources
+2022-06-23 17:19:48,804 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:48,804 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:48,804 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:19:48,819 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:19:48,819 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:48,819 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:48,819 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:19:49,206 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.1/spring-boot-starter-logging-2.7.1-sources.jar
+2022-06-23 17:19:49,477 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:49,477 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:49,477 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:19:49,478 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:19:49,478 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:49,478 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:49,478 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-payment\src\test\resources
+2022-06-23 17:19:49,517 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.1/spring-boot-starter-logging-2.7.1-sources.jar
+2022-06-23 17:19:49,599 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-logging:2.7.1
+2022-06-23 17:19:50,230 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.6.1/mongodb-driver-sync-4.6.1-sources.jar
+2022-06-23 17:19:50,625 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-sync/4.6.1/mongodb-driver-sync-4.6.1-sources.jar
+2022-06-23 17:19:50,719 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.mongodb:mongodb-driver-sync:4.6.1
+2022-06-23 17:19:51,299 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson/4.6.1/bson-4.6.1-sources.jar
+2022-06-23 17:19:51,707 [Worker-617: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:19:51,947 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson/4.6.1/bson-4.6.1-sources.jar
+2022-06-23 17:19:52,015 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.mongodb:bson:4.6.1
+2022-06-23 17:19:52,233 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:52,233 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:52,233 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:19:52,233 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:19:52,234 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:52,234 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:52,234 [Worker-617: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:19:52,894 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.6.1/mongodb-driver-core-4.6.1-sources.jar
+2022-06-23 17:19:53,812 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-core/4.6.1/mongodb-driver-core-4.6.1-sources.jar
+2022-06-23 17:19:53,911 [Worker-626: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:53,912 [Worker-626: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:53,913 [Worker-626: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:19:53,917 [Worker-626: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:19:53,918 [Worker-626: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:19:53,918 [Worker-626: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:19:53,918 [Worker-626: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:19:53,955 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.mongodb:mongodb-driver-core:4.6.1
+2022-06-23 17:19:54,518 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/bson-record-codec/4.6.1/bson-record-codec-4.6.1-sources.jar
+2022-06-23 17:19:54,797 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/bson-record-codec/4.6.1/bson-record-codec-4.6.1-sources.jar
+2022-06-23 17:19:54,859 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.mongodb:bson-record-codec:4.6.1
+2022-06-23 17:19:55,445 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.4.1/spring-data-mongodb-3.4.1-sources.jar
+2022-06-23 17:19:56,347 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-mongodb/3.4.1/spring-data-mongodb-3.4.1-sources.jar
+2022-06-23 17:19:56,409 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.data:spring-data-mongodb:3.4.1
+2022-06-23 17:19:56,990 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.7.1/spring-data-commons-2.7.1-sources.jar
+2022-06-23 17:19:57,881 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.7.1/spring-data-commons-2.7.1-sources.jar
+2022-06-23 17:19:57,931 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.data:spring-data-commons:2.7.1
+2022-06-23 17:19:58,148 [Worker-617: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:19:58,561 [Worker-617: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-payment:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-payment\pom.xml.
+2022-06-23 17:19:58,573 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.7.1/spring-boot-starter-validation-2.7.1-sources.jar
+2022-06-23 17:19:58,755 [Worker-617: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:19:58,847 [Worker-617: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-catalog:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-catalog\pom.xml.
+2022-06-23 17:19:58,855 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.7.1/spring-boot-starter-validation-2.7.1-sources.jar
+2022-06-23 17:19:58,911 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-validation:2.7.1
+2022-06-23 17:19:59,654 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.7.1/spring-boot-starter-web-2.7.1-sources.jar
+2022-06-23 17:19:59,931 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.7.1/spring-boot-starter-web-2.7.1-sources.jar
+2022-06-23 17:19:59,994 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-web:2.7.1
+2022-06-23 17:20:00,143 [Worker-617: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:20:00,143 [Worker-617: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:20:00,143 [Worker-617: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:20:00,144 [Worker-617: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:20:00,500 [Worker-617: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2022-06-23 17:20:00,560 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.7.1/spring-boot-starter-json-2.7.1-sources.jar
+2022-06-23 17:20:00,856 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.7.1/spring-boot-starter-json-2.7.1-sources.jar
+2022-06-23 17:20:00,946 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-json:2.7.1
+2022-06-23 17:20:00,978 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:00,978 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:00,980 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:00,980 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:00,981 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:00,981 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:00,981 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-catalog\src\test\resources
+2022-06-23 17:20:01,144 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:01,145 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:01,145 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:20:01,156 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:01,157 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:01,158 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:01,158 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:20:01,559 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.7.1/spring-boot-starter-tomcat-2.7.1-sources.jar
+2022-06-23 17:20:01,662 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:01,663 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:01,663 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:01,663 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:01,664 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:01,664 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:01,665 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-payment\src\test\resources
+2022-06-23 17:20:01,867 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.7.1/spring-boot-starter-tomcat-2.7.1-sources.jar
+2022-06-23 17:20:01,942 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-tomcat:2.7.1
+2022-06-23 17:20:02,525 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1-sources.jar
+2022-06-23 17:20:02,989 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/2.7.1/spring-boot-devtools-2.7.1-sources.jar
+2022-06-23 17:20:03,053 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-devtools:2.7.1
+2022-06-23 17:20:03,631 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.1/spring-boot-2.7.1-sources.jar
+2022-06-23 17:20:04,573 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.1/spring-boot-2.7.1-sources.jar
+2022-06-23 17:20:04,676 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot:2.7.1
+2022-06-23 17:20:05,272 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.1/spring-boot-autoconfigure-2.7.1-sources.jar
+2022-06-23 17:20:06,200 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.1/spring-boot-autoconfigure-2.7.1-sources.jar
+2022-06-23 17:20:06,292 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-autoconfigure:2.7.1
+2022-06-23 17:20:06,918 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.1/spring-boot-starter-test-2.7.1-sources.jar
+2022-06-23 17:20:07,152 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.1/spring-boot-starter-test-2.7.1-sources.jar
+2022-06-23 17:20:07,263 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-test:2.7.1
+2022-06-23 17:20:07,830 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.1/spring-boot-test-2.7.1-sources.jar
+2022-06-23 17:20:08,276 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.1/spring-boot-test-2.7.1-sources.jar
+2022-06-23 17:20:08,392 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-test:2.7.1
+2022-06-23 17:20:09,061 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.1/spring-boot-test-autoconfigure-2.7.1-sources.jar
+2022-06-23 17:20:09,560 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.1/spring-boot-test-autoconfigure-2.7.1-sources.jar
+2022-06-23 17:20:09,667 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-test-autoconfigure:2.7.1
+2022-06-23 17:20:10,232 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.11/byte-buddy-1.12.11-sources.jar
+2022-06-23 17:20:11,230 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.11/byte-buddy-1.12.11-sources.jar
+2022-06-23 17:20:11,370 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for net.bytebuddy:byte-buddy:1.12.11
+2022-06-23 17:20:11,945 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.11/byte-buddy-agent-1.12.11-sources.jar
+2022-06-23 17:20:12,415 [Worker-623: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.11/byte-buddy-agent-1.12.11-sources.jar
+2022-06-23 17:20:12,616 [Worker-623: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for net.bytebuddy:byte-buddy-agent:1.12.11
+2022-06-23 17:20:12,924 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:12,924 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:12,924 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:12,925 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:12,925 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:12,925 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:12,925 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:20:35,708 [Worker-621: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:20:36,127 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:36,127 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:36,127 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:36,128 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:36,128 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:36,128 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:36,128 [Worker-621: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:20:37,892 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:37,892 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:37,893 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:20:37,896 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:37,896 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:37,897 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:37,897 [Worker-623: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:20:43,066 [Worker-624: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:20:43,458 [Worker-624: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-payment:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-payment\pom.xml.
+2022-06-23 17:20:43,638 [Worker-624: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:20:43,697 [Worker-624: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-catalog:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-catalog\pom.xml.
+2022-06-23 17:20:44,946 [Worker-624: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:20:44,946 [Worker-624: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:20:44,946 [Worker-624: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:20:44,947 [Worker-624: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:20:45,336 [Worker-624: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2022-06-23 17:20:45,818 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:45,818 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:45,819 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:45,819 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:45,820 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:45,820 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:45,820 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-catalog\src\test\resources
+2022-06-23 17:20:46,133 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:46,133 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:46,133 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:20:46,141 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:46,142 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:46,142 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:46,142 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:20:46,605 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:46,605 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:46,605 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:46,605 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:20:46,606 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:20:46,606 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:20:46,606 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-payment\src\test\resources
+2022-06-23 17:22:41,417 [Worker-627: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:22:42,056 [Worker-627: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:22:42,056 [Worker-627: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:22:42,060 [Worker-627: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:22:42,067 [Worker-627: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:22:42,538 [Worker-627: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2022-06-23 17:22:42,539 [Worker-627: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:22:42,747 [Worker-627: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:22:43,439 [Worker-627: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:22:43,439 [Worker-627: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:22:43,439 [Worker-627: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:22:43,440 [Worker-627: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:22:43,743 [Worker-627: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-06-23 17:22:44,286 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:22:44,286 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:22:44,287 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:22:44,289 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:22:44,290 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:22:44,290 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:22:44,290 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:22:50,945 [Worker-627: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:22:51,348 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:22:51,348 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:22:51,348 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:22:51,348 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:22:51,349 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:22:51,349 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:22:51,349 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:22:53,296 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:22:53,296 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:22:53,297 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:22:53,299 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:22:53,300 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:22:53,300 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:22:53,300 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:23:02,286 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:23:02,671 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-payment:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-payment\pom.xml.
+2022-06-23 17:23:02,831 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:23:02,875 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-catalog:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-catalog\pom.xml.
+2022-06-23 17:23:04,149 [Worker-627: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:23:04,149 [Worker-627: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:23:04,149 [Worker-627: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:23:04,150 [Worker-627: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:23:04,464 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2022-06-23 17:23:04,935 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:23:04,935 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:23:04,936 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:23:04,936 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:23:04,937 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:23:04,937 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:23:04,937 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-catalog\src\test\resources
+2022-06-23 17:23:05,257 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:23:05,257 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:23:05,258 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:23:05,266 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:23:05,267 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:23:05,267 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:23:05,267 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:23:05,727 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:23:05,727 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:23:05,727 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:23:05,727 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:23:05,728 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:23:05,728 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:23:05,728 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-payment\src\test\resources
+2022-06-23 17:24:47,257 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:24:47,400 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:24:48,100 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.6.9/spring-boot-starter-data-mongodb-reactive-2.6.9.pom
+2022-06-23 17:24:48,402 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.6.9/spring-boot-starter-data-mongodb-reactive-2.6.9.pom
+2022-06-23 17:24:48,583 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.19/reactor-core-3.4.19.pom
+2022-06-23 17:24:48,742 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.19/reactor-core-3.4.19.pom
+2022-06-23 17:24:48,897 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.pom
+2022-06-23 17:24:49,058 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.pom
+2022-06-23 17:24:49,272 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.4.2/mongodb-driver-reactivestreams-4.4.2.pom
+2022-06-23 17:24:49,443 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.4.2/mongodb-driver-reactivestreams-4.4.2.pom
+2022-06-23 17:24:49,600 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/Californium-SR23/reactor-bom-Californium-SR23.pom
+2022-06-23 17:24:49,761 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/Californium-SR23/reactor-bom-Californium-SR23.pom
+2022-06-23 17:24:50,068 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.19/reactor-test-3.4.19.pom
+2022-06-23 17:24:50,226 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.19/reactor-test-3.4.19.pom
+2022-06-23 17:24:50,411 [AetherRepositoryConnector-repo.maven.apache.org-6-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.6.9/spring-boot-starter-data-mongodb-reactive-2.6.9.jar
+2022-06-23 17:24:50,541 [AetherRepositoryConnector-repo.maven.apache.org-6-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar
+2022-06-23 17:24:50,562 [AetherRepositoryConnector-repo.maven.apache.org-6-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.19/reactor-test-3.4.19.jar
+2022-06-23 17:24:50,748 [AetherRepositoryConnector-repo.maven.apache.org-6-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.4.2/mongodb-driver-reactivestreams-4.4.2.jar
+2022-06-23 17:24:50,748 [AetherRepositoryConnector-repo.maven.apache.org-6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.19/reactor-core-3.4.19.jar
+2022-06-23 17:24:50,769 [AetherRepositoryConnector-repo.maven.apache.org-6-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.6.9/spring-boot-starter-data-mongodb-reactive-2.6.9.jar
+2022-06-23 17:24:50,769 [AetherRepositoryConnector-repo.maven.apache.org-6-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar
+2022-06-23 17:24:51,295 [AetherRepositoryConnector-repo.maven.apache.org-6-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.19/reactor-test-3.4.19.jar
+2022-06-23 17:24:51,429 [AetherRepositoryConnector-repo.maven.apache.org-6-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.4.2/mongodb-driver-reactivestreams-4.4.2.jar
+2022-06-23 17:24:51,683 [AetherRepositoryConnector-repo.maven.apache.org-6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.19/reactor-core-3.4.19.jar
+2022-06-23 17:24:52,012 [AetherRepositoryConnector-repo.maven.apache.org-7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.4.2/mongodb-driver-reactivestreams-4.4.2.jar
+2022-06-23 17:24:52,211 [AetherRepositoryConnector-repo.maven.apache.org-7-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.19/reactor-core-3.4.19.jar
+2022-06-23 17:24:52,714 [AetherRepositoryConnector-repo.maven.apache.org-7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.4.2/mongodb-driver-reactivestreams-4.4.2.jar
+2022-06-23 17:24:52,774 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-customer:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-customer\pom.xml.
+2022-06-23 17:24:53,046 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-payment:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-payment\pom.xml.
+2022-06-23 17:24:53,094 [AetherRepositoryConnector-repo.maven.apache.org-7-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.19/reactor-core-3.4.19.jar
+2022-06-23 17:24:53,283 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-catalog:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-catalog\pom.xml.
+2022-06-23 17:24:53,337 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:24:55,171 [Worker-622: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:24:55,171 [Worker-622: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:24:55,179 [Worker-622: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:24:55,206 [Worker-622: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:24:56,398 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:24:56,398 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:24:56,399 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:24:56,399 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.6.9/spring-boot-starter-data-mongodb-reactive-2.6.9-sources.jar
+2022-06-23 17:24:56,409 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:24:56,410 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:24:56,410 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:24:56,410 [Worker-633: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-catalog\src\test\resources
+2022-06-23 17:24:56,707 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.6.9/spring-boot-starter-data-mongodb-reactive-2.6.9-sources.jar
+2022-06-23 17:24:56,781 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:24:56,781 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:24:56,810 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:24:56,820 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:24:56,822 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:24:56,822 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:24:56,822 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-catalog\src\test\resources
+2022-06-23 17:24:57,123 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-data-mongodb-reactive:2.6.9
+2022-06-23 17:24:57,457 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:24:57,457 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:24:57,458 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:24:57,466 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:24:57,467 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:24:57,467 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:24:57,467 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-customer\src\test\resources
+2022-06-23 17:24:57,655 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:24:57,655 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:24:57,656 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:24:57,659 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:24:57,660 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:24:57,660 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:24:57,660 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:24:58,080 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.19/reactor-core-3.4.19-sources.jar
+2022-06-23 17:24:58,176 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:24:58,176 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:24:58,178 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:24:58,187 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:24:58,196 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:24:58,196 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:24:58,196 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-payment\src\test\resources
+2022-06-23 17:24:59,285 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.19/reactor-core-3.4.19-sources.jar
+2022-06-23 17:24:59,434 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.projectreactor:reactor-core:3.4.19
+2022-06-23 17:25:00,236 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.5.11/spring-boot-starter-data-mongodb-reactive-2.5.11.pom
+2022-06-23 17:25:00,398 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.5.11/spring-boot-starter-data-mongodb-reactive-2.5.11.pom
+2022-06-23 17:25:00,657 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.16/reactor-core-3.4.16.pom
+2022-06-23 17:25:00,813 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.16/reactor-core-3.4.16.pom
+2022-06-23 17:25:00,964 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.pom
+2022-06-23 17:25:01,113 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.pom
+2022-06-23 17:25:01,262 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.2.3/mongodb-driver-reactivestreams-4.2.3.pom
+2022-06-23 17:25:01,417 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.2.3/mongodb-driver-reactivestreams-4.2.3.pom
+2022-06-23 17:25:01,684 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.16/reactor-test-3.4.16.pom
+2022-06-23 17:25:01,890 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.16/reactor-test-3.4.16.pom
+2022-06-23 17:25:02,182 [AetherRepositoryConnector-repo.maven.apache.org-8-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.5.11/spring-boot-starter-data-mongodb-reactive-2.5.11.jar
+2022-06-23 17:25:02,209 [AetherRepositoryConnector-repo.maven.apache.org-8-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar
+2022-06-23 17:25:02,230 [AetherRepositoryConnector-repo.maven.apache.org-8-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.2.3/mongodb-driver-reactivestreams-4.2.3.jar
+2022-06-23 17:25:02,397 [AetherRepositoryConnector-repo.maven.apache.org-8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.16/reactor-core-3.4.16.jar
+2022-06-23 17:25:02,397 [AetherRepositoryConnector-repo.maven.apache.org-8-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.16/reactor-test-3.4.16.jar
+2022-06-23 17:25:02,421 [AetherRepositoryConnector-repo.maven.apache.org-8-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.5.11/spring-boot-starter-data-mongodb-reactive-2.5.11.jar
+2022-06-23 17:25:02,538 [AetherRepositoryConnector-repo.maven.apache.org-8-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar
+2022-06-23 17:25:02,899 [AetherRepositoryConnector-repo.maven.apache.org-8-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.2.3/mongodb-driver-reactivestreams-4.2.3.jar
+2022-06-23 17:25:03,052 [AetherRepositoryConnector-repo.maven.apache.org-8-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.16/reactor-test-3.4.16.jar
+2022-06-23 17:25:03,311 [AetherRepositoryConnector-repo.maven.apache.org-8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.16/reactor-core-3.4.16.jar
+2022-06-23 17:25:04,117 [Worker-629: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:25:04,215 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4-sources.jar
+2022-06-23 17:25:04,363 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4-sources.jar
+2022-06-23 17:25:04,520 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.reactivestreams:reactive-streams:1.0.4
+2022-06-23 17:25:04,861 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:25:04,861 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:25:04,862 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:25:04,862 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:25:04,862 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:25:04,863 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:25:04,863 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:25:05,420 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.4.2/mongodb-driver-reactivestreams-4.4.2-sources.jar
+2022-06-23 17:25:05,648 [Worker-622: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 18 sec
+2022-06-23 17:25:05,800 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.4.2/mongodb-driver-reactivestreams-4.4.2-sources.jar
+2022-06-23 17:25:06,028 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.mongodb:mongodb-driver-reactivestreams:4.4.2
+2022-06-23 17:25:06,607 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.19/reactor-test-3.4.19-sources.jar
+2022-06-23 17:25:06,933 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.19/reactor-test-3.4.19-sources.jar
+2022-06-23 17:25:06,963 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:25:06,963 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:25:06,965 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:25:06,969 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:25:06,971 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:25:06,971 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:25:06,971 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:25:07,060 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.projectreactor:reactor-test:3.4.19
+2022-06-23 17:25:07,729 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.5.11/spring-boot-starter-data-mongodb-reactive-2.5.11-sources.jar
+2022-06-23 17:25:07,922 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-mongodb-reactive/2.5.11/spring-boot-starter-data-mongodb-reactive-2.5.11-sources.jar
+2022-06-23 17:25:08,041 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-data-mongodb-reactive:2.5.11
+2022-06-23 17:25:08,641 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.16/reactor-core-3.4.16-sources.jar
+2022-06-23 17:25:09,773 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.4.16/reactor-core-3.4.16-sources.jar
+2022-06-23 17:25:09,864 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.projectreactor:reactor-core:3.4.16
+2022-06-23 17:25:10,424 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3-sources.jar
+2022-06-23 17:25:10,705 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3-sources.jar
+2022-06-23 17:25:11,118 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.reactivestreams:reactive-streams:1.0.3
+2022-06-23 17:25:11,679 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.2.3/mongodb-driver-reactivestreams-4.2.3-sources.jar
+2022-06-23 17:25:12,100 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongodb-driver-reactivestreams/4.2.3/mongodb-driver-reactivestreams-4.2.3-sources.jar
+2022-06-23 17:25:12,230 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.mongodb:mongodb-driver-reactivestreams:4.2.3
+2022-06-23 17:25:12,799 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.16/reactor-test-3.4.16-sources.jar
+2022-06-23 17:25:13,137 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-test/3.4.16/reactor-test-3.4.16-sources.jar
+2022-06-23 17:25:13,300 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.projectreactor:reactor-test:3.4.16
+2022-06-23 17:25:13,619 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:25:13,619 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:25:13,620 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:25:13,620 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:25:13,620 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:25:13,620 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:25:13,620 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:25:21,284 [Worker-629: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:25:21,759 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:25:21,759 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:25:21,759 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:25:21,759 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:25:21,760 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:25:21,760 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:25:21,761 [Worker-629: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:25:23,389 [Worker-637: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:25:23,389 [Worker-637: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:25:23,390 [Worker-637: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:25:23,393 [Worker-637: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:25:23,394 [Worker-637: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:25:23,394 [Worker-637: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:25:23,394 [Worker-637: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:26:01,018 [Worker-627: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:26:01,385 [Worker-627: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:26:01,887 [Worker-627: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:26:01,887 [Worker-627: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:26:01,894 [Worker-627: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:26:01,901 [Worker-627: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:26:02,491 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:26:02,491 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:26:02,491 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:26:02,494 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:26:02,495 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:26:02,495 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:26:02,495 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:26:02,897 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:26:02,897 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:26:02,897 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:26:02,903 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:26:02,905 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:26:02,905 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:26:02,905 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:26:03,952 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:26:03,953 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:26:03,953 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:26:03,953 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:26:03,954 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:26:03,954 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:26:03,954 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:26:03,973 [Worker-627: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2022-06-23 17:26:05,062 [Worker-632: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:26:05,062 [Worker-632: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:26:05,062 [Worker-632: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:26:05,063 [Worker-632: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:26:05,063 [Worker-632: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:26:05,063 [Worker-632: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:26:05,063 [Worker-632: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:27:13,004 [Worker-634: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:27:13,417 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:27:13,417 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:27:13,417 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:27:13,417 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:27:13,418 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:27:13,418 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:27:13,418 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:27:15,022 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:27:15,022 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:27:15,022 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:27:15,025 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:27:15,026 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:27:15,026 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:27:15,026 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:27:51,052 [Worker-627: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:27:51,561 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:27:51,561 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:27:51,561 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:27:51,561 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:27:51,562 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:27:51,562 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:27:51,562 [Worker-627: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:28:24,318 [Worker-636: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:28:24,736 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:28:24,737 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:28:24,737 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:28:24,737 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:28:24,737 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:28:24,737 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:28:24,737 [Worker-636: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:29:05,243 [Worker-622: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:29:05,693 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:29:05,693 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:29:05,693 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:29:05,693 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:29:05,694 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:29:05,694 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:29:05,694 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:29:35,614 [Worker-622: Launching Executing clean in C__temp_ws-sts_shop-style_ms-order] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\temp\ws-sts\shop-style\ms-order
+2022-06-23 17:29:35,615 [Worker-622: Launching Executing clean in C__temp_ws-sts_shop-style_ms-order] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean -Dstyle.color=always
+2022-06-23 17:29:43,487 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:29:43,487 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:29:43,488 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:29:43,490 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:29:43,491 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:29:43,491 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:29:43,491 [Worker-635: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:29:57,026 [Worker-634: Launching Executing install in C__temp_ws-sts_shop-style_ms-order] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\temp\ws-sts\shop-style\ms-order
+2022-06-23 17:29:57,027 [Worker-634: Launching Executing install in C__temp_ws-sts_shop-style_ms-order] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install -Dstyle.color=always
+2022-06-23 17:31:00,579 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:31:00,579 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:31:00,580 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:31:00,584 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:31:00,585 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:31:00,585 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:31:00,585 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:31:15,853 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:31:16,252 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-payment:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-payment\pom.xml.
+2022-06-23 17:31:16,448 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:31:17,316 [Worker-627: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/main/java
+2022-06-23 17:31:17,316 [Worker-627: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:31:17,316 [Worker-627: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ms-order/src/main/resources
+2022-06-23 17:31:17,317 [Worker-627: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ms-order/src/test/java
+2022-06-23 17:31:17,697 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-06-23 17:31:18,201 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:31:18,202 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:31:18,202 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:31:18,213 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:31:18,214 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:31:18,214 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:31:18,214 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:31:18,680 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:31:18,680 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:31:18,681 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:31:18,681 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:31:18,681 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:31:18,681 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:31:18,681 [Worker-634: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-payment\src\test\resources
+2022-06-23 17:32:41,391 [Worker-631: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:579)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:547)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:503)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:349)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:303)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:860)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:392)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:417)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </dependencies> must match start tag name <dependency> from line 59 (position: TEXT seen ...<dependency>\n\t</dependencies>... @60:17) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:85)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:577)
+	... 23 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </dependencies> must match start tag name <dependency> from line 59 (position: TEXT seen ...<dependency>\n\t</dependencies>... @60:17) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2090)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1361)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1319)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1305)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1350)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2239)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3872)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:112)
+	... 25 common frames omitted
+2022-06-23 17:32:42,518 [Worker-637: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:579)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:547)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:503)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:349)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:303)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:151)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:860)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:392)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:417)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </dependencies> must match start tag name <dependency> from line 59 (position: TEXT seen ...<dependency>\n\t</dependencies>... @60:17) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:85)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:577)
+	... 23 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </dependencies> must match start tag name <dependency> from line 59 (position: TEXT seen ...<dependency>\n\t</dependencies>... @60:17) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2090)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1361)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1319)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1305)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1350)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2239)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3872)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:112)
+	... 25 common frames omitted
+2022-06-23 17:32:58,470 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-06-23 17:32:58,497 [Worker-627: Updating Maven Project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:579)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:547)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:503)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:349)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:303)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:413)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:362)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1411)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:361)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </dependencies> must match start tag name <dependency> from line 59 (position: TEXT seen ...<dependency>\n\t</dependencies>... @60:17) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:117)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:85)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:577)
+	... 14 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </dependencies> must match start tag name <dependency> from line 59 (position: TEXT seen ...<dependency>\n\t</dependencies>... @60:17) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2090)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1361)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1319)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1305)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1350)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2239)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3872)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:112)
+	... 16 common frames omitted
+2022-06-23 17:32:58,499 [Worker-627: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-06-23 17:33:12,512 [Worker-622: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.compass:ms-order:0.0.1-SNAPSHOT @ C:\temp\ws-sts\shop-style\ms-order\pom.xml.
+2022-06-23 17:33:13,161 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:33:13,161 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:33:13,162 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:33:13,164 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:33:13,165 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:33:13,165 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:33:13,165 [Worker-622: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:33:14,646 [Worker-631: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:33:14,646 [Worker-631: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:33:14,647 [Worker-631: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:33:14,651 [Worker-631: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:33:14,652 [Worker-631: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:33:14,652 [Worker-631: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:33:14,652 [Worker-631: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:44:24,734 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-06-23 17:46:57,605 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:46:57,605 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:46:57,612 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:46:57,632 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:46:57,634 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:46:57,634 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:46:57,634 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:47:18,504 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:47:18,504 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:47:18,507 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:47:18,516 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:47:18,518 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:47:18,519 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:47:18,519 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:47:43,503 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:47:43,504 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:47:43,506 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:47:43,524 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:47:43,534 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:47:43,534 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:47:43,552 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:48:15,429 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:48:15,429 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:48:15,430 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:48:15,439 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:48:15,451 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:48:15,451 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:48:15,451 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:50:35,482 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:50:35,483 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:50:35,489 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:50:35,502 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:50:35,509 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:50:35,509 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:50:35,509 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:50:47,556 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:50:47,556 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:50:47,558 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:50:47,572 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:50:47,574 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:50:47,574 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:50:47,575 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:50:58,149 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:50:58,150 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:50:58,152 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:50:58,168 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:50:58,170 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:50:58,172 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:50:58,173 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\temp\ws-sts\shop-style\ms-order\src\test\resources
+2022-06-23 17:51:08,172 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-23 17:51:08,172 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-23 17:51:08,173 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-23 17:51:08,181 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-23 17:51:08,193 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
