@@ -14,6 +14,7 @@ import br.com.compass.mscatalog.entity.Category;
 import br.com.compass.mscatalog.entity.Product;
 import br.com.compass.mscatalog.repository.CategoryRepository;
 import br.com.compass.mscatalog.repository.ProductRepository;
+import br.com.compass.mscatalog.service.exception.CategoryNotValidException;
 import br.com.compass.mscatalog.service.exception.ObjectNotFoundException;
 
 @Service
@@ -23,59 +24,57 @@ public class ProductService {
 	private ProductRepository productRepository;
 	
 	@Autowired
-	private SequenceGeneratorService seqService;
-	
-	@Autowired
 	private CategoryRepository categoryRepository;
 	
 	public List<ProductDto> findAll() {
 		return productRepository.findAll().stream().map(ProductDto::new).collect(Collectors.toList());
 	}
 	
+	public ProductDto findById(Long id) {
+		return new ProductDto(productRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Product ID: " + id + " not found.")));
+	}
+	
 	public ProductDto save(@Valid ProductFormDto productFormDto) {
+		
+		Category category = categoryRepository.findById(productFormDto.getCategoryId()).orElseThrow(
+				() -> new ObjectNotFoundException("Category ID: " + productFormDto.getCategoryId() + " not found."));
 		Product product = new Product();
-		product.setId(seqService.getSequenceNumber(Product.SEQUENCE_NAME));
 		product.setName(productFormDto.getName());
 		product.setDescription(productFormDto.getDescription());
 		product.setActive(productFormDto.getActive());
-		for(Long idCategory : productFormDto.getCategory_ids()) {
-			Category findCategory = categoryRepository.findById(idCategory).orElseThrow(
-					() -> new ObjectNotFoundException("Category ID: " + idCategory + " not found."));
-			if(findCategory.getActive()) {
-				findCategory.addProducts(product);
-				categoryRepository.save(findCategory);
-			}
-		}
-		return new ProductDto(productRepository.save(product));
-	}
+		product.setBrand(productFormDto.getBrand());
+		product.setMaterial(productFormDto.getMaterial());
 
-	public ProductDto findById(Long id) {
-		return new ProductDto( 
-				productRepository.findById(id).orElseThrow(
-				() -> new ObjectNotFoundException("Product ID: " + id + " not found."))
-			);
+		if(category.getActive() && category.getChildren().isEmpty()) {
+			product.setCategory(category);
+			return new ProductDto(productRepository.save(product));
+		} else {
+			throw new CategoryNotValidException("Não é possível incluir produto nesta categoria.");
+		}
+	}
+	
+	public ProductDto update(Long id, @Valid ProductFormDto productFormDto) {
+		Product product = productRepository.findById(id).orElseThrow(
+				() -> new ObjectNotFoundException("Product ID: " + id + " not found."));
+		Category category = categoryRepository.findById(productFormDto.getCategoryId()).orElseThrow(
+				() -> new ObjectNotFoundException("Category ID: " + productFormDto.getCategoryId() + " not found."));
+		product.setName(productFormDto.getName());
+		product.setDescription(productFormDto.getDescription());
+		product.setActive(productFormDto.getActive());
+		product.setBrand(productFormDto.getBrand());
+		product.setMaterial(productFormDto.getMaterial());
+		
+		if(category.getActive() && category.getChildren().isEmpty()) {
+			product.setCategory(category);
+			return new ProductDto(productRepository.save(product));
+		} else {
+			throw new CategoryNotValidException("Não é possível incluir produto nesta categoria.");
+		}
 	}
 
 	public void deleteById(Long id) {
 		findById(id);
 		productRepository.deleteById(id);
 	}
-
-	public ProductDto update(Long id, @Valid ProductFormDto productFormDto) {
-		Product product = productRepository.findById(id).orElseThrow(
-				() -> new ObjectNotFoundException("Product ID: " + id + " not found."));
-		product.setName(productFormDto.getName());
-		product.setDescription(productFormDto.getDescription());
-		product.setActive(productFormDto.getActive());
-		
-		for(Long idCategory : productFormDto.getCategory_ids()) {
-			Category findCategory = categoryRepository.findById(idCategory).orElseThrow(
-					() -> new ObjectNotFoundException("Category ID: " + idCategory + " not found."));
-			if(findCategory.getActive()) {			
-				findCategory.addProducts(product);
-				categoryRepository.save(findCategory);
-			}
-		}
-		return new ProductDto(productRepository.save(product));
-	}
 }
+

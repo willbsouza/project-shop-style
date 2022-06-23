@@ -7,6 +7,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,7 +25,7 @@ import br.com.compass.mscatalog.service.CategoryService;
 @RestController
 @RequestMapping("/v1/categories")
 public class CategoryController {
-	
+
 	@Autowired
 	private CategoryService categoryService;
 	
@@ -39,11 +40,13 @@ public class CategoryController {
 	}
 	
 	@PostMapping
+	@Transactional
 	public ResponseEntity<CategoryDto> save(@RequestBody @Valid CategoryFormDto categoryFormDto){
 		return new ResponseEntity<CategoryDto>(categoryService.save(categoryFormDto), HttpStatus.CREATED);
 	}
 	
 	@PutMapping("/{id}")
+	@Transactional
 	public ResponseEntity<CategoryDto> update(@PathVariable Long id, @RequestBody @Valid CategoryFormDto categoryFormDto){
 		return new ResponseEntity<CategoryDto>(categoryService.update(id, categoryFormDto), HttpStatus.OK);
 	}

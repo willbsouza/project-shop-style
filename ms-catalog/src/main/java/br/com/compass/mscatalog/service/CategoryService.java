@@ -20,20 +20,22 @@ public class CategoryService {
 
 	@Autowired
 	private CategoryRepository categoryRepository;
-	
-	@Autowired
-	private SequenceGeneratorService seqService;
 
 	public CategoryDto save(@Valid CategoryFormDto categoryFormDto) {
 		Category category = new Category();
-		category.setId(seqService.getSequenceNumber(Category.SEQUENCE_NAME));
+		Category parentCategory = categoryRepository.findById(categoryFormDto.getParentId()).orElse(null);
 		category.setName(categoryFormDto.getName());
 		category.setActive(categoryFormDto.getActive());
-		return new CategoryDto(categoryRepository.save(category));
+		categoryRepository.save(category);
+		if(parentCategory != null) {
+			category.setParent(parentCategory);
+			parentCategory.addChildren(category);
+		}
+		return new CategoryDto(category);
 	}
 
 	public List<CategoryDto> findAll() {
-		return categoryRepository.findAll().stream().map(CategoryDto::new).collect(Collectors.toList());
+		return categoryRepository.findAll().stream().filter(c -> c.getParent() == null).map(CategoryDto::new).collect(Collectors.toList());
 	}
 
 	public List<ProductDto> findListProductsById(Long id) {

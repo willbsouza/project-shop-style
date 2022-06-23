@@ -11,6 +11,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import br.com.compass.mscatalog.service.exception.CategoryNotValidException;
 import br.com.compass.mscatalog.service.exception.ObjectNotFoundException;
 
 @RestControllerAdvice
@@ -49,5 +50,19 @@ public class ResourceExceptionHandler {
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
 	}	
+	
+	@ExceptionHandler(CategoryNotValidException.class)
+	public ResponseEntity<StandardError> categoryNotValid(CategoryNotValidException e, HttpServletRequest request){
+		
+		StandardError erro = new StandardError();
+		erro.setTimestamp(Instant.now());
+		erro.setStatus(HttpStatus.BAD_REQUEST.value());
+		erro.setError("Categoria inválida.");
+		erro.setMessage(e.getMessage());
+		erro.setPath(request.getRequestURI());
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
+	}
+	
+	
 }
 

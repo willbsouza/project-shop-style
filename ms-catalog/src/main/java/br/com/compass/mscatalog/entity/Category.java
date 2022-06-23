@@ -3,21 +3,24 @@ package br.com.compass.mscatalog.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Transient;
-import org.springframework.data.mongodb.core.mapping.DBRef;
-import org.springframework.data.mongodb.core.mapping.Document;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-@Document
+@Entity
 public class Category {
-	
-	@Transient
-	public static final String SEQUENCE_NAME="category_sequence";
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@NotNull @NotEmpty
@@ -26,8 +29,17 @@ public class Category {
 	@NotNull
 	private Boolean active;
 	
-	@DBRef
-	private List<Product> products = new ArrayList<>();
+	@ManyToOne
+	@JoinColumn(name = "parent_id")
+	@JsonIgnore
+	private Category parent;
+	
+	@OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
+	private List<Category> children = new ArrayList<>();
+	
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
+	@JsonIgnore
+	private List<Product> products;
 	
 	public Long getId() {
 		return id;
@@ -47,11 +59,20 @@ public class Category {
 	public void setActive(Boolean active) {
 		this.active = active;
 	}
-	public List<Product> getProducts() {
-		return products;
+	public Category getParent() {
+		return parent;
+	}
+	public void setParent(Category parent) {
+		this.parent = parent;
+	}
+	public List<Category> getChildren() {
+		return children;
 	}
 	
-	public void addProducts(Product product) {
-		this.products.add(product);
+	public void addChildren(Category category) {
+		this.children.add(category);
 	}
+	public List<Product> getProducts() {
+		return products;
+	}	
 }

@@ -23,7 +23,7 @@ import br.com.compass.mscatalog.service.ProductService;
 @RestController
 @RequestMapping("/v1/products")
 public class ProductController {
-	
+
 	@Autowired
 	private ProductService productService;
 	
