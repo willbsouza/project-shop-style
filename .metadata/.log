@@ -1164,3 +1164,330 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 16:18:06.363
 !MESSAGE executing callback sts4.classpath.yITLISGM SUCCESS [done]
+
+!ENTRY Activator 4 0 2022-06-27 16:36:14.068
+!MESSAGE DebugException: Launch configuration ms-order - MsOrderApplication (1) at file:/C:/temp/ws-sts/shop-style/.metadata/.plugins/org.eclipse.debug.core/.launches/ms-order%20-%20MsOrderApplication%20(1).launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration ms-order - MsOrderApplication (1) at file:/C:/temp/ws-sts/shop-style/.metadata/.plugins/org.eclipse.debug.core/.launches/ms-order%20-%20MsOrderApplication%20(1).launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:439)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProjectName(AbstractBootLaunchConfigurationDelegate.java:316)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProject(AbstractBootLaunchConfigurationDelegate.java:301)
+	at org.springframework.ide.eclipse.boot.dash.model.LaunchConfDashElement.getProject(LaunchConfDashElement.java:68)
+	at org.springframework.ide.eclipse.boot.dash.model.LaunchConfDashElement.getParent(LaunchConfDashElement.java:89)
+	at org.springframework.ide.eclipse.boot.dash.model.LaunchConfDashElement.getParent(LaunchConfDashElement.java:1)
+	at org.springframework.ide.eclipse.boot.dash.views.sections.BootDashTreeContentProvider.getParent(BootDashTreeContentProvider.java:68)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getParentElement(AbstractTreeViewer.java:1768)
+	at org.eclipse.jface.viewers.TreeViewer.getParentElement(TreeViewer.java:573)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1696)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setSelectionToWidget(AbstractTreeViewer.java:2575)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setSelectionToWidget(AbstractTreeViewer.java:3036)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1405)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:365)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1359)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1482)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:538)
+	at org.springframework.ide.eclipse.boot.dash.views.sections.BootDashUnifiedTreeSection$3$1.run(BootDashUnifiedTreeSection.java:208)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-06-27 16:36:14.069
+!MESSAGE Launch configuration ms-order - MsOrderApplication (1) at file:/C:/temp/ws-sts/shop-style/.metadata/.plugins/org.eclipse.debug.core/.launches/ms-order%20-%20MsOrderApplication%20(1).launch does not exist.
+
+!ENTRY Activator 4 0 2022-06-27 16:36:14.589
+!MESSAGE DebugException: Launch configuration ms-order - MsOrderApplication (1) at file:/C:/temp/ws-sts/shop-style/.metadata/.plugins/org.eclipse.debug.core/.launches/ms-order%20-%20MsOrderApplication%20(1).launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration ms-order - MsOrderApplication (1) at file:/C:/temp/ws-sts/shop-style/.metadata/.plugins/org.eclipse.debug.core/.launches/ms-order%20-%20MsOrderApplication%20(1).launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:414)
+	at org.springframework.ide.eclipse.boot.launch.devtools.BootDevtoolsClientLaunchConfigurationDelegate.isManaged(BootDevtoolsClientLaunchConfigurationDelegate.java:281)
+	at org.springframework.ide.eclipse.boot.dash.devtools.DevtoolsUtil$1.deleteConf(DevtoolsUtil.java:283)
+	at org.springframework.ide.eclipse.boot.dash.devtools.DevtoolsUtil$1.processTerminated(DevtoolsUtil.java:278)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.processTerminated(ProcessTracker.java:112)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.handleDebugEvent(ProcessTracker.java:78)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker$1.handleDebugEvents(ProcessTracker.java:48)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-06-27 16:36:14.589
+!MESSAGE Launch configuration ms-order - MsOrderApplication (1) at file:/C:/temp/ws-sts/shop-style/.metadata/.plugins/org.eclipse.debug.core/.launches/ms-order%20-%20MsOrderApplication%20(1).launch does not exist.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:08.948
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:08.959
+!MESSAGE classpath=168 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:08.970
+!MESSAGE buffering callback sts4.classpath.yITLISGM ms-customer false 168
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:08.971
+!MESSAGE executing callback sts4.classpath.yITLISGM 1 batched events
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-27 17:03:10.437
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-openfeign:3.0.6
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:285)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.0.6
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-06-27 17:03:10.437
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.0.6
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-06-27 17:03:10.437
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.0.6
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:10.861
+!MESSAGE executing callback sts4.classpath.yITLISGM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:19.211
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:19.221
+!MESSAGE classpath=168 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:19.233
+!MESSAGE buffering callback sts4.classpath.yITLISGM ms-customer false 168
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:19.234
+!MESSAGE executing callback sts4.classpath.yITLISGM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:19.277
+!MESSAGE executing callback sts4.classpath.yITLISGM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:38.089
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:38.103
+!MESSAGE classpath=165 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:38.117
+!MESSAGE buffering callback sts4.classpath.yITLISGM ms-payment false 165
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:38.118
+!MESSAGE executing callback sts4.classpath.yITLISGM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:03:38.182
+!MESSAGE executing callback sts4.classpath.yITLISGM SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-06-27 17:03:40.606
+!MESSAGE Could not download javadoc for org.springframework.cloud:spring-cloud-starter-openfeign:3.0.6
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.0.6
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.0.6
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-06-27 17:03:40.607
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.0.6
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-06-27 17:03:40.607
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.0.6
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:07.714
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:07.730
+!MESSAGE classpath=147 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:07.746
+!MESSAGE buffering callback sts4.classpath.yITLISGM ms-order false 147
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:07.749
+!MESSAGE executing callback sts4.classpath.yITLISGM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:07.853
+!MESSAGE executing callback sts4.classpath.yITLISGM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:26.209
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:26.223
+!MESSAGE classpath=165 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:26.234
+!MESSAGE buffering callback sts4.classpath.yITLISGM ms-catalog false 165
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:26.235
+!MESSAGE executing callback sts4.classpath.yITLISGM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:26.295
+!MESSAGE executing callback sts4.classpath.yITLISGM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:40.281
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.yITLISGM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:40.283
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.yITLISGM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:40.284
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:04:40.285
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.yITLISGM => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:18.709
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:18.710
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@684b78eb[org.springframework.tooling.boot.ls:1.33.0.202204250653(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:18.711
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.061
+!MESSAGE Boot LS startup time from start to initialized: 3348ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.183
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vcBCyjLiisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.184
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.186
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.187
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.190
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.191
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vcBCyjLi => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.199
+!MESSAGE classpath=147 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.211
+!MESSAGE buffering callback sts4.classpath.vcBCyjLi ms-order false 147
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.212
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.220
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.229
+!MESSAGE buffering callback sts4.classpath.vcBCyjLi config-server false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.231
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.251
+!MESSAGE classpath=131 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.259
+!MESSAGE buffering callback sts4.classpath.vcBCyjLi eureka-server false 131
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.260
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.282
+!MESSAGE classpath=165 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.299
+!MESSAGE buffering callback sts4.classpath.vcBCyjLi ms-catalog false 165
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.300
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.315
+!MESSAGE classpath=168 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.329
+!MESSAGE buffering callback sts4.classpath.vcBCyjLi ms-customer false 168
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.330
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.344
+!MESSAGE classpath=165 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.352
+!MESSAGE buffering callback sts4.classpath.vcBCyjLi ms-payment false 165
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:22.353
+!MESSAGE executing callback sts4.classpath.vcBCyjLi 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-27 17:08:23.048
+!MESSAGE executing callback sts4.classpath.vcBCyjLi SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-06-27 17:13:02.098
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-06-27 17:17:08.681
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
