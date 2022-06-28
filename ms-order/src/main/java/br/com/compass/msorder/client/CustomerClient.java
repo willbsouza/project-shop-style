@@ -5,12 +5,16 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import br.com.compass.msorder.client.dto.CustomerDto;
+import br.com.compass.msorder.client.dto.Address;
+import br.com.compass.msorder.client.dto.Customer;
 
 @Component
 @FeignClient("customer")
 public interface CustomerClient {
 
 	@RequestMapping("/v1/customers/{id}")
-	CustomerDto getCustomer(@PathVariable Long id);
+	Customer getCustomer(@PathVariable Long id);
+	
+	@RequestMapping("/v1/addresses/{id}")
+	Address getAddress(@PathVariable Long id);
 }

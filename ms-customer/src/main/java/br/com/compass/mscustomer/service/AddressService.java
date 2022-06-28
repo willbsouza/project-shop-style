@@ -58,4 +58,9 @@ public class AddressService {
 				() -> new ObjectNotFoundException("Address Id: " + id + " not found."));
 		addressRepository.deleteById(id);
 	}
+
+	public AddressDto findById(Long id) {
+		return new AddressDto(addressRepository.findById(id).orElseThrow(
+				() -> new ObjectNotFoundException("Address Id: " + id + " not found.")));
+	}
 }

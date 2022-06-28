@@ -62,7 +62,6 @@ public class SkuService {
 				() -> new ObjectNotFoundException("Sku ID : "+ id + " not found."));
 		sku.setProduct(product);
 		sku.setColor(skuFormDto.getColor());
-		sku.setColor(skuFormDto.getColor());
 		sku.setPrice(skuFormDto.getPrice());
 		sku.setQuantity(skuFormDto.getQuantity());
 		sku.setSize(skuFormDto.getSize());	

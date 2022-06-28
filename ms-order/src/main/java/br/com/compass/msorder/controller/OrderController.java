@@ -1,11 +1,22 @@
 package br.com.compass.msorder.controller;
 
+import java.time.LocalDate;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.compass.msorder.entity.dto.OrderDto;
+import br.com.compass.msorder.entity.dto.OrderFormDto;
+import br.com.compass.msorder.enums.Status;
 import br.com.compass.msorder.service.OrderService;
 
 @RestController
@@ -14,20 +25,20 @@ public class OrderController {
 	
 	@Autowired
 	private OrderService orderService;
-	
-	@GetMapping("/customer/{id}")
-	public void testControllerCustomer(@PathVariable Long id) {
-		orderService.getCustomer(id);
+		
+	@GetMapping
+	public ResponseEntity<List<OrderDto>> findAll(){
+		return new ResponseEntity<List<OrderDto>>(orderService.findAll(), HttpStatus.OK);
 	}
 	
-	@GetMapping("/payment/{id}")
-	public void testControllerPayment(@PathVariable Long id) {
-		orderService.getPayment(id);
+	@GetMapping("/customers/{id}")
+	public ResponseEntity<List<OrderDto>> findByCustomerId(@PathVariable Long id, @RequestParam(required = false) LocalDate startDate, 
+			@RequestParam(required = false) LocalDate endDate, @RequestParam(required = false) Status status){
+		return new ResponseEntity<List<OrderDto>>(orderService.findByCustomerId(id, startDate, endDate, status), HttpStatus.OK);
 	}
 	
-	@GetMapping("/sku/{id}")
-	public void testControllerSku(@PathVariable Long id) {
-		orderService.getCatalog(id);
+	@PostMapping
+	public ResponseEntity<OrderDto> save(@RequestBody OrderFormDto orderFormDto){
+		return new ResponseEntity<OrderDto>(orderService.save(orderFormDto), HttpStatus.CREATED);
 	}
-	
 }

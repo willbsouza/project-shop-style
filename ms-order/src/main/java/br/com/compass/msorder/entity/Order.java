@@ -1,13 +1,18 @@
 package br.com.compass.msorder.entity;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import br.com.compass.msorder.client.dto.CartDto;
-import br.com.compass.msorder.client.dto.CustomerDto;
-import br.com.compass.msorder.client.dto.PaymentDto;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import br.com.compass.msorder.client.dto.Address;
+import br.com.compass.msorder.client.dto.Customer;
+import br.com.compass.msorder.client.dto.Installment;
+import br.com.compass.msorder.client.dto.Payment;
+import br.com.compass.msorder.client.dto.Sku;
 import br.com.compass.msorder.enums.Status;
 
 @Document
@@ -16,17 +21,18 @@ public class Order {
 	@Id
 	private String id;
 	
-	private CustomerDto customer;
+	private Customer customer;
+	private Address address;
+	private Payment payment;
+	private Installment installment;
+	private List<Sku> cart;
 	
-	private PaymentDto payment;
-	
-	private CartDto cart;
-	
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate date;
-	
 	private Status status;
-	
 	private Double total;
+	
+	public Order() {}
 
 	public String getId() {
 		return id;
@@ -36,27 +42,43 @@ public class Order {
 		this.id = id;
 	}
 
-	public CustomerDto getCustomer() {
+	public Customer getCustomer() {
 		return customer;
 	}
 
-	public void setCustomer(CustomerDto customer) {
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public void setCustomer(Customer customer) {
 		this.customer = customer;
 	}
 
-	public PaymentDto getPayment() {
+	public Payment getPayment() {
 		return payment;
 	}
 
-	public void setPayment(PaymentDto payment) {
+	public void setPayment(Payment payment) {
 		this.payment = payment;
 	}
+	
+	public Installment getInstallment() {
+		return installment;
+	}
 
-	public CartDto getCart() {
+	public void setInstallment(Installment installment) {
+		this.installment = installment;
+	}
+
+	public List<Sku> getCart() {
 		return cart;
 	}
 
-	public void setCart(CartDto cart) {
+	public void setCart(List<Sku> cart) {
 		this.cart = cart;
 	}
 
