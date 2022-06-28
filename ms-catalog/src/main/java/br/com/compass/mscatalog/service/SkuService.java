@@ -81,4 +81,9 @@ public class SkuService {
 				() -> new ObjectNotFoundException("Sku ID : "+ id + " not found."));
 		skuRepository.deleteById(id);
 	}
+
+	public SkuDto findById(Long id) {
+		return new SkuDto(skuRepository.findById(id).orElseThrow(
+				() -> new ObjectNotFoundException("Sku ID : "+ id + " not found.")));
+	}
 }

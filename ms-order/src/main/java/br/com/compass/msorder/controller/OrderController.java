@@ -15,9 +15,19 @@ public class OrderController {
 	@Autowired
 	private OrderService orderService;
 	
-	@GetMapping("/{id}")
-	public void testController(@PathVariable Long id) {
+	@GetMapping("/customer/{id}")
+	public void testControllerCustomer(@PathVariable Long id) {
 		orderService.getCustomer(id);
+	}
+	
+	@GetMapping("/payment/{id}")
+	public void testControllerPayment(@PathVariable Long id) {
+		orderService.getPayment(id);
+	}
+	
+	@GetMapping("/sku/{id}")
+	public void testControllerSku(@PathVariable Long id) {
+		orderService.getCatalog(id);
 	}
 	
 }

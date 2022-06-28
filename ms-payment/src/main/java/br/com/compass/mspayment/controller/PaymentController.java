@@ -33,6 +33,11 @@ public class PaymentController {
 		return new ResponseEntity<List<PaymentDto>>(paymentService.findAll(), HttpStatus.OK);
 	}
 	
+	@GetMapping("/{id}")
+	public ResponseEntity<PaymentDto> findById(@PathVariable Long id) {
+		return new ResponseEntity<PaymentDto>(paymentService.findById(id), HttpStatus.OK);
+	}
+	
 	@PostMapping
 	@Transactional
 	public ResponseEntity<PaymentDto> save(@RequestBody @Valid PaymentFormDto paymentFormDto){

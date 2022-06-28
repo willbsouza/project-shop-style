@@ -41,4 +41,8 @@ public class PaymentService {
 		paymentRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Payment Id: " + id + " not found."));
 		paymentRepository.deleteById(id);
 	}
+
+	public PaymentDto findById(Long id) {
+		return new PaymentDto(paymentRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Payment Id: " + id + " not found.")));
+	}
 }
