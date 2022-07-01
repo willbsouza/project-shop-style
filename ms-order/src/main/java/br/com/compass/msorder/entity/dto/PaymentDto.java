@@ -1,7 +1,10 @@
 package br.com.compass.msorder.entity.dto;
 
-public class PaymentDto {
+import java.io.Serializable;
 
+public class PaymentDto implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
 	private Long id;
 	private Integer installments;
 	

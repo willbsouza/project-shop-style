@@ -17,7 +17,7 @@ import br.com.compass.msorder.enums.Status;
 
 @Document
 public class Order {
-
+	
 	@Id
 	private String id;
 	

@@ -12,7 +12,7 @@ import br.com.compass.msorder.entity.Order;
 import br.com.compass.msorder.enums.Status;
 
 public class OrderDto {
-
+	
 	private String id;	
 	private Customer customer;
 	private List<Sku> cart;
