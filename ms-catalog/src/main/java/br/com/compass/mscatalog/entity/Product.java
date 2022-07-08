@@ -1,5 +1,6 @@
 package br.com.compass.mscatalog.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -14,7 +15,15 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import br.com.compass.mscatalog.dto.ProductFormDto;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
 public class Product {
 
 	@Id
@@ -37,77 +46,19 @@ public class Product {
 
 	@OneToMany(mappedBy = "product")
 	@JsonIgnore
-	private List<Sku> skus;
+	private List<Sku> skus = new ArrayList<>();
 	
 	@ManyToOne
 	@JoinColumn(name = "category_id")
 	@NotNull
 	private Category category;
 	
-	public Product() {}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public String getBrand() {
-		return brand;
-	}
-
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
-
-	public String getMaterial() {
-		return material;
-	}
-
-	public void setMaterial(String material) {
-		this.material = material;
-	}
-
-	public Boolean getActive() {
-		return active;
-	}
-
-	public void setActive(Boolean active) {
-		this.active = active;
-	}
-
-	public List<Sku> getSkus() {
-		return skus;
-	}
-
-	public Category getCategory() {
-		return category;
-	}
-
-	public void setCategory(Category category) {
+	public Product(ProductFormDto productFormDto, Category category) {
+		this.name = productFormDto.getName();
+		this.description = productFormDto.getDescription();
+		this.brand = productFormDto.getBrand();
+		this.material = productFormDto.getMaterial();
+		this.active = productFormDto.getActive();
 		this.category = category;
 	}
-	
-	
-
-
 }
-

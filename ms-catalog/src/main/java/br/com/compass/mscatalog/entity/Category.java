@@ -16,7 +16,15 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import br.com.compass.mscatalog.dto.CategoryFormDto;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
 public class Category {
 
 	@Id
@@ -41,38 +49,13 @@ public class Category {
 	@JsonIgnore
 	private List<Product> products;
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public Boolean getActive() {
-		return active;
-	}
-	public void setActive(Boolean active) {
-		this.active = active;
-	}
-	public Category getParent() {
-		return parent;
-	}
-	public void setParent(Category parent) {
-		this.parent = parent;
-	}
-	public List<Category> getChildren() {
-		return children;
+	public Category(CategoryFormDto categoryDto, Category parentCategory) {
+		this.name = categoryDto.getName();
+		this.active = categoryDto.getActive();
+		this.parent = parentCategory;
 	}
 	
 	public void addChildren(Category category) {
 		this.children.add(category);
 	}
-	public List<Product> getProducts() {
-		return products;
-	}	
 }

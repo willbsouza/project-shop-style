@@ -17,8 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.compass.msorder.entity.dto.OrderDto;
 import br.com.compass.msorder.entity.dto.OrderFormDto;
 import br.com.compass.msorder.enums.Status;
-import br.com.compass.msorder.rabbitmq.consts.RabbitMQConsts;
-import br.com.compass.msorder.rabbitmq.service.RabbitMQService;
 import br.com.compass.msorder.service.OrderService;
 
 @RestController
@@ -27,9 +25,6 @@ public class OrderController {
 	
 	@Autowired
 	private OrderService orderService;
-	
-	@Autowired
-	private RabbitMQService rabbitMQService;
 		
 	@GetMapping
 	public ResponseEntity<List<OrderDto>> findAll(){
@@ -44,7 +39,6 @@ public class OrderController {
 	
 	@PostMapping
 	public ResponseEntity<OrderDto> save(@RequestBody OrderFormDto orderFormDto){
-		this.rabbitMQService.sendMessage(RabbitMQConsts.QUEUE_STOCK, orderFormDto.getCustomer().getAddressId());
 		return new ResponseEntity<OrderDto>(orderService.save(orderFormDto), HttpStatus.CREATED);
 	}
 }

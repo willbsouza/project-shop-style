@@ -14,8 +14,14 @@ import br.com.compass.msorder.client.dto.Installment;
 import br.com.compass.msorder.client.dto.Payment;
 import br.com.compass.msorder.client.dto.Sku;
 import br.com.compass.msorder.enums.Status;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Document
+@Getter
+@Setter
+@NoArgsConstructor
 public class Order {
 	
 	@Id
@@ -31,78 +37,4 @@ public class Order {
 	private LocalDate date;
 	private Status status;
 	private Double total;
-	
-	public Order() {}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public Customer getCustomer() {
-		return customer;
-	}
-
-	public Address getAddress() {
-		return address;
-	}
-
-	public void setAddress(Address address) {
-		this.address = address;
-	}
-
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
-	}
-
-	public Payment getPayment() {
-		return payment;
-	}
-
-	public void setPayment(Payment payment) {
-		this.payment = payment;
-	}
-	
-	public Installment getInstallment() {
-		return installment;
-	}
-
-	public void setInstallment(Installment installment) {
-		this.installment = installment;
-	}
-
-	public List<Sku> getCart() {
-		return cart;
-	}
-
-	public void setCart(List<Sku> cart) {
-		this.cart = cart;
-	}
-
-	public LocalDate getDate() {
-		return date;
-	}
-
-	public void setDate(LocalDate date) {
-		this.date = date;
-	}
-
-	public Status getStatus() {
-		return status;
-	}
-
-	public void setStatus(Status status) {
-		this.status = status;
-	}
-
-	public Double getTotal() {
-		return total;
-	}
-
-	public void setTotal(Double total) {
-		this.total = total;
-	}
 }

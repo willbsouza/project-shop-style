@@ -6,7 +6,9 @@ import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import br.com.compass.msorder.rabbitmq.consts.RabbitMQConsts;
@@ -16,6 +18,11 @@ public class RabbitMQConnection {
 
 	private static final String EXCHANGE_NAME = "amq.direct";
 	
+	@Bean
+    public Jackson2JsonMessageConverter producerJackson2MessageConverter() {
+        return new Jackson2JsonMessageConverter();
+    }
+	
 	@Autowired
 	private AmqpAdmin ampAdmin;
 	
@@ -23,26 +30,26 @@ public class RabbitMQConnection {
 		return new Queue(queueName, true, false, false);
 	}
 	
-	private DirectExchange directChange() {
+	private DirectExchange directExchange() {
 		return new DirectExchange(EXCHANGE_NAME);
 	}
 	
-	private Binding relationship(Queue queue, DirectExchange change) {
-		return new Binding(queue.getName(),Binding.DestinationType.QUEUE, change.getName(), queue.getName(), null);
+	private Binding relate(Queue queue, DirectExchange exchange) {
+		return new Binding(queue.getName(),Binding.DestinationType.QUEUE, exchange.getName(), queue.getName(), null);
 	}
 	
 	@PostConstruct
 	private void add() {
 		Queue queueStock = this.queue(RabbitMQConsts.QUEUE_STOCK);
 		
-		DirectExchange change = this.directChange();
+		DirectExchange exchange = this.directExchange();
 		
-		Binding callStock = this.relationship(queueStock, change);
+		Binding relate = this.relate(queueStock, exchange);
 		
 		this.ampAdmin.declareQueue(queueStock);
 		
-		this.ampAdmin.declareExchange(change);
+		this.ampAdmin.declareExchange(exchange);
 		
-		this.ampAdmin.declareBinding(callStock);
+		this.ampAdmin.declareBinding(relate);
 	}
 }

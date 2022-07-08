@@ -1,10 +1,14 @@
 package br.com.compass.mscatalog.dto;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import br.com.compass.mscatalog.entity.Product;
-import br.com.compass.mscatalog.entity.Sku;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@Getter
+@NoArgsConstructor
 public class ProductDto {
 
 	private Long id;
@@ -13,9 +17,7 @@ public class ProductDto {
 	private String brand;
 	private String material;
 	private Boolean active;
-	private List<Sku> skus;
-	
-	public ProductDto() {}
+	private List<SkuDto> skus;
 	
 	public ProductDto(Product product) {
 		this.id = product.getId();
@@ -24,46 +26,6 @@ public class ProductDto {
 		this.brand = product.getBrand();
 		this.material = product.getMaterial();
 		this.active = product.getActive();
-		this.skus = product.getSkus();
+		this.skus = product.getSkus().stream().map(SkuDto::new).collect(Collectors.toList());
 	}
-	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
-	public String getBrand() {
-		return brand;
-	}
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
-	public String getMaterial() {
-		return material;
-	}
-	public void setMaterial(String material) {
-		this.material = material;
-	}
-	public Boolean getActive() {
-		return active;
-	}
-	public void setActive(Boolean active) {
-		this.active = active;
-	}
-	public List<Sku> getSkus() {
-		return skus;
-	}	
 }

@@ -13,7 +13,11 @@ import org.hibernate.validator.constraints.br.CPF;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import br.com.compass.mscustomer.entity.enums.Sex;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@Getter
+@NoArgsConstructor
 public class CustomerFormDto {
 
 	@NotNull
@@ -47,35 +51,5 @@ public class CustomerFormDto {
 	@NotNull
 	private Boolean active;
 
-	public String getFirstName() {
-		return firstName;
-	}
 
-	public String getLastName() {
-		return lastName;
-	}
-
-	public Sex getSex() {
-		return sex;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
-	public LocalDate getBirthdate() {
-		return birthdate;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public Boolean getActive() {
-		return active;
-	}
 }

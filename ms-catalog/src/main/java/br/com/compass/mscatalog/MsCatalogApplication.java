@@ -12,5 +12,4 @@ public class MsCatalogApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MsCatalogApplication.class, args);
 	}
-
 }

@@ -16,7 +16,15 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import br.com.compass.mscatalog.dto.SkuFormDto;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
 public class Sku {
 	
 	@Id
@@ -51,57 +59,16 @@ public class Sku {
 	@NotNull @NotEmpty
 	private List<Media> images = new ArrayList<>();
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getColor() {
-		return color;
-	}
-	public void setColor(String color) {
-		this.color = color;
-	}
-	public String getSize() {
-		return size;
-	}
-	public void setSize(String size) {
-		this.size = size;
-	}
-	public Double getPrice() {
-		return price;
-	}
-	public void setPrice(Double price) {
-		this.price = price;
-	}
-	public Integer getQuantity() {
-		return quantity;
-	}
-	public void setQuantity(Integer quantity) {
-		this.quantity = quantity;
-	}
-	public Product getProduct() {
-		return product;
-	}
-	public void setProduct(Product product) {
+	public Sku(SkuFormDto skuFormDto, Product product) {
+		this.price = skuFormDto.getPrice();
+		this.quantity = skuFormDto.getQuantity();
+		this.color = skuFormDto.getColor();
+		this.size = skuFormDto.getSize();
+		this.height = skuFormDto.getHeight();
+		this.width = skuFormDto.getWidth();
 		this.product = product;
 	}
-	public Integer getHeight() {
-		return height;
-	}
-	public void setHeight(Integer height) {
-		this.height = height;
-	}
-	public Integer getWidth() {
-		return width;
-	}
-	public void setWidth(Integer width) {
-		this.width = width;
-	}
-	public List<Media> getImages() {
-		return images;
-	}
+	
 	public void addImages(Media media) {
 		this.images.add(media);
 	}

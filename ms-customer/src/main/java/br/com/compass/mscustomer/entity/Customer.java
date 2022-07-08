@@ -24,9 +24,15 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import br.com.compass.mscustomer.dto.CustomerFormDto;
 import br.com.compass.mscustomer.entity.enums.Sex;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "customer")
+@Setter
+@Getter
+@NoArgsConstructor
 public class Customer {
 	
 	@Id
@@ -67,8 +73,6 @@ public class Customer {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "customer")
 	private List<Address> addresses;
 	
-	public Customer() {}
-	
 	public Customer(CustomerFormDto customerFormDto) {
 		this.firstName = customerFormDto.getFirstName();
 		this.lastName = customerFormDto.getLastName();
@@ -78,81 +82,5 @@ public class Customer {
 		this.email = customerFormDto.getEmail();
 		this.password = new BCryptPasswordEncoder().encode(customerFormDto.getPassword());
 		this.active = customerFormDto.getActive();
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public Sex getSex() {
-		return sex;
-	}
-
-	public void setSex(Sex sex) {
-		this.sex = sex;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-
-	public LocalDate getBirthdate() {
-		return birthdate;
-	}
-
-	public void setBirthdate(LocalDate birthdate) {
-		this.birthdate = birthdate;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = new BCryptPasswordEncoder().encode(password);
-	}
-
-	public Boolean getActive() {
-		return active;
-	}
-
-	public void setActive(Boolean active) {
-		this.active = active;
-	}
-
-	public List<Address> getAddresses() {
-		return addresses;
 	}
 }

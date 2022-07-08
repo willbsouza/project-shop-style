@@ -2,25 +2,15 @@ package br.com.compass.msorder.entity.dto;
 
 import java.io.Serializable;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
 public class CartDto implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private Long skuId;
 	private Integer quantity;
-	
-	public Long getSkuId() {
-		return skuId;
-	}
-	
-	public void setSkuId(Long skuId) {
-		this.skuId = skuId;
-	}
-	
-	public Integer getQuantity() {
-		return quantity;
-	}
-	
-	public void setQuantity(Integer quantity) {
-		this.quantity = quantity;
-	}
 }
+

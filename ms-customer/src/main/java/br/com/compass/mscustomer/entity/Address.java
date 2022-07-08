@@ -14,11 +14,18 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import br.com.compass.mscustomer.dto.AddressFormDto;
 import br.com.compass.mscustomer.entity.enums.State;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 
 @Entity
 @Table(name = "address")
+@Setter
+@Getter
+@NoArgsConstructor
 public class Address {
 
 	@Id
@@ -50,77 +57,15 @@ public class Address {
 	@JoinColumn(name = "customer_id")
 	@JsonIgnore
 	private Customer customer;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public State getState() {
-		return state;
-	}
-
-	public void setState(State state) {
-		this.state = state;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getDistrict() {
-		return district;
-	}
-
-	public void setDistrict(String district) {
-		this.district = district;
-	}
-
-	public String getStreet() {
-		return street;
-	}
-
-	public void setStreet(String street) {
-		this.street = street;
-	}
-
-	public String getNumber() {
-		return number;
-	}
-
-	public void setNumber(String number) {
-		this.number = number;
-	}
-
-	public String getComplement() {
-		return complement;
-	}
-
-	public void setComplement(String complement) {
-		this.complement = complement;
-	}
-
-	public String getCep() {
-		return cep;
-	}
-
-	public void setCep(String cep) {
-		this.cep = cep;
-	}
-
-	public Customer getCustomer() {
-		return customer;
-	}
-
-	public void setCustomer(Customer customer) {
+	
+	public Address(AddressFormDto addressFormDto, Customer customer) {
+		this.street = addressFormDto.getStreet();
+		this.number = addressFormDto.getNumber();
+		this.complement = addressFormDto.getComplement();
+		this.district = addressFormDto.getDistrict();
+		this.city = addressFormDto.getCity();
+		this.state = addressFormDto.getState();
+		this.cep = addressFormDto.getCep();
 		this.customer = customer;
 	}
-	
 }

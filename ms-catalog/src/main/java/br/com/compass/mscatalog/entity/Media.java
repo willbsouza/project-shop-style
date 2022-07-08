@@ -10,7 +10,14 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
+@NoArgsConstructor
+@Getter
+@Setter
 public class Media {
 
 	@Id
@@ -24,34 +31,8 @@ public class Media {
 	@JsonIgnore
 	private Sku sku;
 	
-	public Media() {}
-	
 	public Media(@NotNull @NotEmpty String imagemUrl, Sku sku) {
 		this.imagemUrl = imagemUrl;
 		this.sku = sku;
 	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getImagemUrl() {
-		return imagemUrl;
-	}
-
-	public void setImagemUrl(String imagemUrl) {
-		this.imagemUrl = imagemUrl;
-	}
-
-	public Sku getSku() {
-		return sku;
-	}
-
-	public void setSku(Sku sku) {
-		this.sku = sku;
-	}		
 }
