@@ -1,4 +1,4 @@
-package br.com.compass.msorder.client.dto;
+package br.com.compass.msorder.client.entity;
 
 import br.com.compass.msorder.client.enums.State;
 import lombok.Getter;

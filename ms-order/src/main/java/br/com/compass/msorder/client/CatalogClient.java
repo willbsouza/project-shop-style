@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import br.com.compass.msorder.client.dto.Sku;
+import br.com.compass.msorder.client.entity.Sku;
 
 @Component
 @FeignClient("catalog")

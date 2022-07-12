@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import br.com.compass.msorder.client.dto.Address;
-import br.com.compass.msorder.client.dto.Customer;
+import br.com.compass.msorder.client.entity.Address;
+import br.com.compass.msorder.client.entity.Customer;
 
 @Component
 @FeignClient("customer")

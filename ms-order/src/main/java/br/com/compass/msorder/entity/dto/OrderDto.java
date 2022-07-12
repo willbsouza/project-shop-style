@@ -3,11 +3,11 @@ package br.com.compass.msorder.entity.dto;
 import java.time.LocalDate;
 import java.util.List;
 
-import br.com.compass.msorder.client.dto.Address;
-import br.com.compass.msorder.client.dto.Customer;
-import br.com.compass.msorder.client.dto.Installment;
-import br.com.compass.msorder.client.dto.Payment;
-import br.com.compass.msorder.client.dto.Sku;
+import br.com.compass.msorder.client.entity.Address;
+import br.com.compass.msorder.client.entity.Customer;
+import br.com.compass.msorder.client.entity.Installment;
+import br.com.compass.msorder.client.entity.Payment;
+import br.com.compass.msorder.client.entity.Sku;
 import br.com.compass.msorder.entity.Order;
 import br.com.compass.msorder.enums.Status;
 import lombok.Getter;

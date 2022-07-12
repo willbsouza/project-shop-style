@@ -21,18 +21,18 @@ import br.com.compass.mscustomer.dto.CustomerLoginDto;
 import br.com.compass.mscustomer.service.CustomerService;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/v1/customers")
 public class CustomerController {
 	
 	@Autowired
 	private CustomerService customerService;
 
-	@GetMapping("/customers/{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<CustomerDto> findById(@PathVariable Long id) {
 		return new ResponseEntity<CustomerDto>(customerService.findById(id), HttpStatus.OK);
 	}
 	
-	@PostMapping("/customers")
+	@PostMapping
 	@Transactional
 	public ResponseEntity<CustomerDto> save(@RequestBody @Valid CustomerFormDto customerFormDto) {
 		return new ResponseEntity<CustomerDto>(customerService.save(customerFormDto), HttpStatus.CREATED);
@@ -43,13 +43,13 @@ public class CustomerController {
 		return new ResponseEntity<CustomerDto>(customerService.login(customerLoginDto), HttpStatus.ACCEPTED);
 	}
 	
-	@PutMapping("/customers/{id}")
+	@PutMapping("/{id}")
 	@Transactional
 	public ResponseEntity<CustomerDto> update(@RequestBody @Valid CustomerFormDto customerFormDto, @PathVariable Long id) {
 		return new ResponseEntity<CustomerDto>(customerService.updateById(customerFormDto, id), HttpStatus.OK);
 	}
 	
-	@PutMapping("/customers/{id}/password")
+	@PutMapping("/{id}/password")
 	@Transactional
 	public ResponseEntity<CustomerDto> changePassword(@RequestBody @Valid CustomerChangePasswordDto passwordDto, @PathVariable Long id) {
 		return new ResponseEntity<CustomerDto>(customerService.changePassword(passwordDto, id), HttpStatus.ACCEPTED);
