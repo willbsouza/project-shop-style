@@ -17,7 +17,6 @@ import br.com.compass.mscatalog.repository.MediaRepository;
 import br.com.compass.mscatalog.repository.ProductRepository;
 import br.com.compass.mscatalog.repository.SkuRepository;
 import br.com.compass.mscatalog.service.exception.ObjectNotFoundException;
-import br.com.compass.mscatalog.service.exception.QuantityUnavailableException;
 
 @Service
 public class SkuServiceImp implements SkuService{
@@ -71,12 +70,8 @@ public class SkuServiceImp implements SkuService{
 	public SkuDto updateOrderSku(Long id, Integer quantity) {
 		Sku sku = skuRepository.findById(id).orElseThrow(
 				() -> new ObjectNotFoundException("Sku ID : "+ id + " not found."));
-		if(sku.getQuantity() >= quantity) {
-			sku.setQuantity(sku.getQuantity() - quantity);
-			return new SkuDto(skuRepository.save(sku));
-		} else {
-			throw new QuantityUnavailableException("Quantidade indisponível do item de ID: " + id);	
-		}
+		sku.setQuantity(sku.getQuantity() - quantity);
+		return new SkuDto(skuRepository.save(sku));
 	}
 
 	public void deleteById(Long id) {

@@ -1,4 +1,4 @@
-package br.com.compass.mscatalog.service.exception;
+package br.com.compass.msorder.service.exception;
 
 public class QuantityUnavailableException extends RuntimeException{
 	private static final long serialVersionUID = 1L;

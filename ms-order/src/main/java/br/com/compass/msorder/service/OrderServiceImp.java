@@ -26,6 +26,7 @@ import br.com.compass.msorder.entity.dto.OrderFormDto;
 import br.com.compass.msorder.enums.Status;
 import br.com.compass.msorder.rabbitmq.entity.SkuOrder;
 import br.com.compass.msorder.repository.OrderRepository;
+import br.com.compass.msorder.service.exception.QuantityUnavailableException;
 
 @Service
 public class OrderServiceImp implements OrderService {
@@ -60,7 +61,11 @@ public class OrderServiceImp implements OrderService {
 		List<Sku> cart = new ArrayList<>();
 		for (CartDto cartDto : orderFormDto.getCart()) {
 			Sku sku = catalogClient.getSku(cartDto.getSkuId());
-			sku.setQuantity(cartDto.getQuantity());
+			if(sku.getQuantity() >= cartDto.getQuantity()) {
+				sku.setQuantity(cartDto.getQuantity());
+			} else {
+				throw new QuantityUnavailableException("Quantity unavailable Sku ID: " + sku.getId());
+			}
 			cart.add(sku);
 			total += (sku.getPrice() * cartDto.getQuantity());
 		}

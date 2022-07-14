@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import br.com.compass.mscatalog.service.exception.CategoryNotValidException;
 import br.com.compass.mscatalog.service.exception.ObjectNotFoundException;
-import br.com.compass.mscatalog.service.exception.QuantityUnavailableException;
 
 @RestControllerAdvice
 public class ResourceExceptionHandler {
@@ -63,16 +62,4 @@ public class ResourceExceptionHandler {
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
 	}	
-	
-	@ExceptionHandler(QuantityUnavailableException.class)
-	public ResponseEntity<StandardError> invalidFields(QuantityUnavailableException e, HttpServletRequest request){
-		StandardError erro = new StandardError();
-		erro.setTimestamp(Instant.now());
-		erro.setStatus(HttpStatus.BAD_REQUEST.value());
-		erro.setError("Quantity unavailable.");
-		erro.setMessage(e.getMessage());
-		erro.setPath(request.getRequestURI());
-		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
-	}	
 }
-
