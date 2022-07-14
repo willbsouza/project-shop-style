@@ -23,7 +23,9 @@ import br.com.compass.msorder.entity.Order;
 import br.com.compass.msorder.entity.dto.CartDto;
 import br.com.compass.msorder.entity.dto.OrderDto;
 import br.com.compass.msorder.entity.dto.OrderFormDto;
+import br.com.compass.msorder.entity.dto.PaymentDto;
 import br.com.compass.msorder.enums.Status;
+import br.com.compass.msorder.rabbitmq.entity.PaymentOrder;
 import br.com.compass.msorder.rabbitmq.entity.SkuOrder;
 import br.com.compass.msorder.repository.OrderRepository;
 import br.com.compass.msorder.service.exception.QuantityUnavailableException;
@@ -48,6 +50,9 @@ public class OrderServiceImp implements OrderService {
 	
 	@Value("${mq.queues.sku-order}")
 	private String queueSkuOrder;
+	
+	@Value("${mq.queues.payment-order}")
+	private String queuePaymentOrder;
 
 	public OrderDto save(OrderFormDto orderFormDto) {
 		Order order = new Order();
@@ -69,7 +74,6 @@ public class OrderServiceImp implements OrderService {
 			cart.add(sku);
 			total += (sku.getPrice() * cartDto.getQuantity());
 		}
-
 		order.setCustomer(customer);
 		order.setAddress(address);
 		order.setPayment(payment);
@@ -79,12 +83,28 @@ public class OrderServiceImp implements OrderService {
 		order.setStatus(Status.PROCESSING_PAYMENT);
 		order.setTotal(total);
 		
+		orderRepository.save(order);
+		rabbitTemplate.convertAndSend(queueSkuOrder, builderSkuOrder(order));
+		rabbitTemplate.convertAndSend(queuePaymentOrder, builderPaymentOrder(order));
+		return new OrderDto(order);
+	}
+	
+	private PaymentOrder builderPaymentOrder(Order order) {
+		
+		PaymentOrder paymentOrder = new PaymentOrder();
+		PaymentDto paymentDto = new PaymentDto();
+		paymentDto.setId(order.getPayment().getId());
+		paymentDto.setInstallments(order.getInstallment().getAmount());
+		paymentOrder.setOrderId(order.getId());
+		paymentOrder.setPayment(paymentDto);
+		return paymentOrder;
+	}
+
+	private SkuOrder builderSkuOrder(Order order) {
 		SkuOrder skuOrder = new SkuOrder();
 		skuOrder.setOrderId(order.getId());
 		skuOrder.setSkus(order.getCart());
-		
-		rabbitTemplate.convertAndSend(queueSkuOrder, skuOrder);
-		return new OrderDto(orderRepository.save(order));
+		return skuOrder;
 	}
 
 	public List<OrderDto> findAll() {

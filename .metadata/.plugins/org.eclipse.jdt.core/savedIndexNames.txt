@@ -17,7 +17,6 @@ INDEX VERSION 1.131+C:\temp\ws-sts\shop-style\.metadata\.plugins\org.eclipse.jdt
 1396637906.index
 1602775842.index
 270996577.index
-1250847482.index
 773152198.index
 1340170969.index
 3620829913.index
@@ -51,13 +50,10 @@ INDEX VERSION 1.131+C:\temp\ws-sts\shop-style\.metadata\.plugins\org.eclipse.jdt
 3475176863.index
 2965842321.index
 908350592.index
-3429743539.index
 1316684199.index
-3801477768.index
 3547102604.index
 3032180793.index
 785384173.index
-645106697.index
 372001782.index
 3829992092.index
 3322342599.index
@@ -77,7 +73,6 @@ INDEX VERSION 1.131+C:\temp\ws-sts\shop-style\.metadata\.plugins\org.eclipse.jdt
 1138604056.index
 4119285583.index
 2659560493.index
-1815653245.index
 2321474747.index
 4235183336.index
 195496432.index
@@ -180,7 +175,6 @@ INDEX VERSION 1.131+C:\temp\ws-sts\shop-style\.metadata\.plugins\org.eclipse.jdt
 1361896391.index
 1703880894.index
 926430761.index
-2795658351.index
 975644751.index
 1582238238.index
 383560983.index
@@ -204,7 +198,6 @@ INDEX VERSION 1.131+C:\temp\ws-sts\shop-style\.metadata\.plugins\org.eclipse.jdt
 1844305651.index
 1430352310.index
 1208135023.index
-3280667176.index
 2274491169.index
 2467167679.index
 3531138574.index

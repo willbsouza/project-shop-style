@@ -16,10 +16,13 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitMQConfig {
 	
 	@Value("${mq.queues.sku-order}")
-	private String queueName;
+	private String queueSkuOrder;
+	
+	@Value("${mq.queues.payment-order}")
+	private String queuePaymentOrder;
 	
 	@Value("${mq.exchange.sku-order}")
-	private String exchangeSkuOrder;
+	private String exchange;
 	
 	@Autowired
 	private AmqpAdmin ampAdmin;
@@ -34,7 +37,7 @@ public class RabbitMQConfig {
 	}
 	
 	private DirectExchange directExchange() {
-		return new DirectExchange(exchangeSkuOrder);
+		return new DirectExchange(exchange);
 	}
 	
 	private Binding relate(Queue queue, DirectExchange exchange) {
@@ -43,16 +46,20 @@ public class RabbitMQConfig {
 	
 	@PostConstruct
 	private void add() {
-		Queue queueSkuOrder = this.queue(queueName);
+		Queue skuOrderQueue = this.queue(queueSkuOrder);
+		Queue paymentOrderQueue = this.queue(queuePaymentOrder);
 		
 		DirectExchange exchange = this.directExchange();
 		
-		Binding relate = this.relate(queueSkuOrder, exchange);
+		Binding relateSkuOrder = this.relate(skuOrderQueue, exchange);
+		Binding relatePaymentOrder = this.relate(paymentOrderQueue, exchange);
 		
-		this.ampAdmin.declareQueue(queueSkuOrder);
+		this.ampAdmin.declareQueue(skuOrderQueue);
+		this.ampAdmin.declareQueue(paymentOrderQueue);
 		
 		this.ampAdmin.declareExchange(exchange);
 		
-		this.ampAdmin.declareBinding(relate);
+		this.ampAdmin.declareBinding(relateSkuOrder);
+		this.ampAdmin.declareBinding(relatePaymentOrder);
 	}
 }
