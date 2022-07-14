@@ -1,4 +1,4 @@
-package br.com.compass.mspayment.rabbit.entity;
+package br.com.compass.mspayment.rabbit.consumer.entity;
 
 import java.io.Serializable;
 

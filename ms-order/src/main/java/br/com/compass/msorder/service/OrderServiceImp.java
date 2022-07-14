@@ -25,9 +25,11 @@ import br.com.compass.msorder.entity.dto.OrderDto;
 import br.com.compass.msorder.entity.dto.OrderFormDto;
 import br.com.compass.msorder.entity.dto.PaymentDto;
 import br.com.compass.msorder.enums.Status;
+import br.com.compass.msorder.rabbitmq.consumer.entity.PaymentOrderStatus;
 import br.com.compass.msorder.rabbitmq.entity.PaymentOrder;
 import br.com.compass.msorder.rabbitmq.entity.SkuOrder;
 import br.com.compass.msorder.repository.OrderRepository;
+import br.com.compass.msorder.service.exception.ObjectNotFoundException;
 import br.com.compass.msorder.service.exception.QuantityUnavailableException;
 
 @Service
@@ -87,6 +89,13 @@ public class OrderServiceImp implements OrderService {
 		rabbitTemplate.convertAndSend(queueSkuOrder, builderSkuOrder(order));
 		rabbitTemplate.convertAndSend(queuePaymentOrder, builderPaymentOrder(order));
 		return new OrderDto(order);
+	}
+	
+	public OrderDto updateStatusPayment(PaymentOrderStatus paymentOrderStatus) {
+		Order order = orderRepository.findById(paymentOrderStatus.getOrderId()).orElseThrow(
+				() -> new ObjectNotFoundException("Order ID: " + paymentOrderStatus.getOrderId() + " not found."));
+		order.setStatus(paymentOrderStatus.getStatus());
+		return new OrderDto(orderRepository.save(order));
 	}
 	
 	private PaymentOrder builderPaymentOrder(Order order) {
