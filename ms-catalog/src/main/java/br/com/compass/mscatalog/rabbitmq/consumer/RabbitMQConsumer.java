@@ -2,28 +2,29 @@ package br.com.compass.mscatalog.rabbitmq.consumer;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
-import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-import br.com.compass.mscatalog.rabbitmq.consts.RabbitMQConsts;
-import br.com.compass.mscatalog.rabbitmq.dto.CartDto;
-import br.com.compass.mscatalog.service.SkuServiceImp;
+import br.com.compass.mscatalog.rabbitmq.entity.Sku;
+import br.com.compass.mscatalog.rabbitmq.entity.SkuOrder;
+import br.com.compass.mscatalog.service.SkuService;
 
 @Component
 public class RabbitMQConsumer {
 	
 	@Autowired
-	private SkuServiceImp skuService;
+	private SkuService skuService;
 	
 	@Bean
-	public MessageConverter jsonMessageConverter() {
+	public Jackson2JsonMessageConverter producerJackson2MessageConverter() {
 		return new Jackson2JsonMessageConverter();
 	}
 
-	@RabbitListener(queues = RabbitMQConsts.QUEUE_STOCK)
-	private void processMessage(CartDto cartDto) {
-		skuService.updateOrderSku(cartDto.getSkuId(), cartDto.getQuantity());
+	@RabbitListener(queues = "${mq.queues.sku-order}")
+	private void processMessage(SkuOrder skuOrder) {			
+		for(Sku sku : skuOrder.getSkus()) {
+			skuService.updateOrderSku(sku.getId(), sku.getQuantity());
+		}
 	}
 }

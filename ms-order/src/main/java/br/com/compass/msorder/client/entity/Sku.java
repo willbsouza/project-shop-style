@@ -1,13 +1,18 @@
 package br.com.compass.msorder.client.entity;
 
+import java.io.Serializable;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @NoArgsConstructor
-public class Sku {
+@ToString
+public class Sku implements Serializable{
+	private static final long serialVersionUID = 1L;
 
 	private Long id;
 	private Double price;
@@ -16,5 +21,4 @@ public class Sku {
 	private String size;
 	private Integer height;
 	private Integer width;
-
 }

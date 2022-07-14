@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import br.com.compass.msorder.client.CatalogClient;
@@ -23,26 +24,29 @@ import br.com.compass.msorder.entity.dto.CartDto;
 import br.com.compass.msorder.entity.dto.OrderDto;
 import br.com.compass.msorder.entity.dto.OrderFormDto;
 import br.com.compass.msorder.enums.Status;
-import br.com.compass.msorder.rabbitmq.consts.RabbitMQConsts;
+import br.com.compass.msorder.rabbitmq.entity.SkuOrder;
 import br.com.compass.msorder.repository.OrderRepository;
 
 @Service
-public class OrderServiceImp implements OrderService{
-	
+public class OrderServiceImp implements OrderService {
+
 	@Autowired
 	private CustomerClient customerClient;
-	
+
 	@Autowired
 	private PaymentClient paymentClient;
-	
+
 	@Autowired
 	private CatalogClient catalogClient;
-	
+
 	@Autowired
 	private OrderRepository orderRepository;
 	
 	@Autowired
 	private RabbitTemplate rabbitTemplate;
+	
+	@Value("${mq.queues.sku-order}")
+	private String queueSkuOrder;
 
 	public OrderDto save(OrderFormDto orderFormDto) {
 		Order order = new Order();
@@ -54,14 +58,13 @@ public class OrderServiceImp implements OrderService{
 		installment.setPayment(payment);
 		Double total = 0.0;
 		List<Sku> cart = new ArrayList<>();
-		for(CartDto cartDto : orderFormDto.getCart()) {
+		for (CartDto cartDto : orderFormDto.getCart()) {
 			Sku sku = catalogClient.getSku(cartDto.getSkuId());
 			sku.setQuantity(cartDto.getQuantity());
 			cart.add(sku);
 			total += (sku.getPrice() * cartDto.getQuantity());
-			this.rabbitTemplate.convertAndSend(RabbitMQConsts.QUEUE_STOCK, cartDto);
 		}
-	
+
 		order.setCustomer(customer);
 		order.setAddress(address);
 		order.setPayment(payment);
@@ -70,6 +73,12 @@ public class OrderServiceImp implements OrderService{
 		order.setDate(LocalDate.now());
 		order.setStatus(Status.PROCESSING_PAYMENT);
 		order.setTotal(total);
+		
+		SkuOrder skuOrder = new SkuOrder();
+		skuOrder.setOrderId(order.getId());
+		skuOrder.setSkus(order.getCart());
+		
+		rabbitTemplate.convertAndSend(queueSkuOrder, skuOrder);
 		return new OrderDto(orderRepository.save(order));
 	}
 
@@ -78,15 +87,15 @@ public class OrderServiceImp implements OrderService{
 	}
 
 	public List<OrderDto> findByCustomerId(Long id, LocalDate startDate, LocalDate endDate, Status status) {
-		
-		Stream<Order> ordersStream  = orderRepository.findByCustomerId(id).stream();
-		if(status != null) {
+
+		Stream<Order> ordersStream = orderRepository.findByCustomerId(id).stream();
+		if (status != null) {
 			ordersStream = ordersStream.filter(o -> (o.getStatus() == status));
 		}
-		if(startDate != null) {
+		if (startDate != null) {
 			ordersStream = ordersStream.filter(o -> (o.getDate().isAfter(startDate) || o.getDate().isEqual(startDate)));
 		}
-		if(endDate != null) {
+		if (endDate != null) {
 			ordersStream = ordersStream.filter(o -> (o.getDate().isBefore(endDate) || o.getDate().isEqual(endDate)));
 		}
 		return ordersStream.map(OrderDto::new).collect(Collectors.toList());
