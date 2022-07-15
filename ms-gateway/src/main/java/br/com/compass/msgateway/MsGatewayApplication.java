@@ -28,6 +28,7 @@ public class MsGatewayApplication {
 				.route(r -> r.path("/v1/payments/**").uri("lb://payment"))
 				.route(r -> r.path("/v1/installments/**").uri("lb://payment"))
 				.route(r -> r.path("/v1/orders/**").uri("lb://order"))
+				.route(r -> r.path("/v1/audit/**").uri("lb://audit"))
 				.build();
 	}
 

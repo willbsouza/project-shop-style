@@ -3,6 +3,8 @@ package br.com.compass.msorder.controller;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,8 +29,9 @@ public class OrderController {
 	private OrderService orderService;
 		
 	@GetMapping
-	public ResponseEntity<List<OrderDto>> findAll(){
-		return new ResponseEntity<List<OrderDto>>(orderService.findAll(), HttpStatus.OK);
+	public ResponseEntity<List<OrderDto>> findAll(@RequestParam(required = true) LocalDate startDate, 
+			@RequestParam(required = false) LocalDate endDate, @RequestParam(required = false) Status status) {
+		return new ResponseEntity<List<OrderDto>>(orderService.findAll(startDate, endDate, status), HttpStatus.OK);
 	}
 	
 	@GetMapping("/customers/{id}")
@@ -38,7 +41,7 @@ public class OrderController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<OrderDto> save(@RequestBody OrderFormDto orderFormDto){
+	public ResponseEntity<OrderDto> save(@RequestBody @Valid OrderFormDto orderFormDto){
 		return new ResponseEntity<OrderDto>(orderService.save(orderFormDto), HttpStatus.CREATED);
 	}
 }

@@ -3,6 +3,8 @@ package br.com.compass.msorder.entity;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.validation.constraints.NotNull;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -26,15 +28,20 @@ public class Order {
 	
 	@Id
 	private String id;
-	
+	@NotNull
 	private Customer customer;
+	@NotNull
 	private Address address;
+	@NotNull
 	private Payment payment;
+	@NotNull
 	private Installment installment;
+	@NotNull
 	private List<Sku> cart;
-	
-	@JsonFormat(pattern = "dd/MM/yyyy")
+	@NotNull @JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate date;
+	@NotNull
 	private Status status;
+	@NotNull
 	private Double total;
 }

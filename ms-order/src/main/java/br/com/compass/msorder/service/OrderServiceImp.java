@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import javax.validation.Valid;
+
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -56,7 +58,7 @@ public class OrderServiceImp implements OrderService {
 	@Value("${mq.queues.payment-order}")
 	private String queuePaymentOrder;
 
-	public OrderDto save(OrderFormDto orderFormDto) {
+	public OrderDto save(@Valid OrderFormDto orderFormDto) {
 		Order order = new Order();
 		Customer customer = customerClient.getCustomer(orderFormDto.getCustomer().getId());
 		Address address = customerClient.getAddress(orderFormDto.getCustomer().getAddressId());
@@ -116,8 +118,16 @@ public class OrderServiceImp implements OrderService {
 		return skuOrder;
 	}
 
-	public List<OrderDto> findAll() {
-		return orderRepository.findAll().stream().map(OrderDto::new).collect(Collectors.toList());
+	public List<OrderDto> findAll(LocalDate startDate,LocalDate endDate,Status status) {
+		
+		Stream<Order> ordersStream = orderRepository.findAll().stream().filter(o -> (o.getDate().isAfter(startDate) || o.getDate().isEqual(startDate)));
+		if (endDate != null) {
+			ordersStream = ordersStream.filter(o -> (o.getDate().isBefore(endDate) || o.getDate().isEqual(endDate)));
+		}
+		if (status != null) {
+			ordersStream = ordersStream.filter(o -> (o.getStatus() == status));
+		}
+		return ordersStream.map(OrderDto::new).collect(Collectors.toList());
 	}
 
 	public List<OrderDto> findByCustomerId(Long id, LocalDate startDate, LocalDate endDate, Status status) {
