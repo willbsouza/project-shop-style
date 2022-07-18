@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import br.com.compass.msorder.client.AuditClient;
 import br.com.compass.msorder.client.CatalogClient;
 import br.com.compass.msorder.client.CustomerClient;
 import br.com.compass.msorder.client.PaymentClient;
@@ -45,6 +46,9 @@ public class OrderServiceImp implements OrderService {
 
 	@Autowired
 	private CatalogClient catalogClient;
+	
+	@Autowired
+	private AuditClient auditClient;
 
 	@Autowired
 	private OrderRepository orderRepository;
@@ -88,6 +92,7 @@ public class OrderServiceImp implements OrderService {
 		order.setTotal(total);
 		
 		orderRepository.save(order);
+		auditClient.saveOrderAudit(order);
 		rabbitTemplate.convertAndSend(queueSkuOrder, builderSkuOrder(order));
 		rabbitTemplate.convertAndSend(queuePaymentOrder, builderPaymentOrder(order));
 		return new OrderDto(order);
@@ -97,7 +102,9 @@ public class OrderServiceImp implements OrderService {
 		Order order = orderRepository.findById(paymentOrderStatus.getOrderId()).orElseThrow(
 				() -> new ObjectNotFoundException("Order ID: " + paymentOrderStatus.getOrderId() + " not found."));
 		order.setStatus(paymentOrderStatus.getStatus());
-		return new OrderDto(orderRepository.save(order));
+		orderRepository.save(order);
+		auditClient.saveOrderAudit(order);
+		return new OrderDto(order);
 	}
 	
 	private PaymentOrder builderPaymentOrder(Order order) {
