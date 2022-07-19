@@ -607,3 +607,78 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:11:10.610
 !MESSAGE executing callback sts4.classpath.byuWUDjq SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.376
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.378
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.391
+!MESSAGE classpath=135 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.394
+!MESSAGE classpath=135 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.405
+!MESSAGE buffering callback sts4.classpath.byuWUDjq eureka-server false 135
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.406
+!MESSAGE buffering callback sts4.classpath.inrDfeqN eureka-server false 135
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.407
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.409
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.421
+!MESSAGE classpath=135 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.422
+!MESSAGE classpath=135 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.432
+!MESSAGE buffering callback sts4.classpath.byuWUDjq eureka-server false 135
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.433
+!MESSAGE buffering callback sts4.classpath.inrDfeqN eureka-server false 135
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.435
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.436
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.444
+!MESSAGE classpath=135 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.446
+!MESSAGE classpath=135 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.456
+!MESSAGE buffering callback sts4.classpath.byuWUDjq eureka-server false 135
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.457
+!MESSAGE buffering callback sts4.classpath.inrDfeqN eureka-server false 135
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.458
+!MESSAGE executing callback sts4.classpath.byuWUDjq 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.460
+!MESSAGE executing callback sts4.classpath.inrDfeqN 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.461
+!MESSAGE executing callback sts4.classpath.inrDfeqN FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-07-19 11:51:46.464
+!MESSAGE No language server has registered to handle command 'sts4.classpath.inrDfeqN'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.inrDfeqN'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-19 11:51:46.688
+!MESSAGE executing callback sts4.classpath.byuWUDjq SUCCESS [done]
