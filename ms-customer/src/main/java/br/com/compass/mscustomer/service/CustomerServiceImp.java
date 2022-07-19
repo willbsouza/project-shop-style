@@ -27,20 +27,20 @@ public class CustomerServiceImp implements CustomerService{
 		return new CustomerDto(customer);
 	}
 
-	public CustomerDto save(@Valid CustomerFormDto userFormDto) {
-		return new CustomerDto(customerRepository.save(new Customer(userFormDto)));
+	public CustomerDto save(@Valid CustomerFormDto customerLoginDto) {
+		return new CustomerDto(customerRepository.save(new Customer(customerLoginDto)));
 	}
 
-	public CustomerDto updateById(@Valid CustomerFormDto userFormDto, Long id) {
+	public CustomerDto updateById(@Valid CustomerFormDto customerLoginDto, Long id) {
 		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " not found"));
-			customer.setFirstName(userFormDto.getFirstName());
-			customer.setLastName(userFormDto.getLastName());
-			customer.setSex(userFormDto.getSex());
-			customer.setCpf(userFormDto.getCpf());
-			customer.setBirthdate(userFormDto.getBirthdate());
-			customer.setEmail(userFormDto.getEmail());
-			customer.setPassword(userFormDto.getPassword());
-			customer.setActive(userFormDto.getActive());
+			customer.setFirstName(customerLoginDto.getFirstName());
+			customer.setLastName(customerLoginDto.getLastName());
+			customer.setSex(customerLoginDto.getSex());
+			customer.setCpf(customerLoginDto.getCpf());
+			customer.setBirthdate(customerLoginDto.getBirthdate());
+			customer.setEmail(customerLoginDto.getEmail());
+			customer.setPassword(customerLoginDto.getPassword());
+			customer.setActive(customerLoginDto.getActive());
 			return new CustomerDto(customer);		
 	}
 

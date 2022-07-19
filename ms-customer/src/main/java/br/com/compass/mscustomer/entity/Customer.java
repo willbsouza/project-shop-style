@@ -1,6 +1,7 @@
 package br.com.compass.mscustomer.entity;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -71,7 +72,7 @@ public class Customer {
 	private Boolean active;
 	
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "customer")
-	private List<Address> addresses;
+	private List<Address> addresses = new ArrayList<>();
 	
 	public Customer(CustomerFormDto customerFormDto) {
 		this.firstName = customerFormDto.getFirstName();

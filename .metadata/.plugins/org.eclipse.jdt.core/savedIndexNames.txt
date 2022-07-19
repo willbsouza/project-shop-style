@@ -88,7 +88,6 @@ INDEX VERSION 1.131+C:\temp\ws-sts\shop-style\.metadata\.plugins\org.eclipse.jdt
 3386363013.index
 785384173.index
 2344948838.index
-270996577.index
 2116799470.index
 1250847482.index
 214499993.index

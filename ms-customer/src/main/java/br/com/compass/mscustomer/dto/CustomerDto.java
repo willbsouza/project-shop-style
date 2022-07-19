@@ -1,6 +1,7 @@
 package br.com.compass.mscustomer.dto;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,7 +24,7 @@ public class CustomerDto {
 	private LocalDate birthdate;
 	private String email;
 	private Boolean active;
-	private List<AddressDto> addresses;
+	private List<AddressDto> addresses = new ArrayList<>();
 	
 	public CustomerDto(Customer customer) {
 		this.id = customer.getId();
