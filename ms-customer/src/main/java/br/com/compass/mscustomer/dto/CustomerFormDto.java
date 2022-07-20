@@ -37,7 +37,7 @@ public class CustomerFormDto {
 	private String cpf;
 	
 	@NotNull
-	@JsonFormat(pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "dd-MM-yyyy")
 	private LocalDate birthdate;
 	
 	@NotNull

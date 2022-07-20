@@ -57,7 +57,7 @@ public class Customer {
 	private String cpf;
 	
 	@NotNull
-	@JsonFormat(pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "dd-MM-yyyy")
 	private LocalDate birthdate;
 	
 	@Email
