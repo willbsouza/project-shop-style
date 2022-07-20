@@ -3,6 +3,7 @@ package br.com.compass.mscatalog.rabbitmq.entity;
 import java.io.Serializable;
 import java.util.List;
 
+import br.com.compass.mscatalog.entity.Sku;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

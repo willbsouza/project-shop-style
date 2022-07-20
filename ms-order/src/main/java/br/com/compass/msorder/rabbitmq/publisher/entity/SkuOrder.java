@@ -1,8 +1,9 @@
-package br.com.compass.msorder.rabbitmq.entity;
+package br.com.compass.msorder.rabbitmq.publisher.entity;
 
 import java.io.Serializable;
+import java.util.List;
 
-import br.com.compass.msorder.entity.dto.PaymentDto;
+import br.com.compass.msorder.client.entity.Sku;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,9 +13,9 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
-public class PaymentOrder implements Serializable{
+public class SkuOrder implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private String orderId;
-	private PaymentDto payment;
+	private List<Sku> skus;
 }

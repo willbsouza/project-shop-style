@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-import br.com.compass.mscatalog.rabbitmq.entity.Sku;
+import br.com.compass.mscatalog.entity.Sku;
 import br.com.compass.mscatalog.rabbitmq.entity.SkuOrder;
 import br.com.compass.mscatalog.service.SkuService;
 
