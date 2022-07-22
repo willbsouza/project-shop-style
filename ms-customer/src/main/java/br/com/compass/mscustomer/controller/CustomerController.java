@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.compass.mscustomer.dto.CustomerChangePasswordDto;
 import br.com.compass.mscustomer.dto.CustomerDto;
 import br.com.compass.mscustomer.dto.CustomerFormDto;
 import br.com.compass.mscustomer.dto.CustomerLoginDto;
+import br.com.compass.mscustomer.entity.Customer;
 import br.com.compass.mscustomer.service.CustomerService;
 
 @RestController
@@ -53,5 +55,10 @@ public class CustomerController {
 	@Transactional
 	public ResponseEntity<CustomerDto> changePassword(@RequestBody @Valid CustomerChangePasswordDto passwordDto, @PathVariable Long id) {
 		return new ResponseEntity<CustomerDto>(customerService.changePassword(passwordDto, id), HttpStatus.ACCEPTED);
+	}
+	
+	@GetMapping
+	public ResponseEntity<Customer> findByEmail(@RequestParam(required = true) String email) {
+		return new ResponseEntity<Customer>(customerService.findByEmail(email), HttpStatus.OK);
 	}
 }

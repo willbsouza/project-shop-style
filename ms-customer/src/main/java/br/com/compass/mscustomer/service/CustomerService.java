@@ -6,6 +6,7 @@ import br.com.compass.mscustomer.dto.CustomerChangePasswordDto;
 import br.com.compass.mscustomer.dto.CustomerDto;
 import br.com.compass.mscustomer.dto.CustomerFormDto;
 import br.com.compass.mscustomer.dto.CustomerLoginDto;
+import br.com.compass.mscustomer.entity.Customer;
 
 public interface CustomerService {
 
@@ -18,4 +19,6 @@ public interface CustomerService {
 	CustomerDto login(CustomerLoginDto customerLoginDto);
 
 	CustomerDto changePassword(@Valid CustomerChangePasswordDto passwordDto, Long id);
+	
+	Customer findByEmail(String email);
 }

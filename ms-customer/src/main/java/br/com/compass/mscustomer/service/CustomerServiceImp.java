@@ -51,6 +51,10 @@ public class CustomerServiceImp implements CustomerService{
 		}
 		throw new LoginException("Incorrect email and/or password!");
 	}
+	
+	public Customer findByEmail(String email) {
+		return customerRepository.findByEmail(email);
+	}
 
 	public CustomerDto changePassword(@Valid CustomerChangePasswordDto passwordDto, Long id) {
 		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " not found."));

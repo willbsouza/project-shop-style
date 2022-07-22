@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import br.com.compass.msbffshop.client.customer.dto.AddressDto;
 import br.com.compass.msbffshop.client.customer.dto.AddressFormDto;
@@ -16,6 +17,7 @@ import br.com.compass.msbffshop.client.customer.dto.CustomerChangePasswordDto;
 import br.com.compass.msbffshop.client.customer.dto.CustomerDto;
 import br.com.compass.msbffshop.client.customer.dto.CustomerFormDto;
 import br.com.compass.msbffshop.client.customer.dto.CustomerLoginDto;
+import br.com.compass.msbffshop.client.entity.Customer;
 
 @Component
 @FeignClient("customer")
@@ -28,7 +30,10 @@ public interface CustomerClient {
 	CustomerDto saveCustomer(@RequestBody CustomerFormDto customerFormDto);
 	
 	@GetMapping("/v1/customers/{id}")
-	CustomerDto getCustomer(@PathVariable Long id);
+	CustomerDto findCustomerById(@PathVariable Long id);
+	
+	@GetMapping("/v1/customers")
+	Customer findCustomerByEmail(@RequestParam(required = true) String email);
 	
 	@PutMapping("/v1/customers/{id}")
 	CustomerDto updateCustomerById(@PathVariable Long id, @RequestBody CustomerFormDto customerFormDto);
