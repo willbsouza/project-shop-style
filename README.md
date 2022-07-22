@@ -449,7 +449,7 @@ GET - /v1/audit/orders/:orderId
 </details>
 
 <details>
-  <summary><a id="id2"><h2><strong>MS BFF-Shop</strong></h2></summary>
+  <summary><a id="id6"><h2><strong>MS BFF-Shop</strong></h2></summary>
 
 <p>Todos os micro-serviços serão de uso interno para os funcionários da empresa. Então precisa ser disponibilizado um ponto de entrada para que os clientes possam se comunicar com as funcionalidades. O MS bff-shop tem os seguintes endpoints:</p>
 
