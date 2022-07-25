@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\temp\\ws-sts\\shop-style\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;
+GitRepositoriesView.GitDirectories=C\:\\temp\\ws-sts\\shop-style\\.git;C\:\\temp\\ws-sts\\shop-style\\project-shop-style\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\temp\\ws-sts\\shop-style\\.git;.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

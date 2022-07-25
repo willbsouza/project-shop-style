@@ -22,12 +22,16 @@ public class CategoryServiceImp implements CategoryService{
 	private CategoryRepository categoryRepository;
 
 	public CategoryDto save(@Valid CategoryFormDto categoryFormDto) {
-		Category parentCategory = categoryRepository.findById(categoryFormDto.getParentId()).orElse(null);
-		Category saveCategory = categoryRepository.save(new Category(categoryFormDto, parentCategory));
-		if(parentCategory != null) {
-			parentCategory.addChildren(saveCategory);
+		if(categoryFormDto.getParentId() == null) {
+			return new CategoryDto(categoryRepository.save(new Category(categoryFormDto)));
+		} else {
+			Category parentCategory = categoryRepository.findById(categoryFormDto.getParentId()).orElse(null);
+			Category saveCategory = categoryRepository.save(new Category(categoryFormDto, parentCategory));
+			if(parentCategory != null) {
+				parentCategory.addChildren(saveCategory);
+			}
+			return new CategoryDto(saveCategory);
 		}
-		return new CategoryDto(saveCategory);
 	}
 
 	public List<CategoryDto> findAll() {

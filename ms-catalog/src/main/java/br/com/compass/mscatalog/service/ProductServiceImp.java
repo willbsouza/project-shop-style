@@ -38,7 +38,7 @@ public class ProductServiceImp implements ProductService{
 		
 		Category category = categoryRepository.findById(productFormDto.getCategoryId()).orElseThrow(
 				() -> new ObjectNotFoundException("Category ID: " + productFormDto.getCategoryId() + " not found."));
-		if(category.getActive() && category.getChildren().isEmpty()) {
+		if(verifyCategory(category)) {
 			return new ProductDto(productRepository.save(new Product(productFormDto, category)));
 		} else {
 			throw new CategoryNotValidException("It is not possible to add a product to this category.");
@@ -57,7 +57,7 @@ public class ProductServiceImp implements ProductService{
 		product.setBrand(productFormDto.getBrand());
 		product.setMaterial(productFormDto.getMaterial());
 		
-		if(category.getActive() && category.getChildren().isEmpty()) {
+		if(verifyCategory(category)) {
 			product.setCategory(category);
 			return new ProductDto(productRepository.save(product));
 		} else {
@@ -68,6 +68,19 @@ public class ProductServiceImp implements ProductService{
 	public void deleteById(Long id) {
 		findById(id);
 		productRepository.deleteById(id);
+	}
+	
+	private Boolean verifyCategory(Category category) {
+		if (!category.getChildren().isEmpty() || !category.getActive()) {
+			return false;
+		}
+		while(category.getParent() != null) {
+			if (!category.getParent().getActive()) {
+				return false;
+			}
+			category = category.getParent();
+		}
+		return true;
 	}
 }
 

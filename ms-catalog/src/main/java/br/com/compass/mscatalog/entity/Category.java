@@ -55,6 +55,11 @@ public class Category {
 		this.parent = parentCategory;
 	}
 	
+	public Category(CategoryFormDto categoryDto) {
+		this.name = categoryDto.getName();
+		this.active = categoryDto.getActive();
+	}
+	
 	public void addChildren(Category category) {
 		this.children.add(category);
 	}

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import br.com.compass.msorder.service.exception.ObjectNotFoundException;
 import br.com.compass.msorder.service.exception.QuantityUnavailableException;
-import feign.FeignException.FeignClientException;
+import feign.FeignException;
 
 @RestControllerAdvice
 public class ResourceExceptionHandler {
@@ -28,17 +28,18 @@ public class ResourceExceptionHandler {
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erro);
 	}
 	
-	@ExceptionHandler(FeignClientException.class)
-	public ResponseEntity<StandardError> objectNotFound(FeignClientException e, HttpServletRequest request){
+	@ExceptionHandler(FeignException.class)
+	public ResponseEntity<StandardError> feignError(FeignException e, HttpServletRequest request){
 		
 		StandardError erro = new StandardError();
 		erro.setTimestamp(Instant.now());
 		erro.setStatus(HttpStatus.NOT_FOUND.value());
-		erro.setError("Not found.");
+		erro.setError("Object not found.");
 		erro.setMessage(e.getMessage());
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erro);
 	}	
+	
 	@ExceptionHandler(QuantityUnavailableException.class)
 	public ResponseEntity<StandardError> invalidFields(QuantityUnavailableException e, HttpServletRequest request){
 		StandardError erro = new StandardError();
