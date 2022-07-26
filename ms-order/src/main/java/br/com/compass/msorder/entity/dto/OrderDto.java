@@ -32,9 +32,9 @@ public class OrderDto {
 		this.customer = order.getCustomer();
 		this.payment = order.getPayment();
 		this.cart = order.getCart();
-		this.date = order.getDate();
 		this.total = order.getTotal();
 		this.status = order.getStatus();
+		this.date = order.getDate();
 		this.address = order.getAddress();
 		this.installment = order.getInstallment();
 	}	

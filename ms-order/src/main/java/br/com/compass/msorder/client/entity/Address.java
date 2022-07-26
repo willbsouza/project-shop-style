@@ -3,9 +3,11 @@ package br.com.compass.msorder.client.entity;
 import br.com.compass.msorder.client.enums.State;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Getter
 @NoArgsConstructor
+@ToString
 public class Address {
 
 	private Long id;

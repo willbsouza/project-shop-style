@@ -20,7 +20,7 @@ public class RabbitMQConsumer {
 	@Autowired
 	private OrderService orderService;
 
-	@RabbitListener(queues = "${mq.queues.order-payment}")
+	@RabbitListener(queues = "${mq.queues.payment-order}")
 	private void processMessage(PaymentOrderStatus paymentOrderStatus) {			
 		orderService.updateStatusPayment(paymentOrderStatus);
 	}

@@ -13,8 +13,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQPublisher {
 	
-	@Value("${mq.queues.order-payment}")
-	private String queueOrderPayment;
+	@Value("${mq.queues.payment-order}")
+	private String queuePaymentOrder;
 	
 	@Value("${mq.exchange.order}")
 	private String exchange;
@@ -36,16 +36,16 @@ public class RabbitMQPublisher {
 	
 	@PostConstruct
 	private void add() {
-		Queue paymentOrderQueue = this.queue(queueOrderPayment);
+		Queue orderPaymentQueue = this.queue(queuePaymentOrder);
 		
 		DirectExchange exchange = this.directExchange();
 		
-		Binding relatePaymentOrder = this.relate(paymentOrderQueue, exchange);
+		Binding relateOrderPayment = this.relate(orderPaymentQueue, exchange);
 		
-		this.ampAdmin.declareQueue(paymentOrderQueue);
+		this.ampAdmin.declareQueue(orderPaymentQueue);
 		
 		this.ampAdmin.declareExchange(exchange);
 		
-		this.ampAdmin.declareBinding(relatePaymentOrder);
+		this.ampAdmin.declareBinding(relateOrderPayment);
 	}
 }

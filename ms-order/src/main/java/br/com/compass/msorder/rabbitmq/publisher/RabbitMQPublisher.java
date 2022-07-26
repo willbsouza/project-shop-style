@@ -13,11 +13,14 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQPublisher {
 	
-	@Value("${mq.queues.sku-order}")
-	private String queueSkuOrder;
+	@Value("${mq.queues.order-sku}")
+	private String queueOrderSku;
 	
-	@Value("${mq.queues.payment-order}")
-	private String queuePaymentOrder;
+	@Value("${mq.queues.order-payment}")
+	private String queueOrderPayment;
+	
+	@Value("${mq.queues.order-audit}")
+	private String queueOrderAudit;
 	
 	@Value("${mq.exchange.order}")
 	private String exchange;
@@ -39,20 +42,24 @@ public class RabbitMQPublisher {
 	
 	@PostConstruct
 	private void add() {
-		Queue skuOrderQueue = this.queue(queueSkuOrder);
-		Queue paymentOrderQueue = this.queue(queuePaymentOrder);
+		Queue orderSkuQueue = this.queue(queueOrderSku);
+		Queue orderPaymentQueue = this.queue(queueOrderPayment);
+		Queue orderAuditQueue = this.queue(queueOrderAudit);
 		
 		DirectExchange exchange = this.directExchange();
 		
-		Binding relateSkuOrder = this.relate(skuOrderQueue, exchange);
-		Binding relatePaymentOrder = this.relate(paymentOrderQueue, exchange);
+		Binding relateOrderSku = this.relate(orderSkuQueue, exchange);
+		Binding relateOrderPayment = this.relate(orderPaymentQueue, exchange);
+		Binding relateOrderAudit = this.relate(orderAuditQueue, exchange);
 		
-		this.ampAdmin.declareQueue(skuOrderQueue);
-		this.ampAdmin.declareQueue(paymentOrderQueue);
+		this.ampAdmin.declareQueue(orderSkuQueue);
+		this.ampAdmin.declareQueue(orderPaymentQueue);
+		this.ampAdmin.declareQueue(orderAuditQueue);
 		
 		this.ampAdmin.declareExchange(exchange);
 		
-		this.ampAdmin.declareBinding(relateSkuOrder);
-		this.ampAdmin.declareBinding(relatePaymentOrder);
+		this.ampAdmin.declareBinding(relateOrderSku);
+		this.ampAdmin.declareBinding(relateOrderPayment);
+		this.ampAdmin.declareBinding(relateOrderAudit);
 	}
 }

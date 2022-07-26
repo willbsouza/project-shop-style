@@ -5,20 +5,18 @@ import java.util.List;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 
-import br.com.compass.msaudit.client.entity.Address;
-import br.com.compass.msaudit.client.entity.Customer;
-import br.com.compass.msaudit.client.entity.Installment;
-import br.com.compass.msaudit.client.entity.Payment;
-import br.com.compass.msaudit.client.entity.Sku;
-import br.com.compass.msaudit.client.enums.Status;
+import br.com.compass.msaudit.enums.Status;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Document
 @Getter
 @NoArgsConstructor
+@ToString
 public class Order {
 	
 	private String id;
@@ -27,8 +25,7 @@ public class Order {
 	private Payment payment;
 	private Installment installment;
 	private List<Sku> cart;
-	
-	@JsonFormat(pattern = "dd/MM/yyyy")
+	@JsonDeserialize(using = LocalDateDeserializer.class)
 	private LocalDate date;
 	private Status status;
 	private Double total;

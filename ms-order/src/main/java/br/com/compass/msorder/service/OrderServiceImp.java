@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import br.com.compass.msorder.client.AuditClient;
 import br.com.compass.msorder.client.CatalogClient;
 import br.com.compass.msorder.client.CustomerClient;
 import br.com.compass.msorder.client.PaymentClient;
@@ -47,9 +46,6 @@ public class OrderServiceImp implements OrderService {
 
 	@Autowired
 	private CatalogClient catalogClient;
-	
-	@Autowired
-	private AuditClient auditClient;
 
 	@Autowired
 	private OrderRepository orderRepository;
@@ -57,11 +53,14 @@ public class OrderServiceImp implements OrderService {
 	@Autowired
 	private RabbitTemplate rabbitTemplate;
 	
-	@Value("${mq.queues.sku-order}")
-	private String queueSkuOrder;
+	@Value("${mq.queues.order-sku}")
+	private String queueOrderSku;
 	
-	@Value("${mq.queues.payment-order}")
-	private String queuePaymentOrder;
+	@Value("${mq.queues.order-payment}")
+	private String queueOrderPayment;
+	
+	@Value("${mq.queues.order-audit}")
+	private String queueOrderAudit;
 
 	@Override
 	public OrderDto save(@Valid OrderFormDto orderFormDto) {
@@ -97,9 +96,9 @@ public class OrderServiceImp implements OrderService {
 		order.setTotal(total);
 		
 		orderRepository.save(order);
-		auditClient.saveOrderAudit(order);
-		rabbitTemplate.convertAndSend(queueSkuOrder, builderSkuOrder(order));
-		rabbitTemplate.convertAndSend(queuePaymentOrder, builderPaymentOrder(order));
+		rabbitTemplate.convertAndSend(queueOrderAudit, order);
+		rabbitTemplate.convertAndSend(queueOrderSku, builderSkuOrder(order));
+		rabbitTemplate.convertAndSend(queueOrderPayment, builderPaymentOrder(order));
 		return new OrderDto(order);
 	}
 	
@@ -109,7 +108,7 @@ public class OrderServiceImp implements OrderService {
 				() -> new ObjectNotFoundException("Order ID: " + paymentOrderStatus.getOrderId() + " not found."));
 		order.setStatus(paymentOrderStatus.getStatus());
 		orderRepository.save(order);
-		auditClient.saveOrderAudit(order);
+		rabbitTemplate.convertAndSend(queueOrderAudit, order);
 		return new OrderDto(order);
 	}
 

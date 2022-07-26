@@ -26,8 +26,8 @@ public class RabbitMQConsumer {
 		return new Jackson2JsonMessageConverter();
 	}
 	
-	@Value("${mq.queues.order-payment}")
-	private String queueOrderPayment;
+	@Value("${mq.queues.payment-order}")
+	private String queuePaymentOrder;
 	
 	@Autowired
 	private PaymentRepository paymentRepository;
@@ -38,10 +38,10 @@ public class RabbitMQConsumer {
 	@Autowired
 	private RabbitTemplate rabbitTemplate;
 
-	@RabbitListener(queues = "${mq.queues.payment-order}")
+	@RabbitListener(queues = "${mq.queues.order-payment}")
 	private void processMessage(PaymentOrder paymentOrder) {
 		Status status = statusCheck(paymentOrder);
-		rabbitTemplate.convertAndSend(queueOrderPayment, new PaymentOrderStatus(paymentOrder.getOrderId(), status));
+		rabbitTemplate.convertAndSend(queuePaymentOrder, new PaymentOrderStatus(paymentOrder.getOrderId(), status));
 	}
 	
 	private Status statusCheck(PaymentOrder paymentOrder) {
