@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import br.com.compass.mscustomer.dto.CustomerChangePasswordDto;
 import br.com.compass.mscustomer.dto.CustomerDto;
 import br.com.compass.mscustomer.dto.CustomerFormDto;
+import br.com.compass.mscustomer.dto.CustomerFormUpdateDto;
 import br.com.compass.mscustomer.dto.CustomerLoginDto;
 import br.com.compass.mscustomer.entity.Customer;
 import br.com.compass.mscustomer.repository.CustomerRepository;
@@ -22,28 +23,30 @@ public class CustomerServiceImp implements CustomerService{
 	@Autowired
 	private CustomerRepository customerRepository;
 
+	@Override
 	public CustomerDto findById(Long id) {
 		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " not found"));
 		return new CustomerDto(customer);
 	}
 
+	@Override
 	public CustomerDto save(@Valid CustomerFormDto customerLoginDto) {
 		return new CustomerDto(customerRepository.save(new Customer(customerLoginDto)));
 	}
-
-	public CustomerDto updateById(@Valid CustomerFormDto customerLoginDto, Long id) {
+	
+	@Override
+	public CustomerDto updateById(@Valid CustomerFormUpdateDto userFormUpdateDto, Long id) {
 		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " not found"));
-			customer.setFirstName(customerLoginDto.getFirstName());
-			customer.setLastName(customerLoginDto.getLastName());
-			customer.setSex(customerLoginDto.getSex());
-			customer.setCpf(customerLoginDto.getCpf());
-			customer.setBirthdate(customerLoginDto.getBirthdate());
-			customer.setEmail(customerLoginDto.getEmail());
-			customer.setPassword(customerLoginDto.getPassword());
-			customer.setActive(customerLoginDto.getActive());
+			customer.setFirstName(userFormUpdateDto.getFirstName());
+			customer.setLastName(userFormUpdateDto.getLastName());
+			customer.setSex(userFormUpdateDto.getSex());
+			customer.setCpf(userFormUpdateDto.getCpf());
+			customer.setBirthdate(userFormUpdateDto.getBirthdate());
+			customer.setActive(userFormUpdateDto.getActive());
 			return new CustomerDto(customer);		
 	}
-
+	
+	@Override
 	public CustomerDto login(CustomerLoginDto customerLoginDto) {
 		Customer customer = customerRepository.findByEmail(customerLoginDto.getEmail());
 		if(customer != null && new BCryptPasswordEncoder().matches(customerLoginDto.getPassword(), customer.getPassword())) {	
@@ -52,10 +55,12 @@ public class CustomerServiceImp implements CustomerService{
 		throw new LoginException("Incorrect email and/or password!");
 	}
 	
+	@Override
 	public Customer findByEmail(String email) {
 		return customerRepository.findByEmail(email);
 	}
 
+	@Override
 	public CustomerDto changePassword(@Valid CustomerChangePasswordDto passwordDto, Long id) {
 		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " not found."));
 		if(verificationPassword(customer, passwordDto)) {	

@@ -30,10 +30,12 @@ public class SkuServiceImp implements SkuService{
 	@Autowired
 	private MediaRepository mediaRepository;
 
+	@Override
 	public List<SkuDto> findAll() {
 		return skuRepository.findAll().stream().map(SkuDto::new).collect(Collectors.toList());
 	}
 
+	@Override
 	public SkuDto save(@Valid SkuFormDto skuFormDto) {
 		Product product = productRepository.findById(skuFormDto.getProductId()).orElseThrow(
 				() -> new ObjectNotFoundException("Product ID : " + skuFormDto.getProductId() + " not found."));
@@ -46,6 +48,7 @@ public class SkuServiceImp implements SkuService{
 		return new SkuDto(skuRepository.save(sku));
 	}
 
+	@Override
 	public SkuDto update(Long id, @Valid SkuFormDto skuFormDto) {
 		Product product = productRepository.findById(skuFormDto.getProductId()).orElseThrow(
 				() -> new ObjectNotFoundException("Product ID : " + skuFormDto.getProductId() + " not found."));
@@ -67,6 +70,7 @@ public class SkuServiceImp implements SkuService{
 		return new SkuDto(skuRepository.save(sku));
 	}
 	
+	@Override
 	public SkuDto updateOrderSku(Long id, Integer quantity) {
 		Sku sku = skuRepository.findById(id).orElseThrow(
 				() -> new ObjectNotFoundException("Sku ID : "+ id + " not found."));
@@ -74,12 +78,14 @@ public class SkuServiceImp implements SkuService{
 		return new SkuDto(skuRepository.save(sku));
 	}
 
+	@Override
 	public void deleteById(Long id) {
 		skuRepository.findById(id).orElseThrow(
 				() -> new ObjectNotFoundException("Sku ID : "+ id + " not found."));
 		skuRepository.deleteById(id);
 	}
 
+	@Override
 	public SkuDto findById(Long id) {
 		return new SkuDto(skuRepository.findById(id).orElseThrow(
 				() -> new ObjectNotFoundException("Sku ID : "+ id + " not found.")));

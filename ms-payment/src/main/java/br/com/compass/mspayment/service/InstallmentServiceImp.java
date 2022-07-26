@@ -23,30 +23,48 @@ public class InstallmentServiceImp implements InstallmentService{
 	@Autowired
 	private PaymentRepository paymentRepository;
 
+	@Override
 	public InstallmentDto save(@Valid InstallmentFormDto installmentFormDto) {
 		Payment payment = paymentRepository.findById(installmentFormDto.getPaymentId()).orElseThrow(
 				() -> new ObjectNotFoundException("Payment Id: " + installmentFormDto.getPaymentId() + " not found."));
-		
-		if(payment.getInstallments() && payment.getActive()) {
+		installmentValidation(installmentFormDto, payment);
 			return new InstallmentDto(installmentRepository.save(new Installment(installmentFormDto, payment)));
-		} else {
-			throw new PaymentNotValidException("Choosed payment method not valid!");
-		}
-		
 	}
 
+	@Override
 	public InstallmentDto update(Long id, @Valid InstallmentFormDto installmentFormDto) {
-		Installment installment = installmentRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Installment Id: " + id + " not found."));
+		installmentRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Installment Id: " + id + " not found."));
 		Payment payment = paymentRepository.findById(installmentFormDto.getPaymentId()).orElseThrow(
 				() -> new ObjectNotFoundException("Payment Id: " + installmentFormDto.getPaymentId() + " not found."));
-		installment.setPayment(payment);
-		installment.setAmount(installmentFormDto.getAmount());
-		installment.setBrand(installmentFormDto.getBrand());
-		return new InstallmentDto(installment);
+		installmentValidation(installmentFormDto, payment);
+		return new InstallmentDto(installmentRepository.save(new Installment(installmentFormDto, payment)));
 	}
 
+	@Override
 	public void deleteById(Long id) {
 		installmentRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Installment Id: " + id + " not found."));
 		installmentRepository.deleteById(id);
+	}
+	
+	@Override
+	public InstallmentDto findByPaymentId(Long paymanetId) {
+		Installment installment = installmentRepository.findByPaymentId(paymanetId);
+		if(installment != null) {
+			return new InstallmentDto(installment);
+		}
+		throw new ObjectNotFoundException("Installment not found to paymentId: " + paymanetId + " informed.");
+	}
+	
+	private Boolean installmentValidation(InstallmentFormDto installmentFormDto, Payment payment) {
+		if(!payment.getActive()) {
+			throw new PaymentNotValidException("Choosed payment method not active!");
+		}
+		if(!payment.getInstallments() && installmentFormDto.getAmount() > 0) {
+			throw new PaymentNotValidException("Choosed payment method does not accept installment!");
+		}
+		if(installmentFormDto.getAmount() < 0) {
+			throw new PaymentNotValidException("Amount cannot be less than 0!");
+		}
+		return true;
 	}
 }

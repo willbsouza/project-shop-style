@@ -20,14 +20,17 @@ public class PaymentServiceImp implements PaymentService{
 	@Autowired
 	private PaymentRepository paymentRepository;
 
+	@Override
 	public List<PaymentDto> findAll() {
 		return paymentRepository.findAll().stream().map(PaymentDto::new).collect(Collectors.toList());
 	}
 
+	@Override
 	public PaymentDto save(@Valid PaymentFormDto paymentFormDto) {
 		return new PaymentDto(paymentRepository.save(new Payment(paymentFormDto)));
 	}
 
+	@Override
 	public PaymentDto update(Long id, @Valid PaymentFormDto paymentFormDto) {
 		Payment payment = paymentRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Payment Id: " + id + " not found."));
 		payment.setType(paymentFormDto.getType());
@@ -37,11 +40,13 @@ public class PaymentServiceImp implements PaymentService{
 		return new PaymentDto(payment);
 	}
 
+	@Override
 	public void deleteById(Long id) {
 		paymentRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Payment Id: " + id + " not found."));
 		paymentRepository.deleteById(id);
 	}
 
+	@Override
 	public PaymentDto findById(Long id) {
 		return new PaymentDto(paymentRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Payment Id: " + id + " not found.")));
 	}

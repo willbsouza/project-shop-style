@@ -1,5 +1,6 @@
 package br.com.compass.mspayment.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -28,8 +29,8 @@ public class Installment {
 	
 	private String brand;
 	
-	@OneToOne
-	@JoinColumn(name = "payment_id")
+	@OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name = "payment_id", unique = true)
 	private Payment payment;
 	
 	public Installment(InstallmentFormDto installmentFormDto, Payment payment) {

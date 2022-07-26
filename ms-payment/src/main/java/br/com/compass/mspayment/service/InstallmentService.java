@@ -10,6 +10,8 @@ public interface InstallmentService {
 	InstallmentDto save(@Valid InstallmentFormDto installmentFormDto);
 
 	InstallmentDto update(Long id, @Valid InstallmentFormDto installmentFormDto);
+	
+	InstallmentDto findByPaymentId(Long paymentId);
 
 	void deleteById(Long id);
 }

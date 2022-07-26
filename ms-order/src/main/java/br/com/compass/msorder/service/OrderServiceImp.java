@@ -32,6 +32,7 @@ import br.com.compass.msorder.rabbitmq.consumer.entity.PaymentOrderStatus;
 import br.com.compass.msorder.rabbitmq.publisher.entity.PaymentOrder;
 import br.com.compass.msorder.rabbitmq.publisher.entity.SkuOrder;
 import br.com.compass.msorder.repository.OrderRepository;
+import br.com.compass.msorder.service.exception.CustomerInactiveException;
 import br.com.compass.msorder.service.exception.ObjectNotFoundException;
 import br.com.compass.msorder.service.exception.QuantityUnavailableException;
 
@@ -62,12 +63,16 @@ public class OrderServiceImp implements OrderService {
 	@Value("${mq.queues.payment-order}")
 	private String queuePaymentOrder;
 
+	@Override
 	public OrderDto save(@Valid OrderFormDto orderFormDto) {
 		Order order = new Order();
 		Customer customer = customerClient.getCustomer(orderFormDto.getCustomer().getId());
+		if (!customer.getActive()) {
+			throw new CustomerInactiveException("Customer is not active.");
+		}
 		Address address = customerClient.getAddress(orderFormDto.getCustomer().getAddressId());
 		Payment payment = paymentClient.getPayment(orderFormDto.getPayment().getId());
-		Installment installment = new Installment();
+		Installment installment = paymentClient.getInstallments(orderFormDto.getPayment().getId());
 		installment.setAmount(orderFormDto.getPayment().getInstallments());
 		installment.setPayment(payment);
 		Double total = 0.0;
@@ -98,6 +103,7 @@ public class OrderServiceImp implements OrderService {
 		return new OrderDto(order);
 	}
 	
+	@Override
 	public OrderDto updateStatusPayment(PaymentOrderStatus paymentOrderStatus) {
 		Order order = orderRepository.findById(paymentOrderStatus.getOrderId()).orElseThrow(
 				() -> new ObjectNotFoundException("Order ID: " + paymentOrderStatus.getOrderId() + " not found."));
@@ -105,6 +111,35 @@ public class OrderServiceImp implements OrderService {
 		orderRepository.save(order);
 		auditClient.saveOrderAudit(order);
 		return new OrderDto(order);
+	}
+
+	@Override
+	public List<OrderDto> findAll(LocalDate startDate,LocalDate endDate,Status status) {
+		
+		Stream<Order> ordersStream = orderRepository.findAll().stream().filter(o -> (o.getDate().isAfter(startDate) || o.getDate().isEqual(startDate)));
+		if (endDate != null) {
+			ordersStream = ordersStream.filter(o -> (o.getDate().isBefore(endDate) || o.getDate().isEqual(endDate)));
+		}
+		if (status != null) {
+			ordersStream = ordersStream.filter(o -> (o.getStatus() == status));
+		}
+		return ordersStream.map(OrderDto::new).collect(Collectors.toList());
+	}
+
+	@Override
+	public List<OrderDto> findByCustomerId(Long id, LocalDate startDate, LocalDate endDate, Status status) {
+
+		Stream<Order> ordersStream = orderRepository.findByCustomerId(id).stream();
+		if (status != null) {
+			ordersStream = ordersStream.filter(o -> (o.getStatus() == status));
+		}
+		if (startDate != null) {
+			ordersStream = ordersStream.filter(o -> (o.getDate().isAfter(startDate) || o.getDate().isEqual(startDate)));
+		}
+		if (endDate != null) {
+			ordersStream = ordersStream.filter(o -> (o.getDate().isBefore(endDate) || o.getDate().isEqual(endDate)));
+		}
+		return ordersStream.map(OrderDto::new).collect(Collectors.toList());
 	}
 	
 	private PaymentOrder builderPaymentOrder(Order order) {
@@ -123,32 +158,5 @@ public class OrderServiceImp implements OrderService {
 		skuOrder.setOrderId(order.getId());
 		skuOrder.setSkus(order.getCart());
 		return skuOrder;
-	}
-
-	public List<OrderDto> findAll(LocalDate startDate,LocalDate endDate,Status status) {
-		
-		Stream<Order> ordersStream = orderRepository.findAll().stream().filter(o -> (o.getDate().isAfter(startDate) || o.getDate().isEqual(startDate)));
-		if (endDate != null) {
-			ordersStream = ordersStream.filter(o -> (o.getDate().isBefore(endDate) || o.getDate().isEqual(endDate)));
-		}
-		if (status != null) {
-			ordersStream = ordersStream.filter(o -> (o.getStatus() == status));
-		}
-		return ordersStream.map(OrderDto::new).collect(Collectors.toList());
-	}
-
-	public List<OrderDto> findByCustomerId(Long id, LocalDate startDate, LocalDate endDate, Status status) {
-
-		Stream<Order> ordersStream = orderRepository.findByCustomerId(id).stream();
-		if (status != null) {
-			ordersStream = ordersStream.filter(o -> (o.getStatus() == status));
-		}
-		if (startDate != null) {
-			ordersStream = ordersStream.filter(o -> (o.getDate().isAfter(startDate) || o.getDate().isEqual(startDate)));
-		}
-		if (endDate != null) {
-			ordersStream = ordersStream.filter(o -> (o.getDate().isBefore(endDate) || o.getDate().isEqual(endDate)));
-		}
-		return ordersStream.map(OrderDto::new).collect(Collectors.toList());
 	}
 }

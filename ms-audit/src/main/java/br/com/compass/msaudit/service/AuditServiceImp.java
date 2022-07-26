@@ -21,7 +21,6 @@ public class AuditServiceImp implements AuditService{
 
 	@Override
 	public OrderDto findById(String id) {
-		
 		return new OrderDto(auditRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Order ID: " + id + " not found.")));
 	}
 }

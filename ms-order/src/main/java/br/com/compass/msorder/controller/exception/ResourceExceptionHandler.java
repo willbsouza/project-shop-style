@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import br.com.compass.msorder.service.exception.CustomerInactiveException;
 import br.com.compass.msorder.service.exception.ObjectNotFoundException;
 import br.com.compass.msorder.service.exception.QuantityUnavailableException;
 import feign.FeignException;
@@ -46,6 +47,17 @@ public class ResourceExceptionHandler {
 		erro.setTimestamp(Instant.now());
 		erro.setStatus(HttpStatus.BAD_REQUEST.value());
 		erro.setError("Quantity unavailable.");
+		erro.setMessage(e.getMessage());
+		erro.setPath(request.getRequestURI());
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
+	}
+	
+	@ExceptionHandler(CustomerInactiveException.class)
+	public ResponseEntity<StandardError> invalidFields(CustomerInactiveException e, HttpServletRequest request){
+		StandardError erro = new StandardError();
+		erro.setTimestamp(Instant.now());
+		erro.setStatus(HttpStatus.BAD_REQUEST.value());
+		erro.setError("Customer Inactive.");
 		erro.setMessage(e.getMessage());
 		erro.setPath(request.getRequestURI());
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);

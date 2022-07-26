@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.compass.mscustomer.dto.CustomerChangePasswordDto;
 import br.com.compass.mscustomer.dto.CustomerDto;
 import br.com.compass.mscustomer.dto.CustomerFormDto;
+import br.com.compass.mscustomer.dto.CustomerFormUpdateDto;
 import br.com.compass.mscustomer.dto.CustomerLoginDto;
 import br.com.compass.mscustomer.entity.Customer;
 import br.com.compass.mscustomer.service.CustomerService;
@@ -47,8 +48,8 @@ public class CustomerController {
 	
 	@PutMapping("/{id}")
 	@Transactional
-	public ResponseEntity<CustomerDto> update(@RequestBody @Valid CustomerFormDto customerFormDto, @PathVariable Long id) {
-		return new ResponseEntity<CustomerDto>(customerService.updateById(customerFormDto, id), HttpStatus.OK);
+	public ResponseEntity<CustomerDto> update(@RequestBody @Valid CustomerFormUpdateDto customerFormUpdateDto, @PathVariable Long id) {
+		return new ResponseEntity<CustomerDto>(customerService.updateById(customerFormUpdateDto, id), HttpStatus.OK);
 	}
 	
 	@PutMapping("/{id}/password")

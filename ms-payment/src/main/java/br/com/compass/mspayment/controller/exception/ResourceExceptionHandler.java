@@ -64,7 +64,7 @@ public class ResourceExceptionHandler {
 	}
 	
 	@ExceptionHandler(PaymentNotValidException.class)
-	public ResponseEntity<StandardError> categoryNotValid(PaymentNotValidException e, HttpServletRequest request){
+	public ResponseEntity<StandardError> paymentNotValid(PaymentNotValidException e, HttpServletRequest request){
 		
 		StandardError erro = new StandardError();
 		erro.setTimestamp(Instant.now());
