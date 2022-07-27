@@ -35,14 +35,14 @@ public class CustomerServiceImp implements CustomerService{
 	}
 	
 	@Override
-	public CustomerDto updateById(@Valid CustomerFormUpdateDto userFormUpdateDto, Long id) {
+	public CustomerDto updateById(@Valid CustomerFormUpdateDto customerFormUpdateDto, Long id) {
 		Customer customer = customerRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("ID: " + id + " not found"));
-			customer.setFirstName(userFormUpdateDto.getFirstName());
-			customer.setLastName(userFormUpdateDto.getLastName());
-			customer.setSex(userFormUpdateDto.getSex());
-			customer.setCpf(userFormUpdateDto.getCpf());
-			customer.setBirthdate(userFormUpdateDto.getBirthdate());
-			customer.setActive(userFormUpdateDto.getActive());
+			customer.setFirstName(customerFormUpdateDto.getFirstName());
+			customer.setLastName(customerFormUpdateDto.getLastName());
+			customer.setSex(customerFormUpdateDto.getSex());
+			customer.setCpf(customerFormUpdateDto.getCpf());
+			customer.setBirthdate(customerFormUpdateDto.getBirthdate());
+			customer.setActive(customerFormUpdateDto.getActive());
 			return new CustomerDto(customer);		
 	}
 	

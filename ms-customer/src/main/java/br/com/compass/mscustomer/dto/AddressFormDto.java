@@ -8,8 +8,10 @@ import javax.validation.constraints.NotNull;
 import br.com.compass.mscustomer.entity.enums.State;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
+@Setter
 @NoArgsConstructor
 public class AddressFormDto {
 	

@@ -37,6 +37,12 @@ public class JwtConfiguration extends WebSecurityConfigurerAdapter{
 		.authorizeHttpRequests()
 		.antMatchers(HttpMethod.POST, "/v1/login").permitAll()
 		.antMatchers(HttpMethod.POST, "/bffshop/v1/customers").permitAll()
+		.antMatchers("/v2/api-docs",
+	            "/swagger-resources/**",
+	            "/swagger-ui.html**",
+	            "/webjars/**",
+	            "/swagger-ui/**",
+	            "favicon.ico").permitAll()
 		.anyRequest().authenticated()
 		.and()
 		.addFilter(new JwtAuthenticateFilter(authenticationManager()))
