@@ -46,8 +46,7 @@ class AddressServiceImpTest {
 	
 	private Optional<Address> optAddress;
 	
-	@SuppressWarnings("unused")
-	private AddressDto addressDto;
+	private AddressDto response;
 	
 	private AddressFormDto addressFormDto;
 	
@@ -65,7 +64,7 @@ class AddressServiceImpTest {
 		when(customerRepository.findById(anyLong())).thenReturn(optCustomer);
 		when(addressRepository.save(any())).thenReturn(address);
 		
-		AddressDto response = addressService.save(addressFormDto);
+		response = addressService.save(addressFormDto);
 		
 		assertNotNull(response);
 		assertEquals(AddressDto.class, response.getClass());
@@ -96,7 +95,7 @@ class AddressServiceImpTest {
 		when(addressRepository.findById(anyLong())).thenReturn(optAddress);
 		when(addressRepository.save(any())).thenReturn(address);
 		
-		AddressDto response = addressService.update(ID, addressFormDto);
+		response = addressService.update(ID, addressFormDto);
 		
 		assertNotNull(response);
 		assertEquals(AddressDto.class, response.getClass());
@@ -147,7 +146,7 @@ class AddressServiceImpTest {
 	void whenFindByIdThenReturnAnAddressDto() {
 		when(addressRepository.findById(anyLong())).thenReturn(optAddress);
 		
-		AddressDto response = addressService.findById(ID);
+		response = addressService.findById(ID);
 		
 		assertNotNull(response);
 		assertEquals(AddressDto.class, response.getClass());
@@ -203,8 +202,5 @@ class AddressServiceImpTest {
 		address.setId(ID);
 		
 		optAddress = Optional.of(address);
-		
-		addressDto = new AddressDto(address);
 	}
-
 }

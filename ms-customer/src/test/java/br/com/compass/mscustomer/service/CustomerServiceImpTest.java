@@ -43,8 +43,7 @@ class CustomerServiceImpTest {
 	
 	private Optional<Customer> optCustomer;
 	
-	@SuppressWarnings("unused")
-	private CustomerDto customerDto;
+	private CustomerDto response;
 	
 	private CustomerLoginDto customerLoginDto;
 	
@@ -76,7 +75,7 @@ class CustomerServiceImpTest {
 	void whenFindByIdThenReturnObjectNotFoundException() {
 		when(customerRepository.findById(anyLong())).thenReturn(optCustomer);
 		
-		CustomerDto response = customerService.findById(ID);
+		response = customerService.findById(ID);
 		
 		assertNotNull(response);
 		assertEquals(CustomerDto.class, response.getClass());
@@ -93,7 +92,7 @@ class CustomerServiceImpTest {
 	void whenSaveThenReturnACustomerDto() {
 		when(customerRepository.save(any())).thenReturn(customer);
 		
-		CustomerDto response = customerService.save(customerFormDto);
+		response = customerService.save(customerFormDto);
 		
 		assertNotNull(response);
 		assertEquals(CustomerDto.class, response.getClass());
@@ -110,7 +109,7 @@ class CustomerServiceImpTest {
 	void whenUpdateByIdThenReturnACustomerDto() {
 		when(customerRepository.findById(anyLong())).thenReturn(optCustomer);
 		
-		CustomerDto response = customerService.updateById(customerFormUpdateDto, ID);
+		response = customerService.updateById(customerFormUpdateDto, ID);
 		
 		assertNotNull(response);
 		assertEquals(CustomerDto.class, response.getClass());
@@ -139,7 +138,7 @@ class CustomerServiceImpTest {
 	void whenLoginThenReturnACustomerDto() {
 		when(customerRepository.findByEmail(anyString())).thenReturn(customer);
 		
-		CustomerDto response = customerService.login(customerLoginDto);
+		response = customerService.login(customerLoginDto);
 		
 		assertNotNull(response);
 		assertEquals(CustomerDto.class, response.getClass());
@@ -185,7 +184,7 @@ class CustomerServiceImpTest {
 	void whenVerificationPasswordThenReturnACustomerDto() {
 		when(customerRepository.findById(anyLong())).thenReturn(optCustomer);
 		
-		CustomerDto response = customerService.changePassword(customerChangePasswordDto, ID);
+		response = customerService.changePassword(customerChangePasswordDto, ID);
 		
 		assertNotNull(response);
 		assertEquals(CustomerDto.class, response.getClass());
@@ -257,9 +256,6 @@ class CustomerServiceImpTest {
 		customer = new Customer(customerFormDto);
 		customer.setId(ID);
 		
-		customerDto = new CustomerDto(customer);
-		
 		optCustomer = Optional.of(customer);
 	}
-
 }
