@@ -28,7 +28,7 @@ public class InstallmentServiceImp implements InstallmentService{
 		Payment payment = paymentRepository.findById(installmentFormDto.getPaymentId()).orElseThrow(
 				() -> new ObjectNotFoundException("Payment Id: " + installmentFormDto.getPaymentId() + " not found."));
 		installmentValidation(installmentFormDto, payment);
-			return new InstallmentDto(installmentRepository.save(new Installment(installmentFormDto, payment)));
+		return new InstallmentDto(installmentRepository.save(new Installment(installmentFormDto, payment)));
 	}
 
 	@Override
@@ -47,12 +47,12 @@ public class InstallmentServiceImp implements InstallmentService{
 	}
 	
 	@Override
-	public InstallmentDto findByPaymentId(Long paymanetId) {
-		Installment installment = installmentRepository.findByPaymentId(paymanetId);
+	public InstallmentDto findByPaymentId(Long paymentId) {
+		Installment installment = installmentRepository.findByPaymentId(paymentId);
 		if(installment != null) {
 			return new InstallmentDto(installment);
 		}
-		throw new ObjectNotFoundException("Installment not found to paymentId: " + paymanetId + " informed.");
+		throw new ObjectNotFoundException("Installment not found to paymentId: " + paymentId + " informed.");
 	}
 	
 	private Boolean installmentValidation(InstallmentFormDto installmentFormDto, Payment payment) {
