@@ -11,10 +11,12 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 import br.com.compass.msaudit.enums.Status;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
 @Document
 @Getter
+@Setter
 @NoArgsConstructor
 @ToString
 public class Order {
