@@ -88,7 +88,7 @@ public class BffShopController {
 		return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
 	}
 	
-	@GetMapping("/v1/products")
+	@GetMapping("/bffshop/v1/products")
 	public ResponseEntity<List<ProductDto>> findAllProducts() {
 		return new ResponseEntity<List<ProductDto>>(catalogClient.findAllProducts(), HttpStatus.OK);
 	}
